@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { HashLink } from 'react-router-hash-link';
 
 export interface TermProps {
     term: string;
@@ -12,8 +13,13 @@ export interface TermProps {
 
 class Term extends React.Component<TermProps> {
 
-    TermLinkFinder: RegExp = new RegExp(/(\[[^|\]]+(?:\|[^\]]+)?\])/);
-    TermLinkMatcher: RegExp = new RegExp(/\[([^|\]]+)(?:\|([^\]]+))?\]/);
+    static routerLinkRenderer(props: {href: string, children: JSX.Element}): JSX.Element {
+        return (
+          props.href.match(/^(https?:)?\/\//)
+            ? <a href={props.href}>{props.children}</a>
+            : <HashLink to={props.href}>{props.children}</HashLink>
+        );
+      }      
 
     makeTermAnchor(s: string): string {
         return "term-" + s.toLowerCase().replace(" ", "-");
@@ -76,7 +82,10 @@ class Term extends React.Component<TermProps> {
             }
         }
 
-        return <ReactMarkdown source={output.join("")} />;
+        return <ReactMarkdown
+                source={output.join("")}
+                renderers={{link: Term.routerLinkRenderer}}
+            />;
     }
 
     render() {

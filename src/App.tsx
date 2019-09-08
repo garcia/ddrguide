@@ -1,11 +1,40 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
 import './App.css';
 import Glossary from './glossary';
 
-function App() {
+function Index() {
   return (
-    <Glossary />
+    <h1>It Works!</h1>
   );
 }
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/glossary/">Glossary</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Route path="/" exact component={Index} />
+        <Route path="/glossary/" component={Glossary} />
+      </div>
+    </Router>
+  );
+}
+
+export const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL
+});
 
 export default App;
