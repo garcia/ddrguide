@@ -2,6 +2,7 @@ import React from 'react';
 import Term, { TermProps } from './term';
 import glossaryJson from './glossary.json';
 import { AssertionError } from 'assert';
+import Helmet from 'react-helmet';
 
 class GlossaryStore {
     
@@ -32,9 +33,17 @@ class Glossary extends React.Component {
     store: GlossaryStore = GlossaryStore.getInstance();
 
     render() {
-        let sortedTerms = this.store.allTerms.slice();
+        let sortedTerms: TermProps[] = this.store.allTerms.slice();
         sortedTerms.sort((a, b) => a.term.localeCompare(b.term));
-        return sortedTerms.map(t => <Term {...t} />);
+        let termElements: JSX.Element[] = sortedTerms.map(t => <Term {...t} />);
+        return (
+            <div className="glossary">
+                <Helmet>
+                    <title>Glossary</title>
+                </Helmet>
+                {termElements}
+            </div>
+        )
     }
 }
 
