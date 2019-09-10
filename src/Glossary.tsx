@@ -1,8 +1,11 @@
 import React from 'react';
-import Term, { TermProps } from './term';
+import Term, { TermProps } from './Term';
 import glossaryJson from './glossary.json';
 import { AssertionError } from 'assert';
 import Helmet from 'react-helmet';
+
+import './Glossary.scss';
+import { HashLink } from 'react-router-hash-link';
 
 class GlossaryStore {
     
@@ -41,6 +44,15 @@ class Glossary extends React.Component {
                 <Helmet>
                     <title>Glossary</title>
                 </Helmet>
+                <div className="contentHeader">
+                    <h1>Glossary</h1>
+                    <p>
+                        A comprehensive glossary of DanceDanceRevolution terminology.
+                        Please note that these definitions are focused on <HashLink to="#term-dancedancerevolution-a">DDR A</HashLink> and <HashLink to="#term-dancedancerevolution-a20">DDR A20</HashLink>,
+                        the two most recent DDR mixes at the time of writing, and
+                        the primary focus of the Western competitive scene.
+                    </p>
+                </div>
                 {termElements}
             </div>
         )

@@ -2,6 +2,8 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { HashLink } from 'react-router-hash-link';
 
+import './Term.scss';
+
 export interface TermProps {
     term: string;
     acronym?: string;
@@ -92,7 +94,7 @@ class Term extends React.Component<TermProps> {
         let anchor: string = this.makeTermAnchor(this.props.term);
         let title: JSX.Element;
         let aka: JSX.Element | undefined;
-        let definition: JSX.Element = <p className="definition">{this.formatText(this.props.definition)}</p>;
+        let definition: JSX.Element = <div className="definition">{this.formatText(this.props.definition)}</div>;
         let trivia: JSX.Element | undefined;
 
         if (this.props.acronym !== undefined) {
@@ -102,11 +104,16 @@ class Term extends React.Component<TermProps> {
         }
 
         if (this.props.aka !== undefined) {
-            aka = <p className="aka">Also known as: {this.props.aka.join(", ")}</p>;
+            aka = <div className="aka"><p>Also known as: {this.props.aka.join(", ")}</p></div>;
         }
 
         if (this.props.trivia !== undefined) {
-            trivia = <p className="trivia">{this.formatText(this.props.trivia)}</p>;
+            trivia = (
+                <div className="trivia">
+                    <h3>Trivia</h3>
+                    {this.formatText(this.props.trivia)}
+                </div>
+            );
         }
         
         return (

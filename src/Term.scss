@@ -1,0 +1,45 @@
+@import "global.scss";
+
+.Term {
+
+    h2 {
+        margin-top: $spacing*2;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $importantText;
+    }
+    
+    .aka {
+        font-size: .75em;
+        font-style: italic;
+        color: $sideText;
+        margin-top: -$spacing/2;
+    }
+
+    p {
+        color: $copyText;
+    }
+
+    .trivia {
+        background-color: mix($altAccent, white, 8%);
+
+        :first-child {
+            padding-top: $spacing;
+        }
+        :last-child {
+            padding-bottom: $spacing;
+        }
+
+        h3 {
+            padding-top: $spacing;
+            margin-bottom: -$spacing/2;
+            font-size: 1.125em;
+            font-weight: bold;
+            color: $altAccent;
+        }
+
+        p {
+            font-size: .875em;
+        }
+    }
+}

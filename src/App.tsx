@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import './App.css';
-import Glossary from './glossary';
+import './App.scss';
+import Glossary from './Glossary';
 
 function Index() {
     return (
@@ -12,15 +12,13 @@ function Index() {
     );
 }
 
-function App() {
+function Sidebar() {
     return (
-        <Router>
-        <Helmet defaultTitle="DDRGuide" titleTemplate="%s | DDRGuide">
-            <meta charSet="utf-8" />
-            <link rel="canonical" href="https://garcia.github.io/ddrguide" />
-        </Helmet>
-        <div>
-            <nav>
+        <nav className="column">
+            <div className="columnHeader">
+                DDRGuide
+            </div>
+            <div className="columnContents">
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -29,13 +27,29 @@ function App() {
                         <Link to="/glossary/">Glossary</Link>
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+    )
+}
 
-            <Route path="/" exact component={Index} />
-            <Route path="/glossary/" component={Glossary} />
-          </div>
-      </Router>
-  );
+function App() {
+    return (
+        <Router>
+            <Helmet defaultTitle="DDRGuide" titleTemplate="%s | DDRGuide">
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="https://garcia.github.io/ddrguide" />
+            </Helmet>
+            <div className="App">
+                <Sidebar />
+                <article className="column">
+                    <div className="columnContents">
+                        <Route path="/" exact component={Index} />
+                        <Route path="/glossary/" component={Glossary} />
+                    </div>
+                </article>
+            </div>
+        </Router>
+    );
 }
 
 export const history = createBrowserHistory({
