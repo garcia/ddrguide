@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ddrguide/static/css/main.077bbd87.chunk.css",
-    "main.js": "/ddrguide/static/js/main.eb3e260e.chunk.js",
-    "main.js.map": "/ddrguide/static/js/main.eb3e260e.chunk.js.map",
+    "main.js": "/ddrguide/static/js/main.df50a2a0.chunk.js",
+    "main.js.map": "/ddrguide/static/js/main.df50a2a0.chunk.js.map",
     "runtime~main.js": "/ddrguide/static/js/runtime~main.cc7b5e0a.js",
     "runtime~main.js.map": "/ddrguide/static/js/runtime~main.cc7b5e0a.js.map",
     "static/js/2.c401f5d4.chunk.js": "/ddrguide/static/js/2.c401f5d4.chunk.js",
     "static/js/2.c401f5d4.chunk.js.map": "/ddrguide/static/js/2.c401f5d4.chunk.js.map",
     "index.html": "/ddrguide/index.html",
-    "precache-manifest.79032567f1da09f7ae22f43438a45aac.js": "/ddrguide/precache-manifest.79032567f1da09f7ae22f43438a45aac.js",
+    "precache-manifest.30548d134dc20e0b2d68198c82c4628b.js": "/ddrguide/precache-manifest.30548d134dc20e0b2d68198c82c4628b.js",
     "service-worker.js": "/ddrguide/service-worker.js",
     "static/css/main.077bbd87.chunk.css.map": "/ddrguide/static/css/main.077bbd87.chunk.css.map"
   }
