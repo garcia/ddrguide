@@ -43,8 +43,8 @@ function App() {
                 <Sidebar />
                 <article className="column">
                     <div className="columnContents">
-                        <Route path="/" exact component={Index} />
-                        <Route path="/glossary/" component={Glossary} />
+                        <Route path={process.env.PUBLIC_URL + "/"} exact component={Index} />
+                        <Route path={process.env.PUBLIC_URL + "/glossary/"} component={Glossary} />
                     </div>
                 </article>
             </div>

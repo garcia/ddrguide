@@ -2,7 +2,7 @@
   "name": "ddrguide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://garcia.github.io/ddrguide",
+  "homepage": "https://garcia.github.io/ddrguide/",
   "dependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.4",
