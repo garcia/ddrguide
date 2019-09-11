@@ -1,0 +1,43 @@
+@import "global";
+
+.container {
+    position: relative;
+    min-width: 360px;
+    margin: $spacing;
+
+    input {
+        width: 100%;
+        padding: 0.5em;
+        border: $border solid mix($accent, white, 25%);
+        font-size: inherit;
+        color: $importantText;
+
+        &:focus {
+            border-color: $accent;
+            outline: none;
+        }
+    }
+
+    .suggestionsList {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        .suggestion {
+            width: 100%;
+            padding: .5em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: white;
+            background-color: $accent;
+            border: $border solid $accent;
+            cursor: pointer;
+        }
+
+        .suggestionHighlighted {
+            background-color: darken($accent, 10%);
+            border-color: darken($accent, 10%);
+        }
+    }
+}

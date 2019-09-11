@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import './Glossary.scss';
 import { HashLink } from 'react-router-hash-link';
 
-class GlossaryStore {
+export class GlossaryStore {
     
     static instance?: GlossaryStore;
 

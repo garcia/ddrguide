@@ -5,10 +5,11 @@ import { createBrowserHistory } from 'history';
 
 import './App.scss';
 import Glossary from './Glossary';
+import SearchBar from './SearchBar';
 
 function Index() {
     return (
-        <h1>It Works!</h1>
+        <SearchBar />
     );
 }
 
@@ -34,7 +35,7 @@ function Sidebar() {
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Helmet defaultTitle="DDRGuide" titleTemplate="%s | DDRGuide">
                 <meta charSet="utf-8" />
                 <link rel="canonical" href="https://garcia.github.io/ddrguide" />
@@ -43,8 +44,8 @@ function App() {
                 <Sidebar />
                 <article className="column">
                     <div className="columnContents">
-                        <Route path={process.env.PUBLIC_URL + "/"} exact component={Index} />
-                        <Route path={process.env.PUBLIC_URL + "/glossary/"} component={Glossary} />
+                        <Route path="/" exact component={Index} />
+                        <Route path="/glossary/" component={Glossary} />
                     </div>
                 </article>
             </div>
