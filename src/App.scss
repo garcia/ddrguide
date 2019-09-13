@@ -2,12 +2,11 @@
 
 .App {
     display: flex;
+    min-height: 100vh;
     box-sizing: border-box;
-    height: 100vh;
     font-size: 16px;
 
     > .column {
-        height: 100%;
         display: flex;
         flex-direction: column;
 
@@ -25,19 +24,45 @@
     > nav.column {
         min-width: 240px;
         flex-shrink: 0;
-        background-color: $accent;
-        color: white;
+        background-color: $offWhite;
+        color: $dark;
 
         > .columnContents {
+
             > ul {
                 list-style-type: none;
                 padding: 0;
+                margin: 0;
+                height: 100%;
+                box-shadow: -4px 0 0 rgba(0, 0, 0, .1) inset;
 
-                > li > a {
-                    display: block;
-                    padding: $spacing;
-                    background-color: darken($accent, 10%);
+                > li {
+
+                    > a {
+                        display: block;
+                        padding: $spacing/2 $spacing;
+                    }
+
+                    .current {
+                        color: $white;
+                        font-weight: bold;
+                    }
                 }
+
+                @mixin navColor($color) {
+                    border-right: $border solid $color;
+
+                    .current {
+                        background-color: $color;
+                    }
+                }
+
+                .homeLink { @include navColor($black); }
+                .newcomersLink { @include navColor($newcomersPage); }
+                .whatChangedLink { @include navColor($whatChangedPage); }
+                .improvingLink { @include navColor($improvingPage); }
+                .glossaryLink { @include navColor($glossaryPage); }
+                .songsLink { @include navColor($songsPage); }
             }
         }
 
@@ -48,6 +73,7 @@
     }
 
     > article {
+        width: 100%;
 
         > .columnContents {
             h1, h2, h3, h4, h5, h6, p {
@@ -60,12 +86,12 @@
                     margin-bottom: 0;
                     font-size: 4em;
                     font-weight: normal;
-                    color: $importantText;
+                    color: $black;
                 }
 
                 p {
                     font-size: 1.25em;
-                    color: $copyText;
+                    color: $dark;
                 }
             }
         }

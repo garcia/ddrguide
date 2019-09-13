@@ -1,9 +1,7 @@
 @import "global";
 
 body {
-    height: 100%;
     margin: 0;
-    overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
@@ -23,10 +21,10 @@ p {
 }
 
 a {
-    color: $accent;
+    color: $primary;
     text-decoration: none;
 
     &:hover {
-        color: $altAccent;
+        color: $secondary;
     }
 }

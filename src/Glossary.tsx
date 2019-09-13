@@ -1,11 +1,11 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import { AssertionError } from 'assert';
+import { HashLink } from 'react-router-hash-link';
+
 import Term, { TermProps } from './Term';
 import glossaryJson from './glossary.json';
-import { AssertionError } from 'assert';
-import Helmet from 'react-helmet';
-
 import './Glossary.scss';
-import { HashLink } from 'react-router-hash-link';
 
 export class GlossaryStore {
     
@@ -43,6 +43,8 @@ class Glossary extends React.Component {
             <div className="glossary">
                 <Helmet>
                     <title>Glossary</title>
+                    <meta property="og:title" content="Glossary | DDRGuide" />
+                    <meta property="og:description" content="A comprehensive glossary of DanceDanceRevolution terminology." />
                 </Helmet>
                 <div className="contentHeader">
                     <h1>Glossary</h1>

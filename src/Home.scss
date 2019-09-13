@@ -1,0 +1,70 @@
+@import "global";
+
+.home {
+
+    > .homeHeader {
+        width: 100vw;
+        padding: 6em;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+
+        > h1 {
+            font-size: 3em;
+            font-weight: normal;
+            margin: 0;
+        }
+    }
+
+    > .homePages {
+        margin-top: 2em;
+
+        > h2 {
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        > ul {
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+
+            > li {
+                display: inline-block;
+                padding: 3em;
+                flex: 1;
+                
+                > a {
+                    color: $white;
+
+                    > h3 {
+                        font-size: 2em;
+                        font-weight: normal;
+                        margin: 0;
+                    }
+
+                    > p {
+                        margin-left: 0;
+                    }
+
+                }
+
+            }
+
+            @mixin pageLinkColor($color) {
+                background-color: $color;
+            }
+
+            .homeLink { @include pageLinkColor($black); }
+            .newcomersLink { @include pageLinkColor($newcomersPage); }
+            .whatChangedLink { @include pageLinkColor($whatChangedPage); }
+            .improvingLink { @include pageLinkColor($improvingPage); }
+            .glossaryLink { @include pageLinkColor($glossaryPage); }
+            .songsLink { @include pageLinkColor($songsPage); }
+
+        }
+
+    }
+
+}
