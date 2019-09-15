@@ -1,6 +1,8 @@
 @import "global";
 
 .home {
+    height: 100%;
+    background-color: $black;
 
     > .homeHeader {
         width: 100vw;
@@ -18,15 +20,10 @@
     }
 
     > .homePages {
-        margin-top: 2em;
-
-        > h2 {
-            text-transform: uppercase;
-            font-weight: normal;
-        }
 
         > ul {
             display: flex;
+            margin: 0;
             padding: 0;
             list-style-type: none;
 

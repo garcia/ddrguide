@@ -12,7 +12,6 @@ class Home extends React.Component {
                     <p>Site description goes here.</p>
                 </div>
                 <div className="homePages homeGuides">
-                    <h2>Guides</h2>
                     <ul>
                         <li className="newcomersLink">
                             <Link to="/newcomers/">
@@ -35,7 +34,6 @@ class Home extends React.Component {
                     </ul>
                 </div>
                 <div className="homePages homeReferences">
-                    <h2>Reference Material</h2>
                     <ul>
                         <li className="glossaryLink">
                             <Link to="/glossary/">

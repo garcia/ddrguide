@@ -1,104 +1,145 @@
 @import "global.scss";
 
 .App {
-    display: flex;
     min-height: 100vh;
-    box-sizing: border-box;
-    font-size: 16px;
-
-    > .column {
-        display: flex;
-        flex-direction: column;
-
-        > .columnHeader {
-            flex-shrink: 0;
-            margin: 1em;
-        }
-
-        > .columnContents {
-            flex-grow: 1;
-        }
-    }
+    display: flex;
+    flex-direction: column;
     
-    > nav.column {
-        min-width: 240px;
-        flex-shrink: 0;
-        background-color: $offWhite;
-        color: $dark;
+    > .top {
+        display: flex;
+        flex-grow: 1;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: $white;
 
-        > .columnContents {
+        > .column {
+            display: flex;
+            flex-direction: column;
 
-            > ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                height: 100%;
-                box-shadow: -4px 0 0 rgba(0, 0, 0, .1) inset;
+            > .columnHeader {
+                flex-shrink: 0;
+                margin: 1em;
+            }
 
-                > li {
+            > .columnContents {
+                flex-grow: 1;
+            }
+        }
+        
+        > nav.column {
+            min-width: 240px;
+            flex-shrink: 0;
+            background-color: $offWhite;
+            color: $dark;
 
-                    > a {
-                        display: block;
-                        padding: $spacing/2 $spacing;
+            > .columnContents {
 
-                        &:focus {
-                            outline: none;
+                > ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    box-shadow: -4px 0 0 rgba(0, 0, 0, .1) inset;
+
+                    > li {
+
+                        > a {
+                            display: block;
+                            padding: $spacing/2 $spacing;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        &:focus-within {
+                            border-right-width: calc(#{$border}*2);  
+                        }
+
+                        .current {
+                            color: $white;
+                            font-weight: bold;
                         }
                     }
 
-                    &:focus-within {
-                        border-right-width: calc(#{$border}*2);  
+                    @mixin navColor($color) {
+                        border-right: $border solid $color;
+
+                        .current {
+                            background-color: $color;
+                        }
                     }
-                    
-                    .current {
-                        color: $white;
-                        font-weight: bold;
-                    }
+
+                    .homeLink { @include navColor($black); }
+                    .newcomersLink { @include navColor($newcomersPage); }
+                    .whatChangedLink { @include navColor($whatChangedPage); }
+                    .improvingLink { @include navColor($improvingPage); }
+                    .glossaryLink { @include navColor($glossaryPage); }
+                    .songsLink { @include navColor($songsPage); }
                 }
+            }
 
-                @mixin navColor($color) {
-                    border-right: $border solid $color;
-
-                    .current {
-                        background-color: $color;
-                    }
-                }
-
-                .homeLink { @include navColor($black); }
-                .newcomersLink { @include navColor($newcomersPage); }
-                .whatChangedLink { @include navColor($whatChangedPage); }
-                .improvingLink { @include navColor($improvingPage); }
-                .glossaryLink { @include navColor($glossaryPage); }
-                .songsLink { @include navColor($songsPage); }
+            a {
+                color: inherit;
+                text-decoration: none;
             }
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
+        > article {
+            width: 100%;
+            color: $black;
+
+            > .columnContents {
+                h1, h2, h3, h4, h5, h6, p {
+                    margin-left: $spacing;
+                    margin-right: $spacing;
+                }
+
+                .contentHeader {
+                    h1 {
+                        font-size: 4em;
+                        font-weight: normal;
+                        color: $black;
+                    }
+
+                    p {
+                        font-size: 1.25em;
+                        color: $dark;
+                    }
+                }
+            }
         }
     }
 
-    > article {
-        width: 100%;
-        color: $black;
+    > footer {
+        background-color: $black;
+        color: $neutral;
+        font-size: .75em;
 
-        > .columnContents {
-            h1, h2, h3, h4, h5, h6, p {
-                margin-left: $spacing;
-                margin-right: $spacing;
-            }
+        > .footerSections {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            justify-content: center;
 
-            .contentHeader {
-                h1 {
-                    font-size: 4em;
-                    font-weight: normal;
-                    color: $black;
+            > li {
+                flex-shrink: 1;
+                margin: 2em;
+
+                > h3 {
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    color: mix($neutral, $white, 75%);
                 }
 
-                p {
-                    font-size: 1.25em;
-                    color: $dark;
+                > .footerLinks {
+                    margin: 0;
+                    padding-left: 1em;
+                    line-height: 2;
+
+                    a {
+                        color: inherit;
+                    }
                 }
             }
         }

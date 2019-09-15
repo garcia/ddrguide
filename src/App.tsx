@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Router, Route, NavLink } from 'react-router-dom';
+import { Router, Route, NavLink, Link } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import './App.scss';
@@ -53,13 +53,34 @@ function App() {
                 <link rel="canonical" href="https://garcia.github.io/ddrguide" />
             </Helmet>
             <div className="App">
-                <Route path="/:any+" component={Sidebar} />
-                <article className="column">
-                    <div className="columnContents">
-                        <Route path="/" exact component={Home} />
-                        <Route path="/glossary/" component={Glossary} />
-                    </div>
-                </article>
+                <div className="top">
+                    <Route path="/:any+" component={Sidebar} />
+                    <article className="column">
+                        <div className="columnContents">
+                            <Route path="/" exact component={Home} />
+                            <Route path="/glossary/" component={Glossary} />
+                        </div>
+                    </article>
+                </div>
+                <footer>
+                    <ul className="footerSections">
+                        <li>
+                            <h3>DDRGuide.com</h3>
+                            <ul className="footerLinks">
+                                <li><Link to="/about/contributors/">Contributors</Link></li>
+                                <li><Link to="/about/source/">Source</Link></li>
+                                <li><a href="https://twitter.com/DDRGuide">Twitter</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Friends</h3>
+                            <ul className="footerLinks">
+                                <li><a href="https://ddrcommunity.com/">DDRCommunity</a></li>
+                                <li><a href="https://twitter.com/sf_evolved">SF Evolved</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </footer>
             </div>
             <ScrollToTop />
         </Router>
