@@ -50,7 +50,7 @@ function App() {
                 <meta property="og:title" content="DDRGuide" />
                 <meta property="og:site_name" content="DDRGuide" />
                 <meta property="og:description" content="Learn where, why, and how to play DanceDanceRevolution. Help for newcomers, advice for competitive play, and references for DDR terminology and songs." />
-                <link rel="canonical" href="https://garcia.github.io/ddrguide" />
+                <link rel="canonical" href="https://www.ddrguide.com/" />
             </Helmet>
             <div className="App">
                 <div className="top">
@@ -78,6 +78,13 @@ function App() {
                                 <li><a href="https://ddrcommunity.com/">DDRCommunity</a></li>
                                 <li><a href="https://twitter.com/sf_evolved">SF Evolved</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <h3>Mission</h3>
+                            <p>
+                                Our goal is to make general knowledge about DDR accessible to anyone and everyone interested.
+                                If you'd like to contribute, message us on Twitter <a href="https://twitter.com/DDRGuide">@DDRGuide</a>.
+                            </p>
                         </li>
                     </ul>
                 </footer>
