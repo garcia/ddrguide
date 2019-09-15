@@ -2,11 +2,11 @@
 
 .container {
     position: relative;
-    min-width: 360px;
-    margin: $spacing;
 
     input {
         width: 100%;
+        height: 100%;
+        box-sizing: border-box;
         padding: 0.5em;
         border: $border solid mix($primary, $white, 25%);
         font-size: inherit;

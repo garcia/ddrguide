@@ -1,9 +1,20 @@
 @import "global";
 
-.sortSelect {
-    padding: .5em;
-    font-size: inherit;
-    color: $dark;
-    background-color: $white;
-    border: $border solid mix($primary, $white, 25%);
+.glossary {
+    > .sortAndFilter {
+        display: flex;
+
+        > div {
+            display: inline-block;
+            width: 180px;
+            flex-shrink: 1;
+            margin: 1em;
+
+            > * {
+                width: 100%;
+                // 1em text + .5em*2 padding + $border*2 borders + 4px manual adjustment
+                height: calc(2em + #{$border}*2 + 4px);
+            }
+        }
+    }
 }

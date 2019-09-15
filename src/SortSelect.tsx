@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SortSelect.scss';
+
 export type SortValue = "alphabetical" | "by-concept";
 
 interface SortState {
