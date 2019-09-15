@@ -12,6 +12,7 @@
         border-color: $primary;
     }
 
+    // Fix for Firefox dotted outline
     &:-moz-focusring {
         color: transparent;
         text-shadow: 0 0 0 #000;

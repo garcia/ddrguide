@@ -94,6 +94,7 @@ class Glossary extends React.Component<GlossaryProps> {
                     <h1>Glossary</h1>
                 </div>
                 <div className="sortAndFilter">
+                    <h2>Filter:</h2>
                     <div><SortSelect onSortUpdate={this.onSortUpdate} /></div>
                     <div><SearchBar /></div>
                 </div>

@@ -40,8 +40,16 @@
                     > a {
                         display: block;
                         padding: $spacing/2 $spacing;
+
+                        &:focus {
+                            outline: none;
+                        }
                     }
 
+                    &:focus-within {
+                        border-right-width: calc(#{$border}*2);  
+                    }
+                    
                     .current {
                         color: $white;
                         font-weight: bold;
@@ -73,6 +81,7 @@
 
     > article {
         width: 100%;
+        color: $black;
 
         > .columnContents {
             h1, h2, h3, h4, h5, h6, p {

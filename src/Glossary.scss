@@ -3,12 +3,18 @@
 .glossary {
     > .sortAndFilter {
         display: flex;
+        align-items: center;
+
+        h2 {
+            font-weight: normal;
+            margin: 0;
+        }
 
         > div {
             display: inline-block;
             width: 180px;
             flex-shrink: 1;
-            margin: 1em;
+            margin-right: 1em;
 
             > * {
                 width: 100%;
