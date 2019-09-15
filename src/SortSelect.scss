@@ -5,6 +5,15 @@
     box-sizing: border-box;
     font-size: inherit;
     color: $dark;
-    background-color: $white;
     border: $border solid mix($primary, $white, 25%);
+    outline: none;
+
+    &:focus {
+        border-color: $primary;
+    }
+
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
 }
