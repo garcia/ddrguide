@@ -123,8 +123,13 @@
             justify-content: center;
 
             > li {
+                max-width: 25%;
                 flex-shrink: 1;
                 margin: 2em;
+
+                p, ul {
+                    line-height: 2;
+                }
 
                 > h3 {
                     text-transform: uppercase;
@@ -132,10 +137,14 @@
                     color: mix($neutral, $white, 75%);
                 }
 
+                > p {
+                    display: inline-block;
+                    margin-top: 0;
+                }
+
                 > .footerLinks {
                     margin: 0;
                     padding-left: 1em;
-                    line-height: 2;
 
                     a {
                         color: inherit;
