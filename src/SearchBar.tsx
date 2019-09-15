@@ -132,7 +132,7 @@ class SearchBar extends React.Component<SearchBarProps> {
                 inputProps={inputProps}
                 theme={Autosuggest_theme}
             />
-        )
+        );
     }
 }
 

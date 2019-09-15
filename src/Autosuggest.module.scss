@@ -8,12 +8,12 @@
     input {
         width: 100%;
         padding: 0.5em;
-        border: $border solid mix($accent, white, 25%);
+        border: $border solid mix($primary, $white, 25%);
         font-size: inherit;
-        color: $importantText;
+        color: $black;
 
         &:focus {
-            border-color: $accent;
+            border-color: $primary;
             outline: none;
         }
     }
@@ -30,14 +30,14 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             color: white;
-            background-color: $accent;
-            border: $border solid $accent;
+            background-color: $primary;
+            border: $border solid $primary;
             cursor: pointer;
         }
 
         .suggestionHighlighted {
-            background-color: darken($accent, 10%);
-            border-color: darken($accent, 10%);
+            background-color: $darkPrimary;
+            border-color: $darkPrimary;
         }
     }
 }

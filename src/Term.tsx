@@ -11,6 +11,7 @@ export interface TermProps {
     definition: string;
     trivia?: string;
     help?: string;
+    concept: string;
 }
 
 class Term extends React.Component<TermProps> {

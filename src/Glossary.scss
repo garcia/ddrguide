@@ -1,0 +1,9 @@
+@import "global";
+
+.sortSelect {
+    padding: .5em;
+    font-size: inherit;
+    color: $dark;
+    background-color: $white;
+    border: $border solid mix($primary, $white, 25%);
+}

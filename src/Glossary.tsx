@@ -1,11 +1,21 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { AssertionError } from 'assert';
-import { HashLink } from 'react-router-hash-link';
 
 import Term, { TermProps } from './Term';
 import glossaryJson from './glossary.json';
 import './Glossary.scss';
+import SearchBar from './SearchBar';
+import SortSelect, { SortValue } from './SortSelect';
+
+interface GlossaryProps {
+
+}
+
+interface GlossaryState {
+    sort: SortValue;
+    terms: TermProps[];
+}
 
 export class GlossaryStore {
     
@@ -18,9 +28,12 @@ export class GlossaryStore {
         if (GlossaryStore.instance !== undefined) {
             throw new AssertionError();
         }
+        let tmpConceptIndex = 0;
         glossaryJson.forEach(entry => {
-            this.termLookup[entry.term] = entry;
-            this.allTerms.push(entry);
+            let temp: TermProps = {concept: tmpConceptIndex.toString().padStart(3, "0"), ...entry};
+            this.termLookup[entry.term] = temp;
+            this.allTerms.push(temp);
+            tmpConceptIndex++;
         })
     }
 
@@ -32,13 +45,44 @@ export class GlossaryStore {
     }
 }
 
-class Glossary extends React.Component {
+class Glossary extends React.Component<GlossaryProps> {
     store: GlossaryStore = GlossaryStore.getInstance();
+    state: GlossaryState;
+
+    constructor(props: GlossaryProps) {
+        super(props);
+        
+        let initialSort: SortValue = "alphabetical";
+        let sortedTerms: TermProps[] = this.store.allTerms.slice();
+        this.sortTerms(sortedTerms, initialSort);
+        this.state = {
+            sort: initialSort,
+            terms: sortedTerms
+        };
+        
+        this.onSortUpdate = this.onSortUpdate.bind(this);
+    }
+
+    onSortUpdate(sort: SortValue) {
+        this.setState((state: GlossaryState, props: GlossaryProps) => {
+            this.sortTerms(state.terms, sort);
+            return {
+                sort: sort,
+                terms: state.terms
+            };
+        });
+    }
+
+    sortTerms(terms: TermProps[], sort: SortValue): void {
+        let sorters: {[key in SortValue]: ((a: TermProps, b: TermProps) => number)} = {
+            "alphabetical": ((a, b) => a.term.localeCompare(b.term)),
+            "by-concept": ((a, b) => a.concept.localeCompare(b.concept))
+        };
+
+        terms.sort(sorters[sort]);
+    }
 
     render() {
-        let sortedTerms: TermProps[] = this.store.allTerms.slice();
-        sortedTerms.sort((a, b) => a.term.localeCompare(b.term));
-        let termElements: JSX.Element[] = sortedTerms.map(t => <Term {...t} />);
         return (
             <div className="glossary">
                 <Helmet>
@@ -48,16 +92,16 @@ class Glossary extends React.Component {
                 </Helmet>
                 <div className="contentHeader">
                     <h1>Glossary</h1>
-                    <p>
-                        A comprehensive glossary of DanceDanceRevolution terminology.
-                        Please note that these definitions are focused on <HashLink to="#term-dancedancerevolution-a">DDR A</HashLink> and <HashLink to="#term-dancedancerevolution-a20">DDR A20</HashLink>,
-                        the two most recent DDR mixes at the time of writing, and
-                        the primary focus of the Western competitive scene.
-                    </p>
                 </div>
-                {termElements}
+                <div className="sortAndFilter">
+                    <div><SortSelect onSortUpdate={this.onSortUpdate} /></div>
+                    <div><SearchBar /></div>
+                </div>
+                <div className="terms">
+                    {this.state.terms.map(t => <Term key={t.term} {...t} />)}
+                </div>
             </div>
-        )
+        );
     }
 }
 
