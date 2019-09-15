@@ -27,4 +27,12 @@ a {
     &:hover {
         color: $secondary;
     }
+
+    &:focus {
+        outline: 2px dotted $primary;
+    }
+
+    &:focus:active {
+        outline: 2px dotted $secondary;
+    }
 }
