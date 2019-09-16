@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { AssertionError } from 'assert';
 
 import Term, { TermProps } from './Term';
+import TermGroup from './TermGroup';
 import glossaryJson from './glossary.json';
 import './Glossary.scss';
 import SearchBar from './SearchBar';
@@ -15,6 +16,7 @@ interface GlossaryProps {
 interface GlossaryState {
     sort: SortValue;
     terms: TermProps[];
+    groupedTerms: {[key: string]: TermProps[]};
 }
 
 export class GlossaryStore {
@@ -28,13 +30,13 @@ export class GlossaryStore {
         if (GlossaryStore.instance !== undefined) {
             throw new AssertionError();
         }
-        let tmpConceptIndex = 0;
+        let sourceIndex: number = 0;
         glossaryJson.forEach(entry => {
-            let temp: TermProps = {concept: tmpConceptIndex.toString().padStart(3, "0"), ...entry};
-            this.termLookup[entry.term] = temp;
-            this.allTerms.push(temp);
-            tmpConceptIndex++;
-        })
+            let props: TermProps = {sourceIndex, ...entry};
+            this.termLookup[entry.term] = props;
+            this.allTerms.push(props);
+            sourceIndex++;
+        });
     }
 
     static getInstance(): GlossaryStore {
@@ -44,6 +46,17 @@ export class GlossaryStore {
         return GlossaryStore.instance;
     }
 }
+
+const GlossarySort: {[key in SortValue]: {compare: (a: TermProps, b: TermProps) => number, sectionName: (t: TermProps) => string } } = {
+    "alphabetical": {
+        compare: (a, b) => a.term.localeCompare(b.term),
+        sectionName: (a) => a.term.charAt(0).toUpperCase(),
+    },
+    "by-concept": {
+        compare: (a, b) => a.concept.localeCompare(b.concept) || (a.sourceIndex - b.sourceIndex),
+        sectionName: (a) => a.concept
+    }
+};
 
 class Glossary extends React.Component<GlossaryProps> {
     store: GlossaryStore = GlossaryStore.getInstance();
@@ -57,7 +70,8 @@ class Glossary extends React.Component<GlossaryProps> {
         this.sortTerms(sortedTerms, initialSort);
         this.state = {
             sort: initialSort,
-            terms: sortedTerms
+            terms: sortedTerms,
+            groupedTerms: this.groupTerms(initialSort, sortedTerms)
         };
         
         this.onSortUpdate = this.onSortUpdate.bind(this);
@@ -68,18 +82,30 @@ class Glossary extends React.Component<GlossaryProps> {
             this.sortTerms(state.terms, sort);
             return {
                 sort: sort,
-                terms: state.terms
+                terms: state.terms,
+                groupedTerms: this.groupTerms(sort, state.terms)
             };
         });
     }
 
     sortTerms(terms: TermProps[], sort: SortValue): void {
-        let sorters: {[key in SortValue]: ((a: TermProps, b: TermProps) => number)} = {
-            "alphabetical": ((a, b) => a.term.localeCompare(b.term)),
-            "by-concept": ((a, b) => a.concept.localeCompare(b.concept))
-        };
+        terms.sort(GlossarySort[sort].compare);
+    }
 
-        terms.sort(sorters[sort]);
+    groupTerms(sort: SortValue, sortedTerms: TermProps[]): { [key: string]: TermProps[]; } {
+        let groups: { [key: string]: TermProps[]; } = {};
+        let currentSectionName: string = GlossarySort[sort].sectionName(sortedTerms[0]);
+        let currentGroup: TermProps[] = [];
+        for (let term of sortedTerms) {
+            let sectionName: string = GlossarySort[sort].sectionName(term);
+            if (sectionName !== currentSectionName) {
+                groups[currentSectionName] = currentGroup;
+                currentGroup = [];
+                currentSectionName = sectionName;
+            }
+            currentGroup.push(term);
+        }
+        return groups;
     }
 
     render() {
@@ -99,7 +125,11 @@ class Glossary extends React.Component<GlossaryProps> {
                     <div><SearchBar /></div>
                 </div>
                 <div className="terms">
-                    {this.state.terms.map(t => <Term key={t.term} {...t} />)}
+                    {Object.keys(this.state.groupedTerms).map(group =>
+                        <TermGroup key={group} groupName={group}>
+                            {this.state.groupedTerms[group].map(t => <Term key={t.term} {...t} />)}
+                        </TermGroup>
+                    )}
                 </div>
             </div>
         );

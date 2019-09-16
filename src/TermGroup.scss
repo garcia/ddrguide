@@ -1,0 +1,28 @@
+@import 'global';
+
+.termGroup {
+    margin-top: 4em;
+
+    h2 {
+        display: flex;
+        flex-direction: row;
+        font-size: 2em;
+        font-weight: normal;
+        color: $neutral;
+
+        &:before, &:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid $neutral;
+            margin: auto;
+        }
+
+        &:before {
+            margin-right: .5em;
+        }
+
+        &:after {
+            margin-left: .5em;
+        }
+    }
+}
