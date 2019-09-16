@@ -105,6 +105,7 @@ class Glossary extends React.Component<GlossaryProps> {
             }
             currentGroup.push(term);
         }
+        groups[currentSectionName] = currentGroup;
         return groups;
     }
 
