@@ -2,10 +2,11 @@
 
 .home {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: $black;
 
     > .homeHeader {
-        width: 100vw;
         padding: 6em;
         box-sizing: border-box;
         text-align: center;
@@ -27,6 +28,10 @@
             padding: 0;
             list-style-type: none;
 
+            @include mobile {
+                flex-direction: column;
+            }
+
             > li {
                 display: inline-block;
                 padding: 3em;
@@ -36,13 +41,13 @@
                     color: $white;
 
                     > h3 {
+                        margin-top: 0;
                         font-size: 2em;
                         font-weight: normal;
-                        margin: 0;
                     }
 
                     > p {
-                        margin-left: 0;
+                        margin-bottom: 0;
                     }
 
                 }
