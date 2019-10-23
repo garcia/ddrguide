@@ -149,14 +149,24 @@
 
         > .footerSections {
             display: flex;
+            flex-wrap: wrap;
             list-style-type: none;
             margin: 0;
-            justify-content: center;
+            padding: 0;
+
+            @include not-phone {
+                justify-content: center;
+            }
 
             > li {
-                max-width: 25%;
+                min-width: 180px;
                 flex-shrink: 1;
-                margin: 2em;
+                padding: 2em;
+                box-sizing: border-box;
+
+                @include not-phone {
+                    max-width: 25%;
+                }
 
                 p, ul {
                     line-height: 2;

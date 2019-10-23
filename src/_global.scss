@@ -29,3 +29,15 @@ $border: 4px;
         @content;
     }
 }
+
+@mixin phone {
+    @media screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin not-phone {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
