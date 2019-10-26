@@ -13,10 +13,34 @@
         background-color: $black;
         color: $white;
 
-        > h1 {
-            font-size: 3em;
-            font-weight: normal;
-            margin: 0;
+        > .homeLogo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            > img {
+                height: 9em;
+                margin-right: 2em;
+            }
+
+            > h1 {
+                font-size: 9em;
+                font-family: "Big Shoulders Text";
+                font-weight: 700;
+                margin: 0;
+            }
+
+            @include mobile {
+                > img {
+                    height: 15vw;
+                    margin-right: 3vw;
+                }
+
+                > h1 {
+                    font-size: 15vw;
+                }
+            }
         }
     }
 

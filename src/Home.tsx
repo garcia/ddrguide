@@ -8,8 +8,11 @@ class Home extends React.Component {
         return (
             <div className="home">
                 <div className="homeHeader">
-                    <h1>DDRGuide</h1>
-                    <p>Site description goes here.</p>
+                    <div className="homeLogo">
+                        <img src="/images/ddrguide.svg" />
+                        <h1>DDRGuide</h1>
+                    </div>
+                    <p>Learn where, why, and how to play DanceDanceRevolution A and A20.</p>
                 </div>
                 <div className="homePages homeGuides">
                     <ul>

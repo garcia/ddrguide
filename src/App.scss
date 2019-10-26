@@ -102,7 +102,25 @@
                     }
                 }
 
-                .homeLink { @include navColor($black); }
+                .homeLink {
+                    font-size: 2em;
+                    font-family: "Big Shoulders Text";
+                    font-weight: 700;
+                    
+                    @include navColor($black);
+
+                    > a {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        > img {
+                            height: 1em;
+                            margin-right: .25em;
+                        }
+                    }
+                }
+
                 .newcomersLink { @include navColor($newcomersPage); }
                 .whatChangedLink { @include navColor($whatChangedPage); }
                 .improvingLink { @include navColor($improvingPage); }

@@ -13,7 +13,10 @@ function Sidebar() {
         <nav className="column">
             <ul>
                 <li className="homeLink">
-                    <NavLink to="/" exact={true} activeClassName="current">(logo)</NavLink>
+                    <NavLink to="/" exact={true} activeClassName="current">
+                        <img src="/images/ddrguide.svg" />
+                        <span>DDRGuide</span>
+                    </NavLink>
                 </li>
                 <li className="newcomersLink">
                     <NavLink to="/newcomers/" activeClassName="current">Newcomers &amp; Novices</NavLink>
