@@ -28,14 +28,15 @@
     "typescript": "^3.6.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run content-to-json && react-scripts start",
     "start-prod": "npm run build && serve -p 3000 build",
-    "build": "react-scripts build",
+    "build": "npm run content-to-json && react-scripts build",
     "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "content-to-json": "node ./tasks/content-to-json.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,7 +54,9 @@
     ]
   },
   "devDependencies": {
+    "frontmatter": "0.0.3",
     "gh-pages": "^2.1.1",
+    "js-yaml": "^3.13.1",
     "react-snap": "^1.23.0"
   },
   "reactSnap": {

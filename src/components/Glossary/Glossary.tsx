@@ -2,12 +2,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { AssertionError } from 'assert';
 
-import Term, { TermProps } from './Term';
-import TermGroup from './TermGroup';
-import glossaryJson from './glossary.json';
+import { Term, TermProps } from './Term';
+import { TermGroup } from './TermGroup';
+import { SearchBar } from './SearchBar';
+import { SortSelect, SortValue } from './SortSelect';
+import glossaryJson from '../../content/resources/glossary.json';
 import './Glossary.scss';
-import SearchBar from './SearchBar';
-import SortSelect, { SortValue } from './SortSelect';
 
 interface GlossaryProps {
 
@@ -58,7 +58,7 @@ const GlossarySort: {[key in SortValue]: {compare: (a: TermProps, b: TermProps) 
     }
 };
 
-class Glossary extends React.Component<GlossaryProps> {
+export class Glossary extends React.Component<GlossaryProps> {
     store: GlossaryStore = GlossaryStore.getInstance();
     state: GlossaryState;
 
@@ -136,5 +136,3 @@ class Glossary extends React.Component<GlossaryProps> {
         );
     }
 }
-
-export default Glossary;

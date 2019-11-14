@@ -12,7 +12,7 @@ interface SortProps {
     onSortUpdate: (sort: SortValue) => void;
 }
 
-class SortSelect extends React.Component<SortProps, SortState> {
+export class SortSelect extends React.Component<SortProps, SortState> {
     state: SortState;
 
     constructor(props: SortProps) {
@@ -41,5 +41,3 @@ class SortSelect extends React.Component<SortProps, SortState> {
     }
 
 }
-
-export default SortSelect;

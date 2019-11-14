@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from 'react';
 import Autosuggest, { SuggestionsFetchRequestedParams } from 'react-autosuggest';
-import { TermProps } from './Term';
-import { GlossaryStore } from './Glossary';
+import { TermProps } from '../Term';
+import { GlossaryStore } from '../Glossary';
 import Autosuggest_theme from './Autosuggest.module.scss';
 
 interface SearchBarProps {
@@ -79,7 +79,7 @@ class Suggestion extends React.Component<SuggestionProps> {
     }
 }
 
-class SearchBar extends React.Component<SearchBarProps> {
+export class SearchBar extends React.Component<SearchBarProps> {
     
     glossaryStore: GlossaryStore = GlossaryStore.getInstance();
     state: SearchBarState;
@@ -135,5 +135,3 @@ class SearchBar extends React.Component<SearchBarProps> {
         );
     }
 }
-
-export default SearchBar;

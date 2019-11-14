@@ -3,11 +3,8 @@ import moize from 'moize';
 
 import './TermGroup.scss';
 
-const TermGroup: React.FunctionComponent<{groupName: string}> = props =>
+export const TermGroup: React.FunctionComponent<{groupName: string}> = moize.react(props =>
     <div className="termGroup">
         <h2>{props.groupName}</h2>
         {props.children}
-    </div>;
-
-
-export default moize.react(TermGroup);
+    </div>);

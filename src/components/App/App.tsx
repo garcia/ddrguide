@@ -4,9 +4,9 @@ import { Router, Route, NavLink, Link } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import './App.scss';
-import Home from './Home';
-import Glossary from './Glossary';
-import ScrollToTop from './ScrollToTop';
+import { Home } from '../Home';
+import { Glossary } from '../Glossary';
+import { ScrollToTop } from './ScrollToTop';
   
 function Sidebar() {
     return (
@@ -73,7 +73,7 @@ export const history = createBrowserHistory({
     basename: process.env.PUBLIC_URL
 });
 
-function App() {
+export function App() {
     return (
         <Router history={history}>
             <Helmet defaultTitle="DDRGuide" titleTemplate="%s | DDRGuide">
@@ -98,5 +98,3 @@ function App() {
         </Router>
     );
 }
-
-export default App;
