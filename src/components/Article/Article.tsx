@@ -54,7 +54,7 @@ export class Article extends React.Component<ArticleProps> {
         console.log(props);
 
         if (this.article) {
-            this.contentMarkdown = <GuideMarkdown source={this.article.content} />;
+            this.contentMarkdown = <GuideMarkdown source={this.article.content} section="article" />;
         }
     }
 

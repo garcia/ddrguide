@@ -3,13 +3,28 @@ import ReactMarkdown, { ReactMarkdownProps } from 'react-markdown';
 import { HashLink } from 'react-router-hash-link';
 import moize from 'moize';
 
-import { makeTermAnchor } from '../../utils/make-term-anchor';
+import { makeAnchor } from '../../utils/make-anchor';
+import { Link } from 'react-router-dom';
 
 // Memoize markdown - needs some ugly type juggling to work around moize not supporting ES5-style classes
 const ReactMarkdownMoized = moize.react(ReactMarkdown as any as (props: ReactMarkdownProps) => React.ReactElement);
 
+const siteSections = {"glossary": null, "article": null};
+export type SiteSection = keyof typeof siteSections;
+
+const MakeSiteLink: {[key in SiteSection]: ((id: string) => string)} = {
+    "glossary": (id) => "/glossary/#term-" + makeAnchor(id),
+    "article": (id) => "/article/" + makeAnchor(id)
+};
+
+const BaseSiteLink: {[key in SiteSection]: string} = {
+    "glossary": "/glossary/",
+    "article": "/article/"
+};
+
 export interface GuideMarkdownProps {
     source: string;
+    section: SiteSection;
 }
 
 export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
@@ -41,8 +56,23 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
                     break;
                 }
 
-                // Check for dividing "|" - if present, the left part is the text to display and the right part is the term to link
                 let linkData: string = s.slice(nextLink+1, linkEnd);
+                
+                // Check for dividing ":" - if present, the left part is the site section
+                let sectionDivider: number = linkData.indexOf(":");
+                let linkSection: string;
+                if (sectionDivider >= 0) {
+                    linkSection = linkData.slice(0, sectionDivider);
+                    if (siteSections.hasOwnProperty(linkSection)) {
+                        linkData = linkData.slice(sectionDivider+1);
+                    } else {
+                        linkSection = this.props.section;
+                    }
+                } else {
+                    linkSection = this.props.section;
+                }
+                
+                // Check for dividing "|" - if present, the left part is the text to display and the right part is the term to link
                 let linkDivider: number = linkData.indexOf("|");
                 let linkDisplay: string;
                 let linkTerm: string;
@@ -53,7 +83,7 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
                     linkDisplay = linkTerm = linkData;
                 }
 
-                let anchor: string = linkTerm.startsWith("http") ? linkTerm : "#" + makeTermAnchor(linkTerm);
+                let anchor: string = linkTerm.startsWith("http") ? linkTerm : MakeSiteLink[linkSection as SiteSection](linkTerm);
 
                 // Push the resulting link
                 output.push("[" + linkDisplay + "](" + anchor + ")");
@@ -75,11 +105,13 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
     }
 
     routerLinkRenderer(props: {href: string, children: JSX.Element}): JSX.Element {
-        return (
-            props.href.match(/^(https?:)?\/\//)
-            ? <a href={props.href}>{props.children}</a>
-            : <HashLink to={props.href}>{props.children}</HashLink>
-        );
+        if (props.href.match(/^(https?:)?\/\//)) {
+            return <a href={props.href}>{props.children}</a>;
+        } else if (props.href.match(/^#/)) {
+            return <HashLink to={props.href}>{props.children}</HashLink>;
+        } else {
+            return <HashLink to={props.href}>{props.children}</HashLink>;
+        }
     }
 
     render() {

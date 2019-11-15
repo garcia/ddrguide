@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { GuideMarkdown } from '../../GuideMarkdown';
-import { makeTermAnchor } from '../../../utils/make-term-anchor';
+import { makeAnchor } from '../../../utils/make-anchor';
 import './Term.scss';
 
 export interface TermProps {
@@ -16,10 +16,10 @@ export interface TermProps {
 }
 
 export function Term(props: TermProps) {
-    let anchor: string = makeTermAnchor(props.term);
+    let anchor: string = makeAnchor(props.term);
     let title: JSX.Element;
     let aka: JSX.Element | undefined;
-    let definition: JSX.Element = <div className="definition"><GuideMarkdown source={props.definition} /></div>;
+    let definition: JSX.Element = <div className="definition"><GuideMarkdown source={props.definition} section="glossary" /></div>;
     let trivia: JSX.Element | undefined;
 
     if (props.acronym !== undefined) {
@@ -36,7 +36,7 @@ export function Term(props: TermProps) {
         trivia = (
             <div className="trivia">
                 <h4>Trivia</h4>
-                <GuideMarkdown source={props.trivia} />
+                <GuideMarkdown source={props.trivia} section="glossary" />
             </div>
         );
     }
