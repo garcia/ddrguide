@@ -1,0 +1,20 @@
+@import "global";
+
+.sortSelect {
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: inherit;
+    color: $dark;
+    border: $border solid mix($primary, $white, 25%);
+    outline: none;
+
+    &:focus {
+        border-color: $primary;
+    }
+
+    // Fix for Firefox dotted outline
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
+}

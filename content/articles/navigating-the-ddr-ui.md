@@ -1,5 +1,6 @@
 ---
 title: Navigating the DanceDanceRevolution A/A20 UI
+slug: navigating-the-ddr-ui
 description: What a complete round of DDR looks like, from swiping your card to walking away from the cabinet
 ---
 If you've never played DDR at the arcade before, you're probably faced with a lot of unknowns about the experience. Worry not! While the user interface may seem complicated at first glance, it won't take long to figure out the basics. And remember that if you ever get stuck, you can always ask a regular player for help; arcade DDR is a social experience above all else.

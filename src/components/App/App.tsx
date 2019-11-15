@@ -1,12 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Router, Route, NavLink, Link } from 'react-router-dom';
+import { Router, Route, NavLink, Link, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import './App.scss';
 import { Home } from '../Home';
 import { Glossary } from '../Glossary';
 import { ScrollToTop } from './ScrollToTop';
+import { Article } from '../Article';
   
 function Sidebar() {
     return (
@@ -88,8 +89,11 @@ export function App() {
                 <div className="top">
                     <Route path="/:any+" component={Sidebar} />
                     <main className="column">
-                        <Route path="/" exact component={Home} />
-                        <Route path="/glossary/" component={Glossary} />
+                        <Switch>
+                            <Route path="/" exact component={Home} />
+                            <Route path="/glossary/" component={Glossary} />
+                            <Route path="/article/:slug" render={({match}) => <Article slug={match.params.slug} />} />
+                        </Switch>
                     </main>
                 </div>
                 <Footer />

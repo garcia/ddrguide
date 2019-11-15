@@ -11,7 +11,7 @@
     "@types/react-autosuggest": "^9.3.11",
     "@types/react-dom": "^16.9.0",
     "@types/react-helmet": "^5.0.9",
-    "@types/react-router-dom": "^4.3.5",
+    "@types/react-router-dom": "^5.0.1",
     "@types/react-router-hash-link": "^1.2.1",
     "history": "^4.9.0",
     "moize": "^5.4.4",
