@@ -2,7 +2,7 @@
 title: Navigating the DDR A/A20 UI
 slug: navigating-the-ddr-ui
 description: What a complete round of DanceDanceRevolution looks like, from swiping your card to walking away from the cabinet.
-sections: [Prerequisites, Starting the game, Song selection & Gameplay, Extra Stage, Ending the game]
+sections: [Prerequisites, Starting the game, Song selection & Gameplay, Extra Stage, Ending the game, Further reading]
 ---
 If you've never played DDR at the arcade before, you're probably faced with a lot of unknowns about the experience. Worry not! While the user interface may seem complicated at first glance, it won't take long to figure out the basics. And remember that if you ever get stuck, you can always ask a regular player for help; arcade DDR is a social experience above all else.
 
@@ -24,12 +24,14 @@ When you find the DDR cabinet, first **check whether anyone is playing** or wait
 
 If no one else is playing or waiting to play, go ahead and **swipe your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
 
+> #### Tip
 > If you get an error message when you swipe your game card, try again (arcade card readers can be finnicky) or check for a specific error like not having enough credits.
 
 On DDR A20, the game will prompt you to choose a language. If you're comfortable with English, press the green button; otherwise, use the left/right inputs to choose your preferred language. DDR A will default to the language associated with the cabinet's region. {TODO verify for gold cabinets?}
 
 If the cabinet is connected to the Internet, you'll be prompted to scan your e-amusement card. If this is your first time using your card, the game will guide you through basic profile creation. {TODO document flow} Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
 
+> #### Tip
 > If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry. If your PIN is incorrect, the game will prompt you to try again.
 
 Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all North America locations! {TODO verify globally?} Simply press the down button to select Premium Play and press green to confirm.
@@ -38,12 +40,11 @@ Once you know what you're doing, this whole process should only take about 15 se
 
 ## Song selection & Gameplay
 
-On the song selection screen {TODO verify screen name?}, you can use all four arrow buttons to navigate the song list. Hold left or right to scan through the complete list of songs, or hold up or down to scroll through each row of 3 songs faster. You can also press and hold up and down to leave a song folder immediately, or press and hold left and right to choose another sort mode.
-
-> Need help choosing a song? Check out our guide on [article:deciding what to play] for some useful advice.
+On the song selection screen {TODO verify screen name?}, you can use all four arrow buttons to navigate the song list. Hold left or right to scan through the complete list of songs, or hold up or down to scroll through each row of 3 songs faster. You can also press and hold up and down to leave a song folder immediately, or press and hold left and right to choose another sort mode. Need help choosing a song? Check out our guide on [article:deciding what to play] for some useful advice.
 
 When you find a song you like, press the green button to play it; be aware that there's no backing out once you've chosen a song! If you *hold* the green button, it'll take you to the [glossary:Option] menu where you can set your speed and more. (If you just want to set your options *without* choosing a song, press the "9" key on the number pad before using the green button). Select your preferred difficulty using the up/down buttons; a lower number ([glossary:level]) indicates an easier chart. If you're ready to play, press the green button again (without holding it down) to confirm. If you're playing with another player, they'll need to confirm too before the song starts.
 
+> #### Tip
 > Once you're comfortable with the game, it becomes crucial to **update your speed option** before every song. Check out our guide on [article:setting your speed] for more details.
 
 Get ready to dance now! You'll have a moment before the first arrow appears on the screen to adjust your footing. If you need help understanding the scrolling arrows, check out our article on [article:basic gameplay] for an in-depth explanation.
@@ -56,6 +57,7 @@ If you're new to DDR, here are some basic goals to aim for:
 * Next, try to get as few [glossary:misses|miss] as possible. You can see your miss count at the bottom of the judgement breakdown, which you may need to find by pressing the left/right buttons to switch tabs.
 * Once you're feeling comfortable hitting the arrows, try concentrating on hitting them as close to the beat as possible. This will yield higher scores and better grades! You can verify your progress from the judgement breakdown tab; you want to hit more notes with higher judgements, like [glossary:Marvelous], and fewer notes with lower judgements, like [glossary:Good].
 
+> #### Tip
 > If you're proud of your score, snap a photo! You can post it online, or just save it to document your progress; it's your call.
 
 If you used your e-amusement card at the start (granting access to [glossary:Premium Play]), you'll always get to play 3 stages per game, so pick whatever you want for each stage! Without an e-amusement card, you can only progress if you cleared each song, so you may want to save harder picks for the last stage.
@@ -77,3 +79,7 @@ By clearing an unlockable song, you immediately unlock all the charts up to the 
 After your last stage, the game will show you an overview of the scores you got, followed by a logout screen {TODO document what it says b/c i forgot}. You can usually ignore the contents of these screens and press the green button to dismiss them; this is the recommended course of action if other players are waiting for their turns.
 
 It's up to you whether to keep playing, or for how many games in total. Sessions vary wildly in length among established DDR players; some are content to play for an hour or two, while others will stay for 6+ hour grinding sessions. Don't feel obligated to continue if you're worn out, physically or mentally - but if you're determined to improve, pushing your limits can be a great way to build stamina! Know your goals and use them to decide how to play the game.
+
+## Further reading
+
+The articles linked from here include [article:basic gameplay], [article:setting your speed], and [article:deciding what to play].

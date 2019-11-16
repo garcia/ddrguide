@@ -2,7 +2,7 @@ const frontmatter = require('frontmatter');
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-const articles = ['navigating-the-ddr-ui']
+const articles = ['navigating-the-ddr-ui', 'setting-your-speed']
 const resources = ['glossary'];
 
 articles.forEach(article_base => {
