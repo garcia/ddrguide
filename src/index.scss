@@ -17,6 +17,7 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
 }
 
 code {
@@ -27,7 +28,6 @@ code {
 p {
     margin-block-start: $spacing;
     margin-block-end: $spacing;
-    line-height: 1.5;
 }
 
 a {

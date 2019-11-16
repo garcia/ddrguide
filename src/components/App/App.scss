@@ -194,6 +194,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            line-height: 2;
 
             @include not-phone {
                 justify-content: center;
@@ -210,7 +211,7 @@
                 }
 
                 p, ul {
-                    line-height: 2;
+                    
                 }
 
                 > h3 {
@@ -243,6 +244,9 @@
     padding: 0;
 
     > li {
+        border-left: $border solid $primary;
+        padding-left: $spacing;
+
         &:not(:last-child) {
             margin-bottom: $spacing*2;
         }

@@ -94,7 +94,6 @@ export class Article extends React.Component<ArticleProps> {
     constructor(props: ArticleProps) {
         super(props);
         this.article = ArticleStore.getInstance().articleSlugs[props.slug];
-        console.log(props);
 
         if (this.article) {
             this.contentMarkdown = <GuideMarkdown source={this.article.content} section="article" />;

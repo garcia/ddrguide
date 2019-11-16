@@ -3,7 +3,7 @@
 article {
     > .contents {
         color: $dark;
-        
+
         h2 {
             font-size: 3em;
             font-weight: normal;
@@ -11,10 +11,6 @@ article {
 
         ol, ul {
             padding-left: 1em;
-        }
-
-        li {
-            line-height: 1.5;
         }
         
         li:not(:last-child) {
