@@ -1,8 +1,10 @@
 import React, { ChangeEvent } from 'react';
-import Autosuggest, { SuggestionsFetchRequestedParams } from 'react-autosuggest';
+import Autosuggest, { SuggestionsFetchRequestedParams, SuggestionSelectedEventData } from 'react-autosuggest';
 import { TermProps } from '../Term';
 import { GlossaryStore } from '../Glossary';
 import Autosuggest_theme from './Autosuggest.module.scss';
+import { makeAnchor } from '../../../utils/make-anchor';
+import { HashRedirect } from '../../HashRedirect/HashRedirect';
 
 interface SearchBarProps {
 }
@@ -10,6 +12,7 @@ interface SearchBarProps {
 interface SearchBarState {
     value: string;
     suggestions: SuggestionProps[];
+    redirect: JSX.Element | undefined;
 }
 
 interface SuggestionProps {
@@ -89,24 +92,33 @@ export class SearchBar extends React.Component<SearchBarProps> {
         
         this.state = {
             value: '',
-            suggestions: []
+            suggestions: [],
+            redirect: undefined,
         };
 
         this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
         this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
+        this.onSuggestionSelected = this.onSuggestionSelected.bind(this);
         this.onChange = this.onChange.bind(this);
     }
 
     onSuggestionsFetchRequested(value: SuggestionsFetchRequestedParams): void {
         this.setState({
             suggestions: Suggestion.getSuggestions(value.value)
-        });      
+        });
     }
 
     onSuggestionsClearRequested(): void {
         this.setState({
             suggestions: []
-        });      
+        });
+    }
+
+    onSuggestionSelected(event: React.FormEvent<any>, data: SuggestionSelectedEventData<SuggestionProps>): void {
+        let redirect: JSX.Element = <HashRedirect to={"#term-" + makeAnchor(data.suggestionValue)}></HashRedirect>;
+        this.setState({
+            redirect: redirect
+        });
     }
     
     onChange(event: ChangeEvent<HTMLInputElement>, params: Autosuggest.ChangeEvent): void {
@@ -123,15 +135,19 @@ export class SearchBar extends React.Component<SearchBarProps> {
         };
 
         return (
+            <>
             <Autosuggest
                 suggestions={this.state.suggestions}
                 onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
                 onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                onSuggestionSelected={this.onSuggestionSelected}
                 getSuggestionValue={(props) => props.termProps.term}
                 renderSuggestion={(props) => <Suggestion {...props} />}
                 inputProps={inputProps}
                 theme={Autosuggest_theme}
             />
+            {this.state.redirect}
+            </>
         );
     }
 }

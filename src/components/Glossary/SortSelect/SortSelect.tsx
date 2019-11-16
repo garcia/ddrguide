@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SortSelect.scss';
 
-export type SortValue = "alphabetical" | "by-concept";
+export type SortValue = "by-concept" | "alphabetical";
 
 interface SortState {
     value: SortValue;
@@ -18,7 +18,7 @@ export class SortSelect extends React.Component<SortProps, SortState> {
     constructor(props: SortProps) {
         super(props);
         this.state = {
-            value: "alphabetical"
+            value: "by-concept"
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -34,8 +34,8 @@ export class SortSelect extends React.Component<SortProps, SortState> {
     render() {
         return (
             <select className="sortSelect" value={this.state.value} onChange={this.handleChange}>
-                <option value="alphabetical">Sort A-Z</option>
                 <option value="by-concept">Sort by concept</option>
+                <option value="alphabetical">Sort A-Z</option>
             </select>
         )
     }

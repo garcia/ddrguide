@@ -67,7 +67,7 @@ export class Glossary extends React.Component<GlossaryProps> {
     constructor(props: GlossaryProps) {
         super(props);
         
-        let initialSort: SortValue = "alphabetical";
+        let initialSort: SortValue = "by-concept";
         let sortedTerms: TermProps[] = this.store.allTerms.slice();
         this.sortTerms(sortedTerms, initialSort);
         this.state = {
@@ -124,7 +124,7 @@ export class Glossary extends React.Component<GlossaryProps> {
                         <h1>Glossary</h1>
                     </div>
                     <div className="sortAndFilter">
-                        <h2>Filter:</h2>
+                        <h2>Options:</h2>
                         <div><SortSelect onSortUpdate={this.onSortUpdate} /></div>
                         <div><SearchBar /></div>
                     </div>

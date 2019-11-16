@@ -8,13 +8,14 @@
         h2 {
             font-weight: normal;
             margin: 0;
+            margin-right: $spacing;
         }
 
         > div {
             display: inline-block;
             width: 180px;
             flex-shrink: 1;
-            margin-right: 1em;
+            margin-right: $spacing;
 
             > * {
                 width: 100%;
