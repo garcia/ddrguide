@@ -1,7 +1,7 @@
 ---
-title: Navigating the DanceDanceRevolution A/A20 UI
+title: Navigating the DDR A/A20 UI
 slug: navigating-the-ddr-ui
-description: What a complete round of DDR looks like, from swiping your card to walking away from the cabinet
+description: What a complete round of DanceDanceRevolution looks like, from swiping your card to walking away from the cabinet
 sections: [Prerequisites, Starting the game, Song selection & Gameplay, Extra Stage, Ending the game]
 ---
 If you've never played DDR at the arcade before, you're probably faced with a lot of unknowns about the experience. Worry not! While the user interface may seem complicated at first glance, it won't take long to figure out the basics. And remember that if you ever get stuck, you can always ask a regular player for help; arcade DDR is a social experience above all else.
@@ -28,9 +28,9 @@ If no one else is playing or waiting to play, go ahead and **swipe your game car
 
 On DDR A20, the game will prompt you to choose a language. If you're comfortable with English, press the green button; otherwise, use the left/right inputs to choose your preferred language. DDR A will default to the language associated with the cabinet's region. {TODO verify for gold cabinets?}
 
-If this is your first time using your e-amusement card, the game will guide you through basic profile creation. {TODO document flow} Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
+If the cabinet is connected to the Internet, you'll be prompted to scan your e-amusement card. If this is your first time using your card, the game will guide you through basic profile creation. {TODO document flow} Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
 
-> If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to delete the last number you typed (before you've entered the 4th digit). If your PIN is incorrect, the game will prompt you to try again.
+> If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry. If your PIN is incorrect, the game will prompt you to try again.
 
 Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all North America locations! {TODO verify globally?} Simply press the down button to select Premium Play and press green to confirm.
 
