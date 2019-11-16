@@ -19,27 +19,5 @@
     p {
         color: $dark;
     }
-
-    .trivia {
-        background-color: $offWhite;
-
-        :first-child {
-            padding-top: $spacing;
-        }
-        :last-child {
-            padding-bottom: $spacing;
-        }
-
-        h4 {
-            padding-top: $spacing;
-            margin-bottom: -$spacing/2;
-            font-size: 1.125em;
-            font-weight: bold;
-            color: $secondary;
-        }
-
-        p {
-            font-size: .875em;
-        }
-    }
+    
 }

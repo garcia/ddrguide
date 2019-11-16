@@ -46,3 +46,40 @@ a {
         outline: 2px dotted $secondary;
     }
 }
+
+blockquote {
+    background-color: $offWhite;
+    padding: $spacing;
+    font-size: .875em;
+
+    @include desktop {
+        margin: $spacing auto;
+        width: 75%;
+    }
+
+    @include mobile {
+        margin: $spacing 0;
+    }
+
+    h4 {
+        margin: 0;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: $neutral;
+        letter-spacing: 2px;
+    }
+
+    h4, p {
+        margin-block-start: $spacing/2;
+        margin-block-end: $spacing/2;
+    }
+
+    h4:first-child, p:first-child {
+        margin-block-start: 0;
+    }
+
+    h4:last-child, p:last-child {
+        margin-block-end: 0;
+    }
+
+}

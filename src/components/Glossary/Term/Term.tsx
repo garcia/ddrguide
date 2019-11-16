@@ -35,10 +35,10 @@ export const Term: React.FunctionComponent<TermProps> = moize.react(props => {
 
     if (props.trivia !== undefined) {
         trivia = (
-            <div className="trivia">
+            <blockquote className="trivia">
                 <h4>Trivia</h4>
                 <GuideMarkdown source={props.trivia} section="glossary" />
-            </div>
+            </blockquote>
         );
     }
     

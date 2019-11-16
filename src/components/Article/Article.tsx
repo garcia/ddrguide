@@ -5,9 +5,12 @@ import { GuideMarkdown } from '../GuideMarkdown';
 import './Article.scss';
 
 import navigatingTheDDRUI from '../../content/articles/navigating-the-ddr-ui.json';
+import settingYourSpeed from '../../content/articles/setting-your-speed.json';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { makeAnchor } from '../../utils/make-anchor';
+import { Page404 } from '../Page404';
+import { SectionOutliner } from '../SectionOutliner';
 
 export interface ArticleProps {
     slug: string;
@@ -27,7 +30,7 @@ export class ArticleStore {
     
     static instance?: ArticleStore;
 
-    allArticles: ArticleContent[] = [navigatingTheDDRUI];
+    allArticles: ArticleContent[] = [navigatingTheDDRUI, settingYourSpeed];
     articleSlugs: {[key: string]: ArticleContent} = {};
 
     constructor() {
@@ -101,39 +104,31 @@ export class Article extends React.Component<ArticleProps> {
     }
 
     render() {
-        let titleHeader: JSX.Element | undefined;
-        let description: JSX.Element | undefined;
-        let sections: JSX.Element | undefined;
+        let output: JSX.Element;
 
         if (this.article) {
-            titleHeader = <h1>{this.article.data.title}</h1>;
-            description = <p>{this.article.data.description}</p>;
-            sections = (
-                <ul>
-                    <li>
+            output = (
+                <>
+                    <main className="column article">
+                        <article>
+                            <div className="contentHeader">
+                                <h1>{this.article.data.title}</h1>
+                                <p>{this.article.data.description}</p>
+                            </div>
+                            <div className="contents">
+                                {this.contentMarkdown}
+                            </div>
+                        </article>
+                    </main>
+                    <SectionOutliner>
                         {this.article.data.sections.map(s => <li key={makeAnchor(s)}><HashLink to={"#section-" + makeAnchor(s)}>{s}</HashLink></li>)}
-                    </li>
-                </ul>
+                    </SectionOutliner>
+                </>
             );
+        } else {
+            output = <Page404 />
         }
 
-        return (
-            <>
-                <main className="column article">
-                    <article>
-                        <div className="contentHeader">
-                            {titleHeader}
-                            {description}
-                        </div>
-                        <div className="contents">
-                            {this.contentMarkdown}
-                        </div>
-                    </article>
-                </main>
-                <aside className="column outline">
-                    {sections}
-                </aside>
-            </>
-        );
+        return output;
     }
 }

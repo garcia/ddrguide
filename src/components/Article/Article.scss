@@ -16,23 +16,5 @@ article {
         li:not(:last-child) {
             margin-bottom: $spacing/2;
         }
-
-        blockquote {
-            box-sizing: border-box;
-            background-color: $offWhite;
-            padding-left: 0;
-
-            @include desktop {
-                margin: $spacing $spacing*6;
-            }
-
-            @include mobile {
-                margin: $spacing 0;
-            }
-
-            > p {
-                padding: $spacing;
-            }
-        }
     }
 }

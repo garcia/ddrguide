@@ -10,6 +10,7 @@ import glossaryJson from '../../content/resources/glossary.json';
 import './Glossary.scss';
 import { makeAnchor } from '../../utils/make-anchor';
 import { HashLink } from 'react-router-hash-link';
+import { SectionOutliner } from '../SectionOutliner';
 
 interface GlossaryProps {
 
@@ -137,11 +138,9 @@ export class Glossary extends React.Component<GlossaryProps> {
                         )}
                     </div>
                 </main>
-                <aside className="column outline">
-                    <ul>
-                        {Object.keys(this.state.groupedTerms).map(group => <li><HashLink to={"#group-" + makeAnchor(group)}>{group}</HashLink></li>)}
-                    </ul>
-                </aside>
+                <SectionOutliner>
+                    {Object.keys(this.state.groupedTerms).map(group => <li><HashLink to={"#group-" + makeAnchor(group)}>{group}</HashLink></li>)}
+                </SectionOutliner>
             </>
         );
     }

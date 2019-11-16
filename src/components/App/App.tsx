@@ -9,6 +9,7 @@ import { Glossary } from '../Glossary';
 import { ScrollToTop } from './ScrollToTop';
 import { Article } from '../Article';
 import { AllArticleSummariesPage } from '../Article';
+import { Page404 } from '../Page404';
   
 function Sidebar() {
     return (
@@ -63,20 +64,6 @@ function Footer() {
     )
 }
 
-function Page404() {
-    return (
-        <main className="column">
-            <Helmet>
-                <title>404</title>
-            </Helmet>
-            <div className="contentHeader">
-                <h1>404</h1>
-                <p>There's nothing at this address. Sorry! Let us know <a href="https://twitter.com/DDRGuide">@DDRGuide</a> if you think this is a mistake.</p>
-            </div>
-        </main>
-    );
-}
-
 export const history = createBrowserHistory({
     basename: process.env.PUBLIC_URL
 });
@@ -99,7 +86,7 @@ export function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/glossary/" component={Glossary} />
                         <Route path="/article/" exact component={AllArticleSummariesPage} />
-                        <Route path="/article/:slug" render={({match}) => <Article slug={match.params.slug} />} />
+                        <Route path="/article/:slug" render={({match}) => <Article key={match.params.slug} slug={match.params.slug} />} />
                         <Route component={Page404} />
                     </Switch>
                 </div>
