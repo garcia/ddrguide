@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-size: inherit;
     color: $dark;
-    border: $border solid mix($primary, $white, 25%);
+    border: $border solid $blueWhite;
     outline: none;
 
     &:focus {

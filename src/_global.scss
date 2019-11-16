@@ -8,12 +8,7 @@ $offWhite: hsla(140%, 5%, 90%, 1);
 $darkPrimary: hsla(196%, 100%, 40%, 1);
 $darkSecondary: hsla(316%, 100%, 40%, 1);
 $neutral: hsla(253%, 4%, 47%, 1);
-
-$newcomersPage: #12831B;
-$whatChangedPage: #A95E00;
-$improvingPage: #091851;
-$glossaryPage: #69727A;
-$songsPage: #c70179;
+$blueWhite: mix($primary, $white, 25%);
 
 $spacing: 24px;
 $border: 4px;

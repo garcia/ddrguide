@@ -122,7 +122,7 @@ export class Article extends React.Component<ArticleProps> {
             <>
                 <main className="column article">
                     <article>
-                        <div className="title">
+                        <div className="contentHeader">
                             {titleHeader}
                             {description}
                         </div>

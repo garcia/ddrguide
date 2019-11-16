@@ -118,10 +118,11 @@ export class Glossary extends React.Component<GlossaryProps> {
                     <Helmet>
                         <title>Glossary</title>
                         <meta property="og:title" content="Glossary | DDRGuide" />
-                        <meta property="og:description" content="A comprehensive glossary of DanceDanceRevolution terminology." />
+                        <meta property="og:description" content="A comprehensive glossary of modern DanceDanceRevolution terminology." />
                     </Helmet>
                     <div className="contentHeader">
                         <h1>Glossary</h1>
+                        <p>This is a comprehensive glossary of modern DanceDanceRevolution terminology and slang.</p>
                     </div>
                     <div className="sortAndFilter">
                         <h2>Options:</h2>

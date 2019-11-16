@@ -78,6 +78,10 @@
             > ul {
                 > li {
                     border-left: $border solid $primary;
+
+                    > a:focus {
+                        background-color: $blueWhite;
+                    }
                 }
             }
         }
@@ -124,8 +128,7 @@
                     }
 
                     .current {
-                        background-color: $primary;
-                        color: white;
+                        background-color: $blueWhite;
                         font-weight: bold;
                     }
                 }
@@ -140,6 +143,10 @@
         > nav + main {
             padding: 0 $spacing*2;
             box-sizing: border-box;
+
+            @include mobile {
+                padding: 0 $spacing;
+            }
         }
 
         > main {
@@ -148,10 +155,24 @@
             overflow-wrap: break-word;
 
             .contentHeader {
+                text-align: center;
+                padding: $spacing;
+                margin-bottom: $spacing;
+
+                @include mobile {
+                    margin-left: -$spacing;
+                    margin-right: -$spacing;
+                }
+
                 h1 {
+                    margin: $spacing;
                     font-size: 4em;
                     font-weight: normal;
                     color: $black;
+
+                    @include phone {
+                        font-size: 3em;
+                    }
                 }
 
                 p {
@@ -195,7 +216,7 @@
                 > h3 {
                     text-transform: uppercase;
                     margin-top: 0;
-                    color: mix($neutral, $white, 75%);
+                    color: $blueWhite;
                 }
 
                 > p {

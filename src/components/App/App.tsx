@@ -14,17 +14,17 @@ function Sidebar() {
     return (
         <nav className="column">
             <NavLink to="/" exact={true} activeClassName="current" className="homeLink">
-                <img src="/images/ddrguide.svg" />
+                <img src="/images/ddrguide.svg" alt="DDRGuide Logo" />
                 <span>DDRGuide</span>
             </NavLink>
             <ul>
-                <li className="newcomersLink">
+                <li>
                     <NavLink to="/article/" activeClassName="current">Articles</NavLink>
                 </li>
-                <li className="glossaryLink">
+                <li>
                     <NavLink to="/glossary/" activeClassName="current">Glossary</NavLink>
                 </li>
-                <li className="songsLink">
+                <li>
                     <NavLink to="/songs/" activeClassName="current">Song List</NavLink>
                 </li>
             </ul>
@@ -47,7 +47,7 @@ function Footer() {
                 <li>
                     <h3>Friends</h3>
                     <ul className="footerLinks">
-                        <li><a href="https://ddrcommunity.com/">DDRCommunity</a></li>
+                        <li><a href="http://ddrcommunity.com/">DDRCommunity</a></li>
                         <li><a href="https://twitter.com/sf_evolved">SF Evolved</a></li>
                     </ul>
                 </li>

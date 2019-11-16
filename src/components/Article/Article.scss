@@ -1,22 +1,20 @@
 @import "global";
 
 article {
-    > .title {
-        padding-bottom: 2em;
-
-        > h1 {
-            font-size: 4em;
-            font-weight: normal;
-        }
-        > p {
-            font-style: italic;
-        }
-    }
-
     > .contents {
+        color: $dark;
+        
         h2 {
             font-size: 3em;
             font-weight: normal;
+        }
+
+        ol, ul {
+            padding-left: 1em;
+        }
+
+        li {
+            line-height: 1.5;
         }
         
         li:not(:last-child) {
@@ -26,15 +24,18 @@ article {
         blockquote {
             box-sizing: border-box;
             background-color: $offWhite;
-            margin: $spacing $spacing*6;
             padding-left: 0;
+
+            @include desktop {
+                margin: $spacing $spacing*6;
+            }
+
+            @include mobile {
+                margin: $spacing 0;
+            }
 
             > p {
                 padding: $spacing;
-            }
-
-            p, ol, ul {
-                margin: initial !important;
             }
         }
     }

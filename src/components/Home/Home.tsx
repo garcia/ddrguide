@@ -10,7 +10,7 @@ export class Home extends React.Component {
             <main className="column home">
                 <div className="homeHeader">
                     <div className="homeLogo">
-                        <img src="/images/ddrguide.svg" />
+                        <img src="/images/ddrguide.svg" alt="DDRGuide Logo" />
                         <h1>DDRGuide</h1>
                     </div>
                     <p>Learn where, why, and how to play DanceDanceRevolution A and A20.</p>
