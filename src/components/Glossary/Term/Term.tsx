@@ -1,4 +1,5 @@
 import React from 'react';
+import moize from 'moize';
 
 import { GuideMarkdown } from '../../GuideMarkdown';
 import { makeAnchor } from '../../../utils/make-anchor';
@@ -15,8 +16,8 @@ export interface TermProps {
     sourceIndex: number;
 }
 
-export function Term(props: TermProps) {
-    let anchor: string = makeAnchor(props.term);
+export const Term: React.FunctionComponent<TermProps> = moize.react(props => {
+    let anchor: string = "term-" + makeAnchor(props.term);
     let title: JSX.Element;
     let aka: JSX.Element | undefined;
     let definition: JSX.Element = <div className="definition"><GuideMarkdown source={props.definition} section="glossary" /></div>;
@@ -49,4 +50,4 @@ export function Term(props: TermProps) {
             {trivia}
         </div>
     );
-}
+});

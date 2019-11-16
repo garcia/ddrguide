@@ -8,6 +8,8 @@ import { SearchBar } from './SearchBar';
 import { SortSelect, SortValue } from './SortSelect';
 import glossaryJson from '../../content/resources/glossary.json';
 import './Glossary.scss';
+import { makeAnchor } from '../../utils/make-anchor';
+import { HashLink } from 'react-router-hash-link';
 
 interface GlossaryProps {
 
@@ -111,28 +113,35 @@ export class Glossary extends React.Component<GlossaryProps> {
 
     render() {
         return (
-            <div className="glossary">
-                <Helmet>
-                    <title>Glossary</title>
-                    <meta property="og:title" content="Glossary | DDRGuide" />
-                    <meta property="og:description" content="A comprehensive glossary of DanceDanceRevolution terminology." />
-                </Helmet>
-                <div className="contentHeader">
-                    <h1>Glossary</h1>
-                </div>
-                <div className="sortAndFilter">
-                    <h2>Filter:</h2>
-                    <div><SortSelect onSortUpdate={this.onSortUpdate} /></div>
-                    <div><SearchBar /></div>
-                </div>
-                <div className="terms">
-                    {Object.keys(this.state.groupedTerms).map(group =>
-                        <TermGroup key={group} groupName={group}>
-                            {this.state.groupedTerms[group].map(t => <Term key={t.term} {...t} />)}
-                        </TermGroup>
-                    )}
-                </div>
-            </div>
+            <>
+                <main className="column glossary">
+                    <Helmet>
+                        <title>Glossary</title>
+                        <meta property="og:title" content="Glossary | DDRGuide" />
+                        <meta property="og:description" content="A comprehensive glossary of DanceDanceRevolution terminology." />
+                    </Helmet>
+                    <div className="contentHeader">
+                        <h1>Glossary</h1>
+                    </div>
+                    <div className="sortAndFilter">
+                        <h2>Filter:</h2>
+                        <div><SortSelect onSortUpdate={this.onSortUpdate} /></div>
+                        <div><SearchBar /></div>
+                    </div>
+                    <div className="terms">
+                        {Object.keys(this.state.groupedTerms).map(group =>
+                            <TermGroup key={group} groupName={group}>
+                                {this.state.groupedTerms[group].map(t => <Term key={t.term} {...t} />)}
+                            </TermGroup>
+                        )}
+                    </div>
+                </main>
+                <aside className="column outline">
+                    <ul>
+                        {Object.keys(this.state.groupedTerms).map(group => <li><HashLink to={"#group-" + makeAnchor(group)}>{group}</HashLink></li>)}
+                    </ul>
+                </aside>
+            </>
         );
     }
 }

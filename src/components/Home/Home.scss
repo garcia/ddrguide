@@ -44,50 +44,41 @@
         }
     }
 
-    > .homePages {
+    > .homeSections {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: $white;
 
-        > ul {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+        @include mobile {
+            flex-direction: column;
+        }
 
-            @include mobile {
-                flex-direction: column;
+        > li {
+            padding: $spacing*2;
+            flex: 1;
+
+            > h2 {
+                font-size: 3em;
+                color: $neutral;
+                margin-top: 0;
             }
+            
+            > a {
+                color: $white;
 
-            > li {
-                display: inline-block;
-                padding: 3em;
-                flex: 1;
-                
-                > a {
-                    color: $white;
+                > h3 {
+                    margin-top: 0;
+                    font-size: 2em;
+                    font-weight: normal;
+                }
 
-                    > h3 {
-                        margin-top: 0;
-                        font-size: 2em;
-                        font-weight: normal;
-                    }
-
-                    > p {
-                        margin-bottom: 0;
-                    }
-
+                > p {
+                    margin-bottom: 0;
                 }
 
             }
-
-            @mixin pageLinkColor($color) {
-                background-color: $color;
-            }
-
-            .homeLink { @include pageLinkColor($black); }
-            .newcomersLink { @include pageLinkColor($newcomersPage); }
-            .whatChangedLink { @include pageLinkColor($whatChangedPage); }
-            .improvingLink { @include pageLinkColor($improvingPage); }
-            .glossaryLink { @include pageLinkColor($glossaryPage); }
-            .songsLink { @include pageLinkColor($songsPage); }
 
         }
 

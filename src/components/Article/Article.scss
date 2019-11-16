@@ -1,20 +1,41 @@
 @import "global";
 
-.sortSelect {
-    padding: .5em;
-    box-sizing: border-box;
-    font-size: inherit;
-    color: $dark;
-    border: $border solid mix($primary, $white, 25%);
-    outline: none;
+article {
+    > .title {
+        padding-bottom: 2em;
 
-    &:focus {
-        border-color: $primary;
+        > h1 {
+            font-size: 4em;
+            font-weight: normal;
+        }
+        > p {
+            font-style: italic;
+        }
     }
 
-    // Fix for Firefox dotted outline
-    &:-moz-focusring {
-        color: transparent;
-        text-shadow: 0 0 0 #000;
+    > .contents {
+        h2 {
+            font-size: 3em;
+            font-weight: normal;
+        }
+        
+        li:not(:last-child) {
+            margin-bottom: $spacing/2;
+        }
+
+        blockquote {
+            box-sizing: border-box;
+            background-color: $offWhite;
+            margin: $spacing $spacing*6;
+            padding-left: 0;
+
+            > p {
+                padding: $spacing;
+            }
+
+            p, ol, ul {
+                margin: initial !important;
+            }
+        }
     }
 }

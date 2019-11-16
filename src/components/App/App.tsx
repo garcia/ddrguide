@@ -8,31 +8,24 @@ import { Home } from '../Home';
 import { Glossary } from '../Glossary';
 import { ScrollToTop } from './ScrollToTop';
 import { Article } from '../Article';
+import { AllArticleSummariesPage } from '../Article';
   
 function Sidebar() {
     return (
         <nav className="column">
+            <NavLink to="/" exact={true} activeClassName="current" className="homeLink">
+                <img src="/images/ddrguide.svg" />
+                <span>DDRGuide</span>
+            </NavLink>
             <ul>
-                <li className="homeLink">
-                    <NavLink to="/" exact={true} activeClassName="current">
-                        <img src="/images/ddrguide.svg" />
-                        <span>DDRGuide</span>
-                    </NavLink>
-                </li>
                 <li className="newcomersLink">
-                    <NavLink to="/newcomers/" activeClassName="current">Newcomers &amp; Novices</NavLink>
-                </li>
-                <li className="whatChangedLink">
-                    <NavLink to="/whatchanged/" activeClassName="current">What's Changed?</NavLink>
-                </li>
-                <li className="improvingLink">
-                    <NavLink to="/improving/" activeClassName="current">Improving Your Scores</NavLink>
+                    <NavLink to="/article/" activeClassName="current">Articles</NavLink>
                 </li>
                 <li className="glossaryLink">
                     <NavLink to="/glossary/" activeClassName="current">Glossary</NavLink>
                 </li>
                 <li className="songsLink">
-                    <NavLink to="/songs/" activeClassName="current">Songs</NavLink>
+                    <NavLink to="/songs/" activeClassName="current">Song List</NavLink>
                 </li>
             </ul>
         </nav>
@@ -88,13 +81,12 @@ export function App() {
             <div className="App">
                 <div className="top">
                     <Route path="/:any+" component={Sidebar} />
-                    <main className="column">
-                        <Switch>
-                            <Route path="/" exact component={Home} />
-                            <Route path="/glossary/" component={Glossary} />
-                            <Route path="/article/:slug" render={({match}) => <Article slug={match.params.slug} />} />
-                        </Switch>
-                    </main>
+                    <Switch>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/glossary/" component={Glossary} />
+                        <Route path="/article/" exact component={AllArticleSummariesPage} />
+                        <Route path="/article/:slug" render={({match}) => <Article slug={match.params.slug} />} />
+                    </Switch>
                 </div>
                 <Footer />
             </div>

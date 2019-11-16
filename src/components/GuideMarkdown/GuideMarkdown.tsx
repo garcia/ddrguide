@@ -17,11 +17,6 @@ const MakeSiteLink: {[key in SiteSection]: ((id: string) => string)} = {
     "article": (id) => "/article/" + makeAnchor(id)
 };
 
-const BaseSiteLink: {[key in SiteSection]: string} = {
-    "glossary": "/glossary/",
-    "article": "/article/"
-};
-
 export interface GuideMarkdownProps {
     source: string;
     section: SiteSection;
@@ -83,7 +78,16 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
                     linkDisplay = linkTerm = linkData;
                 }
 
-                let anchor: string = linkTerm.startsWith("http") ? linkTerm : MakeSiteLink[linkSection as SiteSection](linkTerm);
+                let anchor: string;
+                if (linkTerm.startsWith("http")) {
+                    anchor = linkTerm;
+                } else {
+                    anchor = MakeSiteLink[linkSection as SiteSection](linkTerm);
+                    // Hacky fix for glossary hash links
+                    if (linkSection === "glossary" && this.props.section === "glossary") {
+                        anchor = anchor.substr(anchor.lastIndexOf("/")+1);
+                    }
+                }
 
                 // Push the resulting link
                 output.push("[" + linkDisplay + "](" + anchor + ")");
@@ -98,26 +102,36 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
             }
         }
 
-        console.log(s);
-        console.log(output.join(""));
-
         return output.join("");
     }
 
     routerLinkRenderer(props: {href: string, children: JSX.Element}): JSX.Element {
         if (props.href.match(/^(https?:)?\/\//)) {
             return <a href={props.href}>{props.children}</a>;
-        } else if (props.href.match(/^#/)) {
+        } else if (props.href.indexOf('#') >= 0) {
             return <HashLink to={props.href}>{props.children}</HashLink>;
         } else {
-            return <HashLink to={props.href}>{props.children}</HashLink>;
+            return <Link to={props.href}>{props.children}</Link>;
         }
+    }
+
+    headingRenderer(props: {level: number, children: JSX.Element}): JSX.Element {
+        function flatten(text: string, child: string | JSX.Element): string {
+            return typeof child === 'string'
+              ? text + child
+              : React.Children.toArray(child.props.children).reduce(flatten, text);
+        }
+
+        var children = React.Children.toArray(props.children);
+        var text = children.reduce(flatten, '');
+        var slug = 'section-' + makeAnchor(text);
+        return React.createElement('h' + props.level, {id: slug}, props.children);
     }
 
     render() {
         return <ReactMarkdownMoized
                 source={this.markdown}
-                renderers={{link: this.routerLinkRenderer}}
+                renderers={{link: this.routerLinkRenderer, heading: this.headingRenderer}}
             />;
     }
 }

@@ -451,7 +451,7 @@
     definition: |
         A configurable aspect of gameplay. The option menu is accessible by holding the green button when selecting a [song] or [chart], or by pressing "9" on the [cabinet]'s [e-amusement] keypad. Here are the options available:
 
-        * Speed: Multiplies the speed at which the [notes] (and other gameplay elements) scroll. See [Speed] for additional details.
+        * Speed: Multiplies the speed at which the [notes|note] (and other gameplay elements) scroll. See [Speed] for additional details.
         * Boost: When enabled, the scroll speed changes as notes move across the screen. Options are "NORMAL" (default), "BOOST" (notes accelerate as they approach the [receptors]), "BRAKE" (notes decelerate), and "WAVE" (notes alternate accelerating and decelerating as they scroll).
         * Appearance: When enabled, the notes are covered from one side of the screen. Options are "VISIBLE" (default), "HIDDEN+" (notes are covered as they approach the receptors), "SUDDEN+" (notes are covered *away from* the receptors), "HIDDEN+&SUDDEN+" (both lane covers are in effect), and "STEALTH" (notes are invisible). See [SUDDEN+] for additional details.
         * Turn: When enabled, the chart is transformed such that the notes are rotated or mirrored around the pad. (The receptors do not change order or position; the chart can still be read normally, but the notes to hit will be in different lanes.) Options are "NORMAL" (default), "LEFT" (chart is rotated counterclockwise), "RIGHT" (chart is rotated clockwise), "MIRROR" (chart is mirrored across the receptors - or, equivalently, rotated 180°), and "SHUFFLE" (arrow lanes are shuffled according to a randomly chosen permutation, out of 8 possible permutations).

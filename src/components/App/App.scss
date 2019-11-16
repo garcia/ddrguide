@@ -26,34 +26,91 @@
                 margin: 1em;
             }
         }
-        
+
         > nav.column {
-            min-width: 240px;
-            flex-grow: 0;
-            background-color: $offWhite;
-            color: $dark;
+            text-align: right;
+
+            > .homeLink {
+                padding: $spacing 0;
+                background-color: $dark;
+                color: $white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5em;
+                font-family: "Big Shoulders Text";
+                font-weight: 700;
+
+                @include desktop {
+                    margin: $spacing*2 0;
+                }
+                
+                > img {
+                    height: 1em;
+                    margin-right: .25em;
+                }
+            }
 
             > ul {
-                list-style-type: none;
+                > li {
+                    @include desktop {
+                        border-right: $border solid $primary;
+                    }
+
+                    @include mobile {
+                        height: 100%;
+                        box-sizing: border-box;
+                        vertical-align: bottom;
+                        border-bottom: $border solid $primary;
+                    }
+                }
+            }
+        }
+
+        > aside.column {
+            @include mobile {
+                display: none;
+            }
+
+            padding-top: $spacing*2;
+
+            > ul {
+                > li {
+                    border-left: $border solid $primary;
+                }
+            }
+        }
+        
+        > nav.column, > aside.column {
+            min-width: 240px;
+            flex-grow: 0;
+            color: $dark;
+
+            @include desktop {
+                position: sticky;
+                top: 0;
+                align-self: flex-start;
+            }
+
+            > ul {
+                display: flex;
+                flex-direction: column;
                 padding: 0;
                 margin: 0;
                 height: 100%;
-
-                @include desktop {
-                    box-shadow: -4px 0 0 rgba(0, 0, 0, .1) inset;
-                }
+                list-style-type: none;
 
                 @include mobile {
-                    display: flex;
                     flex-direction: row;
-                    flex-wrap: wrap;
+                    justify-content: center;
                     box-shadow: 0 -4px 0 rgba(0, 0, 0, .1) inset;
                 }
 
                 > li {
                     box-sizing: border-box;
 
-                    > a {
+                    a {
                         display: block;
                         padding: $spacing/2 $spacing;
 
@@ -61,71 +118,17 @@
                             outline: none;
                         }
 
-                        @include mobile {
-                            height: 100%;
-                            box-sizing: border-box;
-                            vertical-align: bottom;
-                        }
-                    }
-
-                    @include desktop {
                         &:focus-within {
-                            border-right-width: calc(#{$border}*2);
-                        }
-                    }
-                    
-                    @include mobile {
-                        flex-grow: 1;
-                        
-                        &:focus-within {
-                            border-bottom-width: calc(#{$border}*2);
+                            font-weight: bold;
                         }
                     }
 
                     .current {
-                        color: $white;
+                        background-color: $primary;
+                        color: white;
                         font-weight: bold;
                     }
                 }
-
-                @mixin navColor($color) {
-                    @include desktop {
-                        border-right: $border solid $color;
-                    }
-
-                    @include mobile {
-                        border-bottom: $border solid $color;
-                    }
-
-                    .current {
-                        background-color: $color;
-                    }
-                }
-
-                .homeLink {
-                    font-size: 2em;
-                    font-family: "Big Shoulders Text";
-                    font-weight: 700;
-                    
-                    @include navColor($black);
-
-                    > a {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        
-                        > img {
-                            height: 1em;
-                            margin-right: .25em;
-                        }
-                    }
-                }
-
-                .newcomersLink { @include navColor($newcomersPage); }
-                .whatChangedLink { @include navColor($whatChangedPage); }
-                .improvingLink { @include navColor($improvingPage); }
-                .glossaryLink { @include navColor($glossaryPage); }
-                .songsLink { @include navColor($songsPage); }
             }
 
             a {
@@ -135,15 +138,14 @@
         }
 
         > nav + main {
-            h1, h2, h3, h4, h5, h6, p {
-                margin-left: $spacing;
-                margin-right: $spacing;
-            }
+            padding: 0 $spacing*2;
+            box-sizing: border-box;
         }
 
         > main {
-            width: 100%;
+            min-width: 40%;
             color: $black;
+            overflow-wrap: break-word;
 
             .contentHeader {
                 h1 {
@@ -210,6 +212,28 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.contentSummaryList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        &:not(:last-child) {
+            margin-bottom: $spacing*2;
+        }
+
+        > a {
+            display: block;
+            color: inherit;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin-top: 0;
         }
     }
 }
