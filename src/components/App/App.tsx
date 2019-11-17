@@ -10,6 +10,7 @@ import { ScrollToTop } from './ScrollToTop';
 import { Article } from '../Article';
 import { AllArticleSummariesPage } from '../Article';
 import { Page404 } from '../Page404';
+import { SongGroups } from '../Songs';
   
 function Sidebar() {
     return (
@@ -87,6 +88,8 @@ export function App() {
                         <Route path="/glossary/" component={Glossary} />
                         <Route path="/article/" exact component={AllArticleSummariesPage} />
                         <Route path="/article/:slug" render={({match}) => <Article key={match.params.slug} slug={match.params.slug} />} />
+                        <Route path="/songs/" component={SongGroups} />
+                        <Route path="/song/" component={SongGroups} />
                         <Route component={Page404} />
                     </Switch>
                 </div>
