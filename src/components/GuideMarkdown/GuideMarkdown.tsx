@@ -9,12 +9,13 @@ import { Link } from 'react-router-dom';
 // Memoize markdown - needs some ugly type juggling to work around moize not supporting ES5-style classes
 const ReactMarkdownMoized = moize.react(ReactMarkdown as any as (props: ReactMarkdownProps) => React.ReactElement);
 
-const siteSections = {"glossary": null, "article": null};
+const siteSections = {"glossary": null, "article": null, "song": null};
 export type SiteSection = keyof typeof siteSections;
 
 const MakeSiteLink: {[key in SiteSection]: ((id: string) => string)} = {
     "glossary": (id) => "/glossary/#term-" + makeAnchor(id),
-    "article": (id) => "/article/" + makeAnchor(id)
+    "article": (id) => "/article/" + makeAnchor(id),
+    "song": (id) => "/song/" + makeAnchor(id)
 };
 
 export interface GuideMarkdownProps {
