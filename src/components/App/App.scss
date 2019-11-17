@@ -12,7 +12,7 @@
         font-size: 16px;
         background-color: $white;
 
-        @include mobile {
+        @include phone {
             flex-direction: column;
         }
 
@@ -41,24 +41,34 @@
                 font-size: 2.5em;
                 font-family: "Big Shoulders Text";
                 font-weight: 700;
+                margin: $spacing*2 0;
 
-                @include desktop {
-                    margin: $spacing*2 0;
+                @include phone {
+                    margin: 0;
                 }
                 
                 > img {
                     height: 1em;
                     margin-right: .25em;
                 }
+
+                @include tablet {
+                    > img {
+                        height: 1.5em;
+                    }
+                    > span {
+                        display: none;
+                    }
+                }
             }
 
             > ul {
                 > li {
-                    @include desktop {
+                    @include tablet-or-larger {
                         border-right: $border solid $primary;
                     }
 
-                    @include mobile {
+                    @include phone {
                         height: 100%;
                         box-sizing: border-box;
                         vertical-align: bottom;
@@ -69,7 +79,7 @@
         }
 
         > aside.column {
-            @include mobile {
+            @include tablet-or-smaller {
                 display: none;
             }
 
@@ -95,11 +105,14 @@
         }
         
         > nav.column, > aside.column {
-            min-width: 240px;
             flex-grow: 0;
             color: $dark;
 
             @include desktop {
+                min-width: 240px;
+            }
+
+            @include tablet-or-larger {
                 position: sticky;
                 top: 0;
                 align-self: flex-start;
@@ -113,7 +126,7 @@
                 height: 100%;
                 list-style-type: none;
 
-                @include mobile {
+                @include phone {
                     flex-direction: row;
                     justify-content: center;
                     box-shadow: 0 -4px 0 rgba(0, 0, 0, .1) inset;
@@ -152,7 +165,7 @@
             padding: 0 $spacing*2;
             box-sizing: border-box;
 
-            @include mobile {
+            @include tablet-or-smaller {
                 padding: 0 $spacing;
             }
         }
@@ -168,7 +181,7 @@
                 padding: $spacing;
                 margin-bottom: $spacing;
 
-                @include mobile {
+                @include phone {
                     margin-left: -$spacing;
                     margin-right: -$spacing;
                 }
@@ -205,7 +218,7 @@
             padding: 0;
             line-height: 2;
 
-            @include not-phone {
+            @include tablet-or-larger {
                 justify-content: center;
             }
 
@@ -215,7 +228,7 @@
                 padding: 2em;
                 box-sizing: border-box;
 
-                @include not-phone {
+                @include tablet-or-larger {
                     max-width: 25%;
                 }
 

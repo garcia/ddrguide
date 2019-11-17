@@ -26,7 +26,7 @@ function Sidebar() {
                     <NavLink to="/glossary/" activeClassName="current">Glossary</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/songs/" activeClassName="current">Song List</NavLink>
+                    <NavLink to="/songs/" activeClassName="current">Songs</NavLink>
                 </li>
             </ul>
         </nav>

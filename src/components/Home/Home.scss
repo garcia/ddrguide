@@ -35,7 +35,7 @@
                 margin: 0;
             }
 
-            @include mobile {
+            @include phone {
                 > img {
                     height: 15vw;
                     margin-right: 3vw;
@@ -55,7 +55,7 @@
         list-style-type: none;
         background-color: $white;
 
-        @include mobile {
+        @include phone {
             flex-direction: column;
         }
 
@@ -63,7 +63,7 @@
             padding: $spacing*2;
             flex: 1;
 
-            @include mobile {
+            @include phone {
                 padding: $spacing;
             }
 
