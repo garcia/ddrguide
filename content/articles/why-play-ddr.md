@@ -4,7 +4,7 @@ slug: why-play-ddr
 description: Everyone has a different motivation to play. Let's figure out yours!
 sections: [Exercise, Having fun, The thrill of improving, Social benefits, Further reading]
 ---
-All around the world, thousands of people play DanceDanceRevolution every day. Some are casual arcade-goers trying something new; others are returning players looking to improve their skills; others yet are seasoned veterans grinding for the highest scores. The fact of the matter is that every one of these people has a different reason for playing the game. No single source of motivation could possibly draw this many people to a single game. In this article, we'll look at the various reasons why people choose to play DanceDanceRevolution. Maybe one or two of them will resonate with you!
+All around the world, thousands of people play DanceDanceRevolution every day. Some are casual arcade-goers trying something new; others are returning players looking to improve their skills; others yet are seasoned veterans grinding for the highest scores. The fact of the matter is that every one of these people has a different reason for playing. No single source of motivation could possibly draw this many people to a single game. In this article, we'll look at the various reasons why people choose to play DanceDanceRevolution. Maybe one or two of them will resonate with you!
 
 ## Exercise
 
