@@ -4,13 +4,18 @@ import React from 'react';
 import { GuideMarkdown } from '../GuideMarkdown';
 import './Article.scss';
 
-import navigatingTheDDRUI from '../../content/articles/navigating-the-ddr-ui.json';
-import settingYourSpeed from '../../content/articles/setting-your-speed.json';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { makeAnchor } from '../../utils/make-anchor';
 import { Page404 } from '../Page404';
 import { SectionOutliner } from '../SectionOutliner';
+
+import navigatingTheDDRUI from '../../content/articles/navigating-the-ddr-ui.json';
+import settingYourSpeed from '../../content/articles/setting-your-speed.json';
+import whyPlayDDR from  '../../content/articles/why-play-ddr.json';
+import basicGameplay from  '../../content/articles/basic-gameplay.json';
+import decidingWhatToPlay from  '../../content/articles/deciding-what-to-play.json';
+import Helmet from 'react-helmet';
 
 export interface ArticleProps {
     slug: string;
@@ -22,6 +27,7 @@ export interface ArticleContent {
         slug: string;
         description: string;
         sections: string[];
+        coming_soon?: boolean;
     }
     content: string;
 }
@@ -30,7 +36,7 @@ export class ArticleStore {
     
     static instance?: ArticleStore;
 
-    allArticles: ArticleContent[] = [navigatingTheDDRUI, settingYourSpeed];
+    allArticles: ArticleContent[] = [navigatingTheDDRUI, settingYourSpeed, whyPlayDDR, basicGameplay, decidingWhatToPlay];
     articleSlugs: {[key: string]: ArticleContent} = {};
 
     constructor() {
@@ -80,7 +86,7 @@ export class ArticleSummary extends React.Component<ArticleContent> {
     render() {
         return (
             <li>
-                <Link to={"/article/" + this.props.data.slug}>
+                <Link to={"/article/" + this.props.data.slug} className={this.props.data.coming_soon ? "coming-soon" : ""}>
                     <h3>{this.props.data.title}</h3>
                     <p>{this.props.data.description}</p>
                 </Link>
@@ -109,6 +115,12 @@ export class Article extends React.Component<ArticleProps> {
         if (this.article) {
             output = (
                 <>
+                    <Helmet>
+                        <title>{this.article.data.title}</title>
+                        <meta property="og:type" content="article" />
+                        <meta property="og:title" content={this.article.data.title + " | DDRGuide"} />
+                        <meta property="og:description" content={this.article.data.description} />
+                    </Helmet>
                     <main className="column article">
                         <article>
                             <div className="contentHeader">

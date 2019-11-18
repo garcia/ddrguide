@@ -280,3 +280,11 @@
         }
     }
 }
+
+.coming-soon {
+    color: $neutral !important;
+
+    &::after {
+        content: " 🔜︎";
+    }
+}

@@ -30,7 +30,7 @@ export class Home extends React.Component {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/songs/">
+                                <Link to="/songs/" className="coming-soon">
                                     <h3>Song List</h3>
                                     <p>Basic information on every song in DDR A / A20.</p>
                                 </Link>
