@@ -6,6 +6,9 @@ sections: [Understanding speed, Finding your target BPM, Speed in practice, Deal
 ---
 Of all the settings you can change from the Option menu, speed is the most important *and* the most heavily dependent on the song. Most players will set or verify their speed choice before every stage, as the penalty for leaving it on the wrong choice can range from getting a lower [glossary:score] to outright [glossary:failing|fail] the song. In this article we'll discuss how the speed mod affects gameplay, how to choose your speed for each song, and some important caveats for specific songs.
 
+> #### In A Nutshell
+> On DanceDanceRevolution A / A20, press the "9" key on the music selection screen to access the Option menu. Set your speed *lower* for songs with a *greater* maximum BPM and vice-versa. The BPM times your speed multiplier should be somewhere between 250 and 600, wherever you feel comfortable.
+
 ## Understanding speed
 
 If you're not familiar with the concept, *speed* in rhythm games determines the rate at which the [glossary:notes|note] scroll vertically across the screen. Speed doesn't affect the density of notes over time - that is, you won't have to *move* faster to hit the notes - the effect it has is purely visual. Higher speed means that the notes will scroll faster and be more spaced apart, which aids readability, especially in densely packed charts. However, higher speed also means that you have less time to react to the notes, since they take less time to scroll from the edge of the screen to the [glossary:receptors]. Finding the right speed is all about finding a balance between its positives and negatives - ideally, you should give yourself just enough time to comfortably react to the notes.

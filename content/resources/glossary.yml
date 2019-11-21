@@ -12,7 +12,7 @@
     definition: The model of [DDR] cabinets released alongside [DDR A20]. These cabinets can be found at all Round1 locations in the United States. In addition to the new cabinet & [dance stage] design, gold cabinets offer some exclusive A20 features like [Dan] courses and exclusive new songs.
 
 -   term: Dance stage
-    aka: [Stage, Dance pad, Pad]
+    aka: [Stage, Dance pad, Pads]
     concept: Hardware
     definition: The physical box that houses the [panels|panel] and connects to the main [game cabinet|cabinet]. Players typically stand on this stage during gameplay.
 
@@ -166,36 +166,38 @@
 -   term: Marvelous
     aka: [Marvs (slang)]
     concept: Scores
-    definition: |
-        The best [note judgement|judgement], above [Perfect]. The timing window for the Marvelous judgement is 16.666… ms. The [score] gained from each Marvelous is determined by dividing the maximum score of 1,000,000 by the maximum number of Marvelous and [OK] judgements that can be obtained in the current chart.
-        
-        If the maximum score described above isn't a multiple of 10 on the current [stage] (which it usually won't be), the score will actually fluctuate on a note-by-note basis between the surrounding multiples of 10, such that the total adds up to exactly 1,000,000.
-    trivia: The Marvelous judgement was introduced in DanceDanceRevolution EXTREME, but only in courses. It was introduced to normal gameplay in DDR SuperNOVA2. Prior to its introduction, Perfect was the best note judgement - hence the peculiar naming convention.
+    definition: The best [note judgement|judgement], above [Perfect]. The timing window for the Marvelous judgement is 16.666… ms.
+    trivia: |
+        The Marvelous judgement was introduced in DanceDanceRevolution EXTREME, but only in courses. It was introduced to normal gameplay in DDR SuperNOVA2. Prior to its introduction, Perfect was the best note judgement - hence the peculiar naming convention.
 
+        The [score] gained from each Marvelous is determined by dividing the maximum score of 1,000,000 by the maximum number of Marvelous and [OK] judgements that can be obtained in the current chart. If the maximum score described above isn't a multiple of 10 on the current [stage] (which it usually won't be), the score will actually fluctuate on a note-by-note basis between the surrounding multiples of 10, such that the total adds up to exactly 1,000,000.
 -   term: Perfect
-    aka: [Perfs (slang), P]
+    aka: [Perfs (slang)]
     concept: Scores
-    definition: The second-best [note judgement|judgement], below [Marvelous] and above [Great]. The timing window for the Perfect judgement is 33.333… ms. The [score] obtained from each Perfect is the corresponding Marvelous score minus 10.
+    definition: The second-best [note judgement|judgement], below [Marvelous] and above [Great]. The timing window for the Perfect judgement is 33.333… ms.
+    trivia: The [score] obtained from each Perfect is the corresponding Marvelous score minus 10.
 
 -   term: Great
-    aka: [G]
     concept: Scores
-    definition: The third-best [note judgement|judgement], below [Perfect] and above [Good]. The timing window for the Great judgement is about 92 ms TODO CONFIRM. The [score] obtained from each Great is the corresponding Perfect score times 60%, rounded down to a multiple of 10.
+    definition: The third-best [note judgement|judgement], below [Perfect] and above [Good]. The timing window for the Great judgement is about 92 ms TODO CONFIRM.
+    trivia: The [score] obtained from each Great is the corresponding Perfect score times 60%, rounded down to a multiple of 10.
 
 -   term: Good
     concept: Scores
-    definition: The fourth-best [note judgement|judgement], below [Great]. The timing window for the Good judgement is about 142 ms TODO CONFIRM. The [score] obtained from each Good is the corresponding Perfect score times 20%, rounded down to a multiple of 10.
+    definition: The fourth-best [note judgement|judgement], below [Great]. The timing window for the Good judgement is about 142 ms TODO CONFIRM.
+    trivia: The [score] obtained from each Good is the corresponding Perfect score times 20%, rounded down to a multiple of 10.
 
 -   term: OK
     concept: Scores
-    definition: A pseudo-[judgement] obtained by holding a [freeze note] to its end or avoiding a [shock arrow]. There is no timing window associated with this judgement. The [score] gained from each OK is the same as [Marvelous].
+    definition: A pseudo-[judgement] obtained by holding a [freeze note] to its end or avoiding a [shock arrow].
+    trivia: The [score] gained from each OK is the same as [Marvelous].
 
 -   term: Miss
-    aka: [M]
     concept: Scores
     definition: Failing to hit an arrow within the widest timing window (namely [Good]) incurs a Miss, as does dropping a [freeze note] or triggering a [shock arrow]. Obtaining a miss will reset the player's [combo] back to zero and decrease the [life gauge] (unless it is already empty). Misses do not increase or decrease the player's [score].
 
 -   term: Pad miss
+    aka: [Pad s**t (slang)]
     concept: Scores
     definition: Informal term for a [miss] judgement that the player believes the game registered erroneously. The [panels|panel], like any piece of hardware, are not perfect and can malfunction or require different pressure compared to other panels, especially if poorly maintained.
 
@@ -398,6 +400,7 @@
     definition: The [difficulty] above [Difficult] and below [Challenge], when present. Expert charts typically range in [level] from 9 to 17, but can go as low as 5 TODO CONFIRM on some older songs and as high as 18 on some boss songs.
 
 -   term: Challenge
+    aka: [Oni (outdated)]
     concept: Charts
     definition: The [difficulty] above [Expert]. Only some [songs|song] have a Challenge [chart]; those that do will have one on both [SP] and [DP]. Challenge charts typically range in [level] from 10 to 18, but can go as low as 8 TODO CONFIRM on some older songs and as high as 19 on some boss songs.
     trivia: A small number of songs *only* have Challenge charts available; players must use an [e-amusement] pass to access these songs, in order to prevent casual players from accidentally selecting them.
