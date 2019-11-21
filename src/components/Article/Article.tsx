@@ -36,7 +36,7 @@ export class ArticleStore {
     
     static instance?: ArticleStore;
 
-    allArticles: ArticleContent[] = [navigatingTheDDRUI, settingYourSpeed, whyPlayDDR, basicGameplay, decidingWhatToPlay];
+    allArticles: ArticleContent[] = [navigatingTheDDRUI, whyPlayDDR, basicGameplay, settingYourSpeed, decidingWhatToPlay];
     articleSlugs: {[key: string]: ArticleContent} = {};
 
     constructor() {

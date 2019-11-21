@@ -51,6 +51,7 @@ function Footer() {
                     <ul className="footerLinks">
                         <li><a href="http://ddrcommunity.com/">DDRCommunity</a></li>
                         <li><a href="https://twitter.com/sf_evolved">SF Evolved</a></li>
+                        <li><a href="https://life4ddr.com/">LIFE4</a></li>
                     </ul>
                 </li>
                 <li>
