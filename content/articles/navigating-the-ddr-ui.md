@@ -8,6 +8,9 @@ If you've never played DDR at the arcade before, you're probably faced with a lo
 
 With that said, a little prior knowledge goes a long way for confidence. This guide covers the complete flow for playing DDR, from the moment you swipe your card to the end of your session.
 
+> #### In a Nutshell
+> Bring your game card to the arcade (or buy one there), plus your e-amusement card. Respect anyone who's playing or waiting for their turn on the game. Swipe your game card, then scan your e-amusement card and enter your PIN. Select "Premium Play" when prompted. When you find a song you want to play, press "9" on the number pad to set your options (mainly speed) and enjoy the game!
+
 ## Prerequisites
 
 This guide assumes you've already found an arcade that offers DDR A or A20.  In North America, this will likely be a [glossary:Round1] or [glossary:Dave & Buster's] location, as these are the two chains that offer modern DDR mixes.
@@ -22,17 +25,14 @@ With your game card and e-amusement pass in hand, you're ready to step up to the
 
 When you find the DDR cabinet, first **check whether anyone is playing** or waiting to play. If people are actively playing, or if the game doesn't appear to be in the "attract sequence" (the default mode when no one is playing), you'll need to wait your turn. There might be a [glossary:card line] if multiple players are waiting for their turn, in which case you should ask a player (but not while they're dancing!) where to put your card. If there's no card line on the cabinet marquee or screen frame, look around for any other potential players hovering near the DDR cabinet. If you're not sure, just ask if they're waiting to play; again, the arcade DDR experience is a social one. Talking to fellow players is good!
 
-If no one else is playing or waiting to play, go ahead and **swipe your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
-
-> #### Tip
-> If you get an error message when you swipe your game card, try again (arcade card readers can be finnicky) or check for a specific error like not having enough credits.
+If no one else is playing or waiting to play, go ahead and **swipe your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you're playing with a friend, you'll need *two swipes* to play together. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
 
 On DDR A20, the game will prompt you to choose a language. If you're comfortable with English, press the green button; otherwise, use the left/right inputs to choose your preferred language. DDR A will default to the language associated with the cabinet's region. {TODO verify for gold cabinets?}
 
 If the cabinet is connected to the Internet, you'll be prompted to scan your e-amusement card. If this is your first time using your card, the game will guide you through basic profile creation. {TODO document flow} Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
 
 > #### Tip
-> If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry. If your PIN is incorrect, the game will prompt you to try again.
+> If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry.
 
 Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all North America locations! {TODO verify globally?} Simply press the down button to select Premium Play and press green to confirm.
 

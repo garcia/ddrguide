@@ -6,6 +6,9 @@ sections: [Exercise, Having fun, The thrill of improving, Social benefits, Furth
 ---
 All around the world, thousands of people play DanceDanceRevolution every day. Some are casual arcade-goers trying something new; others are returning players looking to improve their skills; others yet are seasoned veterans grinding for the highest scores. The fact of the matter is that every one of these people has a different reason for playing. No single source of motivation could possibly draw this many people to a single game. In this article, we'll look at the various reasons why people choose to play DanceDanceRevolution. Maybe one or two of them will resonate with you!
 
+> #### In a Nutshell
+> Besides being a fun videogame, DDR is a great source of exercise, has a banging soundtrack, offers near-endless opportunities for self-improvement, and comes with a devoted community of players who love to see new faces at the arcade. Give it a shot!
+
 ## Exercise
 
 It should come as no surprise that a game where you move your legs constantly can be a good source of exercise. One of the best aspects of this source of motivation is that it applies to everyone, regardless of skill level. While it might seem like the return on investment would increase as you progress into the harder difficulties, much of that progression is driven by optimizing your *form* - conserving energy to hit more arrows without burning out. As a new player, you'll naturally burn more calories on each step at the start of your journey!
