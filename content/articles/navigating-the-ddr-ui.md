@@ -27,9 +27,9 @@ When you find the DDR cabinet, first **check whether anyone is playing** or wait
 
 If no one else is playing or waiting to play, go ahead and **swipe your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you're playing with a friend, you'll need *two swipes* to play together. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
 
-On DDR A20, the game will prompt you to choose a language. If you're comfortable with English, press the green button; otherwise, use the left/right inputs to choose your preferred language. DDR A will default to the language associated with the cabinet's region. {TODO verify for gold cabinets?}
+On DDR A20, the game will prompt you to choose a language. The choice defaults to English on [glossary:white cabinets|white cabinet] and Japanese on [glossary:gold cabinets|gold cabinet], so take a moment to check the selection before pressing the green button to proceed.
 
-If the cabinet is connected to the Internet, you'll be prompted to scan your e-amusement card. If this is your first time using your card, the game will guide you through basic profile creation. {TODO document flow} Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
+If the cabinet is connected to the Internet, you'll be prompted to scan your e-amusement card. If this is your first time using your card, the game will guide you through basic profile creation; follow the instructions on-screen to set your name and region. Otherwise, you'll be prompted to **enter your PIN** on the number pad next to the NFC card reader. Once logged in, press the green button to proceed.
 
 > #### Tip
 > If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry.

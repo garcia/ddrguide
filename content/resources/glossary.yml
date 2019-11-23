@@ -22,7 +22,10 @@
 
 -   term: Receptors
     concept: Gameplay elements
-    definition: The visual element typically seen at the top of the screen (sometimes bottom, sometimes hidden) used by players to determine when to hit each [note]. Each [panel] being used in the current gameplay mode has a corresponding arrow-shaped receptor towards which notes will scroll. The receptors flash in sync with the music on each quarter note.
+    definition: |
+        The visual element typically seen at the top of the screen used by players to determine when to hit each [note]. Each [panel] being used in the current gameplay mode has a corresponding arrow-shaped receptor towards which notes will scroll. The receptors flash in sync with the music on each quarter note.
+
+        Players can hide the receptors by setting the "Step zone" [option] to "HIDDEN", or place the receptors at the bottom of the screen by setting the "Scroll" option to "REVERSE".
 
 -   term: Note
     concept: Gameplay elements
@@ -201,6 +204,12 @@
     concept: Scores
     definition: Informal term for a [miss] judgement that the player believes the game registered erroneously. The [panels|panel], like any piece of hardware, are not perfect and can malfunction or require different pressure compared to other panels, especially if poorly maintained.
 
+-   term: MA
+    acronym: Marvelous Attack
+    concept: Scores
+    definition: A player or score's proportion of [Marvelous] judgements compared to all other judgements, typically quantified in vague terms rather than a specific ratio (e.g. "really good MA").
+    trivia: In the rhythm game series *In The Groove*, the equivalent term is "FA" for "Fantastic Attack".
+
 -   term: Combo
     concept: Combos & Lamps
     definition: |
@@ -213,7 +222,9 @@
     aka: [Marvelous Sweep, Miff (slang)]
     concept: Combos & Lamps
     definition: |
-        A score obtained by getting a [Marvelous] judgement on every step, with no [Misses|Miss]. This is the highest score in the game, corresponding to a [money score|score] of 1,000,000.
+        A score obtained by getting a [Marvelous] judgement on every step, with no [Misses|Miss].
+        
+        This is the highest score in the game, corresponding to a [money score|score] of 1,000,000.
 
         The [sort folder|Sorting] for MFCs is labeled "MARVELOUS SWEEP".
     trivia: |
@@ -223,7 +234,10 @@
     acronym: Perfect Full Combo
     aka: [Piff (slang)]
     concept: Combos & Lamps
-    definition: A score obtained by getting either a [Marvelous] or [Perfect] judgement on every step, with no [Misses|Miss]. The [score] for a PFC will be 1,000,000 minus the number of Perfect judgements obtained times 10.
+    definition: |
+        A score obtained by getting either a [Marvelous] or [Perfect] judgement on every step, with no [Misses|Miss].
+    
+        The [score] for a PFC will be 1,000,000 minus the number of Perfect judgements obtained times 10.
     trivia: |
         All [Single|SP] charts [rated|level] 18 and lower have been PFC'd by at least one player. Only one PFC on a 19 has ever been recorded: [CHRS4LFE's PFC|https://www.youtube.com/watch?v=QWCXAdaj2Vs] of [song:EGOISM 440] [CSP] on December 13, 2017.
         
@@ -259,30 +273,22 @@
         
         A "true black flag" indicates that the lone [Great] or [Perfect] judgement was obtained on the last [note] of the [chart].
 
+-   term: SDP
+    acronym: Single-Digit Perfects
+    concept: Combos & Lamps
+    definition: |
+        A [PFC] with the added constraint of fewer than 10 [Perfect] judgements.
+        
+        The score for a SDP will be between 999,910 (9 Perfects) and 999,990 (1 Perfect, a type of [flag]).
+
+-   term: SDG
+    acronym: Single-Digit Greats
+    concept: Combos & Lamps
+    definition: A [GFC] with the added constraint of fewer than 10 [Great] judgements.
+
 -   term: Life gauge
     concept: Gameplay elements
     definition: An indicator of the player's performance, displayed above the [receptors]. The normal life gauge is a continuous meter that starts out half-full, rises slowly as combo increases, and depletes quickly when the player incurs a [miss]. The normal gauge can be replaced with the [LIFE4] or [RISKY] gauge in the player's modifiers before each song. Depleting the life gauge completely results in a [failing|fail] grade, and the player's [score] is frozen.
-
--   term: LIFE4
-    aka: [hard clear]
-    concept: Options
-    definition: |
-        A [life gauge] mode where the player starts the [stage] with 4 "lives" that can be lost by [missing|miss] notes. The gauge display above the [receptors] is replaced with four discrete cells indicating how many lives remain. Lives cannot be regained during the song. Losing all four lives has the same effect as depleting the normal life gauge.
-        
-        During [Extra Stage], the life gauge is forced onto LIFE4 mode, and losing all four lives will additionally obscure the notefield for that player (either with a "Game Over" display if another player is still playing, or by transitioning to the "Failed" screen immediately otherwise).
-    trivia: |
-        All [SP] charts have been LIFE4 cleared by at least one player.
-        
-        All [DP] charts [rated|level] 17 and below have been not only LIFE4 cleared, but [GFC]'d by at least one player. Almost all DP 18s have been LIFE4 cleared as well; notably, [song:Pluto Relinquish] [CDP] has not been LIFE4 cleared yet. At least one DP 19 has been LIFE4 cleared - [song:POSSESSION] CDP, by FEFEMZ.
-        
-        "LIFE4" also refers to the community-led [LIFE4 ranking system](https://life4ddr.com/).
-
--   term: RISKY
-    concept: Options
-    definition: |
-        A [life gauge] mode where the player starts the [stage] with 1 "life" that can be lost by obtaining a [Miss] judgement. The gauge display appears the same as the [LIFE4] gauge, except the first three cells are already empty when the song starts. The song immediately ends if all players [fail] on the RISKY life gauge.
-        
-        By definition, clearing a song using the RISKY life gauge is at minimum a [FC], so there is no separate [clear level|lamp] for RISKY clears.
 
 -   term: Clear
     aka: [Pass]
@@ -452,36 +458,132 @@
     aka: [Modifier, Mod]
     concept: Options
     definition: |
-        A configurable aspect of gameplay. The option menu is accessible by holding the green button when selecting a [song] or [chart], or by pressing "9" on the [cabinet]'s [e-amusement] keypad. Here are the options available:
+        A configurable aspect of gameplay. The option menu is accessible by pressing "9" on the [cabinet]'s number pad, or by holding the green button when selecting a [song] or [chart]. Here are the options available:
 
-        * Speed: Multiplies the speed at which the [notes|note] (and other gameplay elements) scroll. See [Speed] for additional details.
-        * Boost: When enabled, the scroll speed changes as notes move across the screen. Options are "NORMAL" (default), "BOOST" (notes accelerate as they approach the [receptors]), "BRAKE" (notes decelerate), and "WAVE" (notes alternate accelerating and decelerating as they scroll).
-        * Appearance: When enabled, the notes are covered from one side of the screen. Options are "VISIBLE" (default), "HIDDEN+" (notes are covered as they approach the receptors), "SUDDEN+" (notes are covered *away from* the receptors), "HIDDEN+&SUDDEN+" (both lane covers are in effect), and "STEALTH" (notes are invisible). See [SUDDEN+] for additional details.
-        * Turn: When enabled, the chart is transformed such that the notes are rotated or mirrored around the pad. (The receptors do not change order or position; the chart can still be read normally, but the notes to hit will be in different lanes.) Options are "NORMAL" (default), "LEFT" (chart is rotated counterclockwise), "RIGHT" (chart is rotated clockwise), "MIRROR" (chart is mirrored across the receptors - or, equivalently, rotated 180°), and "SHUFFLE" (arrow lanes are shuffled according to a randomly chosen permutation, out of 8 possible permutations).
-        * Step Zone: Toggles visibility of the [receptors|receptor]. Options are "ON" (default) and "OFF" (receptors are invisible).
-        * Scroll: Toggles which direction the notes scroll. Options are "NORMAL" (notes scroll up to the receptors at the top) and "REVERSE" (notes scroll down to the receptors at the bottom).
-        * Arrow Color: Changes the color of the notes. Options are "RAINBOW" (notes have animated colors according to their [quantization]), "NOTE" (notes have solid colors according to their quantization), "VIVID" (notes are random rainbow colors), and "FLAT" (notes are all the same rainbow color).
-        * Cut: An [assist|assist clear] option that removes notes from the chart based on their [quantization]. Options are "OFF" (default), "ON1" (only quarter notes are kept), "ON2" (only quarter and eighth notes are kept).
-        * Freeze Arrow: An [assist|assist clear] option that removes [freeze notes|freeze note] from the chart. Options are "ON" (default) and "OFF" (freeze notes are removed).
-        * Jumps: An [assist|assist clear] option that removes [jumps|jump] from the chart. Options are "ON" (default) and "OFF" (jumps are removed).
-        * Gauge: Determines the [life gauge] to use. Options are "NORMAL" (default), "LIFE4" (the [LIFE4] gauge is used), and "RISKY" (the [RISKY] gauge is used).
+        * **Speed**: Multiplies the speed at which the [notes|note] scroll. See [Speed] for additional details.
+        * **Boost**: When enabled, the scroll speed changes as notes move across the screen. Choices are:
+            - NORMAL (default)
+            - BOOST (notes accelerate as they approach the [receptors])
+            - BRAKE (notes *decelerate* as they approach the [receptors])
+            - WAVE (notes alternate accelerating and decelerating as they scroll)
+        * **Appearance**: When enabled, the notes are covered from one side of the screen. Choices are:
+            - VISIBLE (default)
+            - HIDDEN+ (notes are covered as they approach the receptors)
+            - [SUDDEN+] (notes are covered *away from* the receptors)
+            - HIDDEN+&SUDDEN+ (both lane covers are in effect)
+            - STEALTH (notes are invisible)
+                - During gameplay, HIDDEN+ and SUDDEN+ can be toggled by pressing the green button and adjusted vertically using the Up/Down buttons.
+        * **Turn**: When enabled, the chart is transformed such that the notes are rotated or mirrored around the pad. (The receptors do not change order or position; the chart can still be read normally, but the notes to hit will be in different lanes.) Choices are:
+            - NORMAL (default)
+            - LEFT (chart is rotated counterclockwise)
+            - RIGHT (chart is rotated clockwise)
+            - MIRROR (chart is mirrored across the receptors - or, equivalently, rotated 180°)
+            - SHUFFLE (arrow lanes are shuffled according to a randomly chosen permutation, out of 8 possible permutations)
+                - LEFT, RIGHT, and SHUFFLE are not available on [double play|DP].
+        * **Step zone**: Toggles visibility of the [receptors|receptor]. Choices are "ON" (default) and "OFF" (receptors are invisible).
+        * **Scroll**: Toggles which direction the notes scroll. Choices are:
+            - NORMAL (notes scroll up to the receptors at the top)
+            - REVERSE (notes scroll *down* to the receptors at the bottom)
+        * **Arrow color**: Changes the color of the notes. This is a distinct option from [arrow type], which can only be configured from the [e-amusement] website. Choices are:
+            - RAINBOW (notes have animated colors according to their [quantization])
+            - NOTE (notes have solid colors according to their quantization)
+            - VIVID (notes are random rainbow colors)
+            - FLAT (notes are all the same rainbow color)
+        * **Cut**: An [assist|assist clear] option that removes notes from the chart based on their [quantization]. Choices are:
+            - OFF (default)
+            - ON1 (only quarter notes are kept; all other notes are removed)
+            - ON2 (only quarter and eighth notes are kept; all other notes are removed)
+        * **Freeze arrow**: An [assist|assist clear] option that removes [freeze notes|freeze note] from the chart. Choices are "ON" (default) and "OFF" (freeze notes are removed).
+        * **Jumps**: An [assist|assist clear] option that removes [jumps|jump] from the chart. Choices are "ON" (default) and "OFF" (jumps are removed).
+        * **Gauge**: Determines the [life gauge] to use. Choices are:
+            - NORMAL (default)
+            - [LIFE4] (four [misses|miss] fails the stage)
+            - [RISKY] (one [miss] fails the stage and ends gameplay immediately)
         
         Options persist for each player between [stages|stage], and across subsequent [games|game] and other [cabinets|cabinet].
-    help: |
-        The most important option is the first one, [Speed], which most players change for every stage.
+
+        When a cabinet is offline, only Speed, Scroll, Cut, Freeze arrow, and Jumps are available; all other options are locked to their default choices.
         
-        You may also want to set your Arrow Color to NOTE to more easily read the [quantization] of notes.
+        > #### Tip
+        > The most important option is the first one, [Speed], which most players change for every stage.
+        > You may also want to set your Arrow Color to NOTE to more easily read the [quantization] of notes.
 
 -   term: Speed
     aka: [Rate, X-mod]
     concept: Options
     definition: |
-        How fast the [notes] and other gameplay elements scroll across the screen. As an [option], the player's choice of speed multiplies the baseline "1x" speed, where consecutive [quarter note|quantization] arrows are directly adjacent to one another (no overlap and no space between the arrows).
+        How fast the [notes] and other gameplay elements scroll across the screen. As an [option], the player's choice of speed multiplies the baseline "x1.0" speed, where consecutive [quarter note|quantization] arrows are directly adjacent to one another (no overlap and no space between the arrows). Lower numbers correspond to slower scrolling; for example, selecting x0.5 will cause consecutive [quarter notes|quantization] to overlap halfway, whereas selecting 2x will space consecutive quarter notes apart by an arrow's worth of space.
         
-        Speed can be adjusted from the Options menu before each [stage]. In [Premium Play], the options are 0.25x-4x in increments of 0.25, then 4.5x-8x in increments of 0.5. Without Premium Play, the options are limited to 1x-8x in increments of 0.5. Lower numbers correspond to slower scrolling; for example, selecting 0.5x will cause consecutive [quarter notes|quantization] to overlap halfway, whereas selecting 2x will space consecutive quarter notes apart by an arrow's worth of space.
+        Speed can be adjusted from the Options menu before each [stage]. In [Premium Play], the options are x0.25-x4.0 in increments of 0.25, then x4.5-x8.0 in increments of 0.5. Without Premium Play, the options are limited to x1.0-x8.0 in increments of 0.5.
         
         The speed can also be adjusted during gameplay, prior to the first [note] of the chart, by pressing the Left or Right buttons on the [cabinet] to decrease or increase the speed, respectively. The only exception is during the [Encore Extra Stage], during which this method of changing the speed is disabled.
     trivia: RemyWiki [documents|https://remywiki.com/DDR_AC_General_Info#SPEED] which DDR mix each speed option was introduced in.
+
+-   term: SUDDEN+
+    concept: Options
+    definition: |
+        A choice under the "Appearance" [option] that players use to assist in reading [charts|chart] with [BPM changes|BPM change]. Specifically, by turning SUDDEN+ on during the slow sections (and off otherwise), some players find it easier to concentrate on the reduced number of notes visible.
+
+        During gameplay, SUDDEN+ can be toggled by pressing the green button and adjusted vertically using the Up/Down buttons. This requires careful planning because using the [cabinet] buttons during gameplay typically requires stepping off of the [dance stage] briefly. As such, the technique is only helpful if there is a gap in the notes long enough for the player to toggle SUDDEN+ when necessary.
+
+-   term: LIFE4
+    aka: [Hard clear]
+    concept: Options
+    definition: |
+        A [life gauge] mode where the player starts the [stage] with 4 "lives" that can be lost by [missing|miss] notes. The gauge display above the [receptors] is replaced with four discrete cells indicating how many lives remain. Lives cannot be regained during the song. Losing all four lives has the same effect as depleting the normal life gauge.
+        
+        During [Extra Stage], the life gauge is forced onto LIFE4 mode, and losing all four lives will additionally obscure the notefield for that player (either with a "Game Over" display if another player is still playing, or by transitioning to the "Failed" screen immediately otherwise).
+    trivia: |
+        All [SP] charts have been LIFE4 cleared by at least one player.
+        
+        All [DP] charts [rated|level] 17 and below have been not only LIFE4 cleared, but [GFC]'d by at least one player. Almost all DP 18s have been LIFE4 cleared as well; notably, [song:Pluto Relinquish] [CDP] has not been LIFE4 cleared yet. At least one DP 19 has been LIFE4 cleared - [song:POSSESSION] CDP, by FEFEMZ.
+        
+        "LIFE4" also refers to the community-led [LIFE4 ranking system|https://life4ddr.com/].
+
+-   term: RISKY
+    concept: Options
+    definition: |
+        A [life gauge] mode where the player starts the [stage] with 1 "life" that can be lost by obtaining a [Miss] judgement. The gauge display appears the same as the [LIFE4] gauge, except the first three cells are already empty when the song starts. The song immediately ends if all players [fail] on the RISKY life gauge.
+        
+        By definition, clearing a song using the RISKY life gauge is at minimum a [FC], so there is no separate [clear level|lamp] for RISKY clears.
+
+-   term: Guide lines
+    concept: Options
+    definition: |
+        Horizontal lines that optionally appear behind the [notes|note] during gameplay. Choices include "OFF" (no lines), "BORDER" (lines separate beats), and "CENTER" (default; lines denote beats). The brighter lines indicate [measures|measure].
+
+        Guide lines can be toggled from the [e-amusement] website; once logged in, click [this link|https://p.eagate.573.jp/game/ddr/ddra20/p/setting/op_detail_setting.html?opt=15] to set your choice, then press the *first* of the two buttons at the bottom to save.
+
+-   term: Arrow type
+    aka: [Noteskin, Normal, X, Classic, Cyber, Medium, Small, Dot]
+    concept: Options
+    definition: |
+        The visual appearance of the [notes|note] during gameplay. Choices include "Normal" (default), "X", "Classic", "Cyber", "Medium", "Small", and "Dot".
+
+        Arrow type can be changed through the [e-amusement] website; once logged in, click [this link|https://p.eagate.573.jp/game/ddr/ddra20/p/setting/op_detail_setting.html?opt=14] to set your arrow type, then press the *first* of the two buttons at the bottom to save.
+
+-   term: Screen filter
+    aka: [Dark, Darker, Darkest]
+    concept: Options
+    definition: |
+        A filter behind the [notes|note] during gameplay that darkens the background for easier reading of notes. Choices include "Off", "Dark" (default), "Darker", and "Darkest".
+
+        Screen filter can be changed through the [e-amusement] website; once logged in, click [this link|https://p.eagate.573.jp/game/ddr/ddra20/p/setting/op_detail_setting.html?opt=16] to set your screen filter, then press the *first* of the two buttons at the bottom to save.
+
+-   term: Judgement display priority
+    concept: Options
+    definition: |
+        An option exclusive to [Basic Course] subscribers that changes whether the judgement and combo indicators appear in front of or behind the [notes|note] during gameplay. By default, the judgement and combo indicators appear in front of the notes.
+
+        Judgement display priority can be changed through the [e-amusement] website; once logged in, click [this link|https://p.eagate.573.jp/game/ddr/ddra20/p/setting/op_detail_setting.html?opt=1] to set your choice, then press the *first* of the two buttons at the bottom to save.
+
+-   term: Timing judgement display
+    aka: [Fast/Slow, Slow/Fast]
+    concept: Options
+    definition: |
+        An option exclusive to [Basic Course] subscribers that adds an indicator above the combo for whether a note hit with a non-[Marvelous] judgement was pressed too fast (early) or too slow (late) relative to the Marvelous timing window. By default, the timing judgement display is disabled.
+
+        Timing judgement display can be changed through the [e-amusement] website; once logged in, click [this link|https://p.eagate.573.jp/game/ddr/ddra20/p/setting/op_detail_setting.html?opt=2] to set your choice, then press the *first* of the two buttons at the bottom to save.
 
 -   term: Quantization
     aka: [Division, Note color]
@@ -497,11 +599,17 @@
 
 -   term: Measure
     concept: Rhythm
-    definition: Four [beats|beat] of a [song]. When [guide lines] TODO CHECK NAME are enabled, measures are denoted by the brigher scrolling lines.
+    definition: |
+        Four [beats|beat] of a [song].
+    
+        When [guide lines] are enabled, measures are denoted by the brigher scrolling lines.
 
 -   term: Beat
     concept: Rhythm
-    definition: The most commonly understood subdivision of a [song] according to its tempo, which is accordingly measured in beats per minute (BPM). One beat is equivalent to a [quarter note|quantization]. When [guide lines] TODO CHECK NAME are enabled, each line denotes one beat of the song.
+    definition: |
+        The most commonly understood subdivision of a [song] according to its tempo, which is accordingly measured in beats per minute (BPM). One beat is equivalent to a [quarter note|quantization].
+        
+        When [guide lines] are enabled, each line denotes one beat of the song.
 
 -   term: Konami
     concept: Bemani
@@ -559,7 +667,33 @@
 -   term: e-amusement
     aka: [eAmuse, EA]
     concept: Online features
-    definition: An online service provided by [Konami] that enhances gameplay in a variety of ways. Players swipe an e-amusement pass near the [cabinet]'s card reader to authenticate at the start of each [session]. TODO
+    definition: |
+        An online service provided by [Konami] that enhances DDR gameplay in a variety of ways. Players swipe an e-amusement pass near the [cabinet]'s card reader to authenticate at the start of each [game].
+
+        The e-amusement website is [p.eagate.573.jp|https://p.eagate.573.jp/]. From here you can register an account, link an e-amusement card, and set various options for DDR gameplay like [guide lines], [arrow type], [screen filter] and more.
+
+        For more information on registering an e-amusement card, refer to the bemanistyle article [How to: Japanese KONAMI ID registration & e-amusement pass management|https://www.bemanistyle.com/how-to-register-for-a-japanese-konami-id-and-manage-your-eamusement-pass/]. Heed the note about leaving your region set to Japan if you intend to purchase the [Basic Course].
+
+-   term: Premium Play
+    concept: Online features
+    definition: |
+        A gameplay mode for online [cabinets|cabinet] that enables many game mechanics, including the [Extra Stage], more granular [speed] choices, and guaranteed play of 3 songs regardless of whether the first two [stages|stage] are [cleared|clear].
+
+        On North American cabinets, Premium Play is available for no additional cost; in Japan, it typically costs [PASELI] or additional game credits.
+
+-   term: Basic Course
+    concept: Online features
+    definition: |
+        An [e-amusement] subscription feature that enables DDR players to view their scores through the e-amusement website, change additional options like [judgement display priority] and [timing judgement display], and more. This feature is paid for using [PASELI].
+        
+        For more information on purchasing the Basic Course and PASELI, refer to the bemanistyle guide [e-amusement How to: Charging PASELI and Basic Course Subscription|https://www.bemanistyle.com/e-amusement-how-to-charging-paseli-and-basic-course-subscription/]. Note that purchasing BitCash is no longer required for players in North America, as the [e-amusement] website now accepts non-Japanese credit cards for payment.
+
+-   term: PASELI
+    concept: Online features
+    definition: |
+        [Konami]'s in-house currency for arcade games, used to pay for the [Basic Course] for an enhanced DDR experience.
+
+        For more information on purchasing the Basic Course and PASELI, refer to the bemanistyle guide [e-amusement How to: Charging PASELI and Basic Course Subscription|https://www.bemanistyle.com/e-amusement-how-to-charging-paseli-and-basic-course-subscription/]. Note that purchasing BitCash is no longer required for players in North America, as the [e-amusement] website now accepts non-Japanese credit cards for payment.
 
 -   term: e-amusement extended maintenance
     aka: [Third Monday, Maintenance Monday]
@@ -640,3 +774,37 @@
     concept: Patterns
     definition: |
         A [pattern] characterized by a monotonic sequence of single [notes|note] on different panels. For example, [song:Healing Vision ~angelic mix~] [ESP] ends with a long stream of [8th notes|quantization], and [song:Nageki no ki] [ESP] has a long 16th note stream towards the end.
+
+-   term: YB
+    acronym: Yabai
+    aka: [やばい]
+    concept: Community Lingo
+    definition: |
+        "Yabai" / "やばい", a Japanese slang term used by DDR players that roughly translates to "OMG" or "awesome".
+
+-   term: HYF
+    acronym: How You Figure
+    aka: [HYFF]
+    concept: Community Lingo
+    definition: |
+        "How You Figure" or "How You F---in' Figure", an informal acronym expressing incredulity, usually directed at some accomplishment by another player.
+
+-   term: MAW
+    acronym: Might As Well...
+    aka: [MAWM, MAWP]
+    concept: Community Lingo
+    definition: |
+        "Might As Well ([Piff|PFC] / [Miff|MFC])", an informal acronym typically used in response to a score that's nearly a [PFC] or [MFC].
+
+        When used in response to someone else's score, the term has positive connotations; it implies that the PFC / MFC is well within the player's reach, and they "might as well" replay it to achieve that score.
+
+-   term: Can check
+    concept: Community Lingo
+    definition: |
+        A social media catchphrase that's usually attached to a photo of the player's drink before or during their DDR [session].
+
+-   term: Corny
+    aka: [🌽, cornafrn]
+    concept: Community Lingo
+    definition: |
+        Highly contextual social media slang. In the context of a [score] post, "corny [MA]" or "corny [chart]" usually has negative connotations. However, replies containing the corn emoji (🌽) and neologisms involving "corn" are typically positive, meant to compare the score to the player who popularized the "corn" meme, CHRS4LFE.
