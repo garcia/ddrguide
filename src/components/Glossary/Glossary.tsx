@@ -53,7 +53,16 @@ export class GlossaryStore {
 const GlossarySort: {[key in SortValue]: {compare: (a: TermProps, b: TermProps) => number, sectionName: (t: TermProps) => string } } = {
     "alphabetical": {
         compare: (a, b) => a.term.localeCompare(b.term),
-        sectionName: (a) => a.term.charAt(0).toUpperCase(),
+        sectionName: (a) => {
+            let firstChar: string = a.term.charAt(0);
+            if (firstChar.match(/[a-z]/i)) {
+                return firstChar.toUpperCase();
+            } else if (firstChar.match(/[0-9]/)) {
+                return '#';
+            } else {
+                return 'Symbols';
+            }
+        },
     },
     "by-concept": {
         compare: (a, b) => a.concept.localeCompare(b.concept) || (a.sourceIndex - b.sourceIndex),
