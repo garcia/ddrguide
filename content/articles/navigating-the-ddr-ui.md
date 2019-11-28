@@ -34,13 +34,13 @@ If the cabinet is connected to the Internet, you'll be prompted to scan your e-a
 > #### Tip
 > If you make a mistake while typing your PIN, you can press any arrow button (left/right/up/down) to clear your entry.
 
-Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all North America locations! {TODO verify globally?} Simply press the down button to select Premium Play and press green to confirm.
+Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all established North America locations! Simply press the down button to select Premium Play and press green to confirm.
 
 Once you know what you're doing, this whole process should only take about 15 seconds each time. Now you're ready to choose your first song and play the game!
 
 ## Song selection & Gameplay
 
-On the song selection screen {TODO verify screen name?}, you can use all four arrow buttons to navigate the song list. Hold left or right to scan through the complete list of songs, or hold up or down to scroll through each row of 3 songs faster. You can also press and hold up and down to leave a song folder immediately, or press and hold left and right to choose another sort mode. Need help choosing a song? Check out our guide on [article:deciding what to play] for some useful advice.
+On the music selection screen, you can use all four arrow buttons to navigate the song list. Hold left or right to scan through the complete list of songs, or hold up or down to scroll through each row of 3 songs faster. You can also press and hold up and down to leave a song folder immediately, or press and hold left and right to choose another sort mode. Need help choosing a song? Check out our guide on [article:deciding what to play] for some useful advice.
 
 When you find a song you like, press the green button to play it; be aware that there's no backing out once you've chosen a song! If you *hold* the green button, it'll take you to the [glossary:Option] menu where you can set your speed and more. (If you just want to set your options *without* choosing a song, press the "9" key on the number pad before using the green button). Select your preferred difficulty using the up/down buttons; a lower number ([glossary:level]) indicates an easier chart. If you're ready to play, press the green button again (without holding it down) to confirm. If you're playing with another player, they'll need to confirm too before the song starts.
 
@@ -76,10 +76,12 @@ By clearing an unlockable song, you immediately unlock all the charts up to the 
 
 ## Ending the game
 
-After your last stage, the game will show you an overview of the scores you got, followed by a logout screen {TODO document what it says b/c i forgot}. You can usually ignore the contents of these screens and press the green button to dismiss them; this is the recommended course of action if other players are waiting for their turns.
+After your last stage, the game will show you an overview of the scores you got, followed by a logout screen that shows your card info and (on DDR A only) your [glossary:result stars|result star]. You can usually ignore the contents of these screens and press the green button to dismiss them; this is the recommended course of action if other players are waiting for their turns.
 
 It's up to you whether to keep playing, or for how many games in total. Sessions vary wildly in length among established DDR players; some are content to play for an hour or two, while others will stay for 6+ hour grinding sessions. Don't feel obligated to continue if you're worn out, physically or mentally - but if you're determined to improve, pushing your limits can be a great way to build stamina! Know your goals and use them to decide how to play the game.
 
 ## Further reading
 
-The articles linked from here include [article:basic gameplay], [article:setting your speed], and [article:deciding what to play].
+One aspect of the UI often overlooked by beginners is the option menu, which is mainly used for [setting your speed].
+
+If you're 100% brand-new to the game, you'll probably want to read about [basic gameplay] as well.
