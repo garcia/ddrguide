@@ -13,6 +13,10 @@ export interface TermProps {
     trivia?: string;
     help?: string;
     concept: string;
+    image?: {
+        filename: string;
+        altText: string;
+    };
     sourceIndex: number;
 }
 
@@ -22,6 +26,7 @@ export const Term: React.FunctionComponent<TermProps> = moize.react(props => {
     let aka: JSX.Element | undefined;
     let definition: JSX.Element = <div className="definition"><GuideMarkdown source={props.definition} section="glossary" /></div>;
     let trivia: JSX.Element | undefined;
+    let image: JSX.Element | undefined;
 
     if (props.acronym !== undefined) {
         title = <h3>{props.term} ({props.acronym})</h3>
@@ -41,12 +46,27 @@ export const Term: React.FunctionComponent<TermProps> = moize.react(props => {
             </blockquote>
         );
     }
+
+    if (props.image !== undefined) {
+        let src: string = "/images/" + props.image.filename;
+        image = (
+            <a className="termImage" target="_blank" href={src}>
+                <img src={src} alt={props.image.altText} title={props.image.altText} />
+                <span>Click to open in new tab</span>
+            </a>
+        );
+    }
     
     return (
         <div id={anchor} className="Term">
-            {title}
-            {aka}
-            {definition}
+            <div className="termTitle">
+                {title}
+                {aka}
+            </div>
+            <div className="termDefinitionAndImage">
+                {definition}
+                {image}
+            </div>
             {trivia}
         </div>
     );

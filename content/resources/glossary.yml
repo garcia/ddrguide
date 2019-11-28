@@ -141,6 +141,33 @@
     concept: Charts
     definition: A gameplay sequence for a particular song. Each chart has a [difficulty], [level], and [groove radar] displayed on the song selection screen. During gameplay, the chart lays out where notes (and other gameplay elements like [shock arrows] and [speed changes|speed change]) are placed.
 
+-   term: Folder
+    aka: [Group]
+    concept: Charts
+    definition: |
+        A collection of [songs|song] on the music selection screen.
+        
+        Songs can be sorted into folders in a variety of different ways, depending on what [category] is selected. While inside a folder, briefly holding the Up + Down buttons will close it.
+    image:
+        filename: "Select Music (with folder annotations).png"
+        altText: Screenshot of the music selection screen, with annotations for the categories, folder, and songs.
+
+-   term: Category
+    aka: [Sort]
+    concept: Charts
+    definition: |
+        One of the views of all the [songs|songs] on the music selection screen. The category determines what kind of [folders|folder] are shown.
+
+        Categories can be found between the list of [folders|folder], or by briefly holding the Left + Right buttons. Songs can be sorted by [level], [course], [event], [song] title, genre, [version|mix], [BEMANI] series, and each player's [clear rank|grade].
+    image:
+        filename: "Select Music (with folder annotations).png"
+        altText: Screenshot of the music selection screen, with annotations for the categories, folder, and songs.
+
+-   term: Sync
+    aka: [Offsync, Early, Late]
+    concept: Charts
+    definition: A measure of how precisely the [notes|note] match a [song]'s audio.  If a chart is *offsync*, the players may have to hit the notes slightly *early* or *late* compared to the beat of the song in order to consistently get [Marvelous] judgements.
+
 -   term: Speed change
     aka: [Speed gimmick, Gimmick, Timing change, Timing gimmick]
     concept: Gameplay elements
@@ -199,6 +226,14 @@
     concept: Scores
     definition: Failing to hit an arrow within the widest timing window (namely [Good]) incurs a Miss, as does dropping a [freeze note] or triggering a [shock arrow]. Obtaining a miss will reset the player's [combo] back to zero and decrease the [life gauge] (unless it is already empty). Misses do not increase or decrease the player's [score].
 
+-   term: N.G.
+    aka: [No Good]
+    concept: Scores
+    definition: |
+        A pseudo-judgement obtained by dropping a [freeze note] or triggering a [shock arrow].
+    
+        During gameplay, the judgement is displayed as "N.G.", but on the results screen it is counted as a [miss], and all game mechanics influenced by misses are also influenced by "N.G." judgements.
+
 -   term: Pad miss
     aka: [Pad s**t (slang)]
     concept: Scores
@@ -208,7 +243,7 @@
     acronym: Marvelous Attack
     concept: Scores
     definition: A player or score's proportion of [Marvelous] judgements compared to all other judgements, typically quantified in vague terms rather than a specific ratio (e.g. "really good MA").
-    trivia: In the rhythm game series *In The Groove*, the equivalent term is "FA" for "Fantastic Attack".
+    trivia: In the dance game series *In The Groove*, the equivalent term is "FA", short for "Fantastic Attack".
 
 -   term: Combo
     concept: Combos & Lamps
@@ -222,11 +257,11 @@
     aka: [Marvelous Sweep, Miff (slang)]
     concept: Combos & Lamps
     definition: |
-        A score obtained by getting a [Marvelous] judgement on every step, with no [Misses|Miss].
+        A score obtained by getting a [Marvelous] judgement on every step, with no [misses|miss].
         
         This is the highest score in the game, corresponding to a [money score|score] of 1,000,000.
 
-        The [sort folder|Sorting] for MFCs is labeled "MARVELOUS SWEEP".
+        The [folder] for MFCs when browsing the "CLEAR RANK" [category] is labeled "MARVELOUS SWEEP".
     trivia: |
         All [Single|SP] charts [rated|level] 14 and lower have been MFC'd by at least one player. Only one MFC on an 18 has ever been recorded: [CHRS4LFE's MFC|https://www.youtube.com/watch?v=gKXz57J1eK4] of [song:Fascination ~eternal love mix~].
 
@@ -235,7 +270,7 @@
     aka: [Piff (slang)]
     concept: Combos & Lamps
     definition: |
-        A score obtained by getting either a [Marvelous] or [Perfect] judgement on every step, with no [Misses|Miss].
+        A score obtained by getting either a [Marvelous] or [Perfect] judgement on every step, with no [misses|miss].
     
         The [score] for a PFC will be 1,000,000 minus the number of Perfect judgements obtained times 10.
     trivia: |
@@ -247,7 +282,7 @@
     acronym: Great Full Combo
     concept: Combos & Lamps
     definition: |
-        A score obtained by getting either a [Marvelous], [Perfect], or [Great] judgement on every step, with no [Misses|Miss].
+        A score obtained by getting either a [Marvelous], [Perfect], or [Great] judgement on every step, with no [misses|miss].
         
         The [score] for any GFC will typically be lower than any PFC on the same chart, due to Greats costing significantly more points off of the maximum than Perfects, although this is not always the case.
     trivia: |
@@ -259,7 +294,7 @@
     acronym: Full Combo
     aka: [Good Full Combo, Blue Full Combo, BFC]
     concept: Combos & Lamps
-    definition: A score obtained by [clearing|clear] a [stage] with no [Misses|Miss]. [Good] judgements do not break combo in [DDR A], so a FC is distinct from (and more permissive than) a [GFC].
+    definition: A score obtained by [clearing|clear] a [stage] with no [misses|miss]. [Good] judgements do not break combo in [DDR A], so a FC is distinct from (and more permissive than) a [GFC].
     trivia: |
         All but one [Single|SP] chart have been FC'd by at least one player; the one remaining is [song:ENDYMION] [CSP].
         
@@ -377,11 +412,17 @@
         * [failed|fail] (dark amber)
         * not played (black)
     trivia: On [SP|Single Play], the highest level folder on which any player has obtained an [MFC] lamp is 14 (by CHRS4LFE). For [PFC] lamps, the highest is 18, obtained by multiple players. Currently, no player has documented a clear level higher than the normal clear lamp on the SP 19 folder (although BROSONI. had a FC lamp prior to ENDYMION [CSP]'s release).
+    image:
+        filename: "Select Music (with lamp annotations).png"
+        altText: Screenshot of the music selection screen, with annotations for each player's song and folder lamps.
+
 
 -   term: Difficulty
     concept: Charts
-    definition: One of five slots for [charts|chart] in ascending order of, well, difficulty. These include [Beginner] ([SP] only), [Basic], [Difficult], [Expert], and [Challenge] (only on some songs).
-    trivia: Some older songs have [Challenge] charts that are actually easier than the [Expert] chart, as this slot was originally used for more "experimental" gameplay techniques, rather than simply harder techniques.
+    definition: |
+        One of five slots for [charts|chart] in ascending order of, well, difficulty. These include [Beginner] ([SP] only), [Basic], [Difficult], [Expert], and [Challenge] (only on some songs).
+
+        "Difficulty" is often used to refer to a chart's [level], too.
 
 -   term: Level
     concept: Charts
@@ -391,25 +432,40 @@
 
 -   term: Beginner
     concept: Charts
-    definition: The easiest [difficulty] in the game on [SP], below [Basic]. Beginner charts typically range in [level] from 1 to 5, but can go as high as 9 on some boss songs.
+    definition: |
+        The easiest [difficulty] in the game on [SP], below [Basic].
+        
+        Beginner charts typically range in [level] from 1 to 6, but can go as high as 9 on some boss songs.
 
 -   term: Basic
     concept: Charts
-    definition: The [difficulty] above [Beginner] ([SP] only) and below [Difficult]. On [DP], this is the easiest difficulty. Basic charts typically range in [level] TODO
+    definition: |
+        The [difficulty] above [Beginner] ([SP] only) and below [Difficult]. On [DP], this is the easiest difficulty.
+        
+        Basic charts typically range in [level] from 3 to 11, but can go as low as 1 ([DP]) or 2 ([SP]) on some older songs and as high as 13 on some boss songs.
 
 -   term: Difficult
     concept: Charts
-    definition: The [difficulty] above [Basic] and below [Expert]. Difficult charts typically range in [level] TODO
+    definition: |
+        The [difficulty] above [Basic] and below [Expert].
+        
+        Difficult charts typically range in [level] from 6 to 14, but can go as low as 4 on some older songs and as high as 15 on some boss songs.
 
 -   term: Expert
     concept: Charts
-    definition: The [difficulty] above [Difficult] and below [Challenge], when present. Expert charts typically range in [level] from 9 to 17, but can go as low as 5 TODO CONFIRM on some older songs and as high as 18 on some boss songs.
+    definition: |
+        The [difficulty] above [Difficult] and below [Challenge], when present.
+    
+        Expert charts typically range in [level] from 8 to 17, but can go as low as 6 on some older songs and as high as 18 on some boss songs.
 
 -   term: Challenge
     aka: [Oni (outdated)]
     concept: Charts
-    definition: The [difficulty] above [Expert]. Only some [songs|song] have a Challenge [chart]; those that do will have one on both [SP] and [DP]. Challenge charts typically range in [level] from 10 to 18, but can go as low as 8 TODO CONFIRM on some older songs and as high as 19 on some boss songs.
-    trivia: A small number of songs *only* have Challenge charts available; players must use an [e-amusement] pass to access these songs, in order to prevent casual players from accidentally selecting them.
+    definition: |
+        The [difficulty] above [Expert]. Only some [songs|song] have a Challenge [chart]; those that do will have one on both [SP] and [DP]. Challenge charts typically range in [level] from 10 to 18, but can go as low as 6 on some older songs and as high as 19 on some boss songs.
+
+        A small number of songs *only* have Challenge charts available; players must use an [e-amusement] pass to access these songs, in order to prevent casual players from accidentally selecting them.
+    trivia: Some songs have Challenge charts that are *easier* than the [Expert] chart, as the Challenge difficulty sometimes denotes an "experimental" chart, rather than a hard one.
 
 -   term: BSP
     acronym: Basic Single Pattern
@@ -464,7 +520,7 @@
         * **Boost**: When enabled, the scroll speed changes as notes move across the screen. Choices are:
             - NORMAL (default)
             - BOOST (notes accelerate as they approach the [receptors])
-            - BRAKE (notes *decelerate* as they approach the [receptors])
+            - BRAKE (notes *decelerate* as they approach the receptors)
             - WAVE (notes alternate accelerating and decelerating as they scroll)
         * **Appearance**: When enabled, the notes are covered from one side of the screen. Choices are:
             - VISIBLE (default)
@@ -619,6 +675,10 @@
     concept: Bemani
     definition: |
         [Konami]'s rhythm game division, which includes [DanceDanceRevolution|DDR], DANCERUSH STARDOM, beatmania IIDX, SOUND VOLTEX, jubeat, pop'n music, GITADORA, NOSTALGIA, and other inactive titles.
+
+-   term: "573"
+    concept: Bemani
+    definition: The [Konami] Number, found in default highscore lists on older DDR mixes and in the system names for the original "Dance Dance Revolution" hardware. In modern times, the number has been largely relegated to [Bemani] memes.
 
 -   term: DDR
     acronym: DanceDanceRevolution

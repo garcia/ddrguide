@@ -2,22 +2,63 @@
 
 .Term {
 
-    h3 {
-        margin-top: $spacing*2;
-        font-size: 1.5em;
-        font-weight: bold;
-        color: $black;
+    > .termTitle {
+
+        h3 {
+            margin-top: $spacing*2;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+        
+        .aka {
+            font-size: .75em;
+            font-style: italic;
+            color: $neutral;
+            margin-top: -$spacing/2;
+        }
     }
+
+    .termDefinitionAndImage {
+        display: flex;
+        align-items: flex-start;
+        
+        @include tablet-or-smaller {
+            flex-direction: column;
+        }
+
+        > .termImage {
+            text-align: right;
+
+            @include desktop {
+                max-width: 33%;
+                margin-left: $spacing;
+            }
     
-    .aka {
-        font-size: .75em;
-        font-style: italic;
-        color: $neutral;
-        margin-top: -$spacing/2;
+            @include phone {
+                margin-left: -$spacing;
+                margin-right: -$spacing;
+
+                span {
+                    margin-left: $spacing;
+                    margin-right: $spacing;
+                }
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+
+            span {
+                color: $neutral;
+                font-size: .75em;
+                font-style: italic;
+            }
+        }
     }
 
     p {
         color: $dark;
     }
-    
 }
