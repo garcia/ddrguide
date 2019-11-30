@@ -7,11 +7,28 @@
     background-color: $white;
 
     > .homeHeader {
+        position: relative;
         padding: 6em;
         box-sizing: border-box;
         text-align: center;
         background-color: $black;
+        background-image: url("/images/Home - Header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
         color: $white;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url("/images/Home - Header (grain).png");
+            background-repeat: repeat;
+            content: " ";
+            pointer-events: none;
+            mix-blend-mode: difference;
+        }
 
         > p {
             font-size: 1.25em;

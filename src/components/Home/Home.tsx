@@ -23,16 +23,22 @@ export class Home extends React.Component {
                     <li>
                         <h2>Resources</h2>
                         <ul className="contentSummaryList">
-                            <li>
+                            <li className="contentSummary">
                                 <Link to="/glossary/">
-                                    <h3>Glossary</h3>
-                                    <p>A comprehensive glossary of modern DDR terminology & slang.</p>
+                                    <img className="contentSummaryThumbnail" src="/images/Glossary - Thumbnail.jpg" alt="" />
+                                    <div className="contentSummaryText">
+                                        <h3>Glossary</h3>
+                                        <p>A comprehensive glossary of modern DDR terminology & slang.</p>
+                                    </div>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="contentSummary">
                                 <Link to="/songs/" className="coming-soon">
-                                    <h3>Song List</h3>
-                                    <p>Basic information on every song in DDR A / A20.</p>
+                                    <img className="contentSummaryThumbnail" src="/images/Glossary - Thumbnail.jpg" alt="" />
+                                    <div className="contentSummaryText">
+                                        <h3>Song List</h3>
+                                        <p>Basic information on every song in DDR A / A20.</p>
+                                    </div>
                                 </Link>
                             </li>
                         </ul>

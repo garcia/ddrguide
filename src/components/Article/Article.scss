@@ -1,6 +1,25 @@
 @import "global";
 
 article {
+    > .contentHeader {
+        background-color: $offWhite;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: left !important;
+        padding-top: $spacing*2 !important;
+        padding-bottom: $spacing*4 !important;
+        margin-bottom: $spacing*2 !important;
+
+        h1, p {
+            display: table;
+            margin: 0 !important;
+            padding: $spacing/2;
+            background-color: rgba(0, 0, 0, .875);
+            color: $offWhite !important;
+        }
+    }
+
     > .contents {
         color: $dark;
 

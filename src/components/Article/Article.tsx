@@ -85,10 +85,13 @@ export class ArticleSummary extends React.Component<ArticleContent> {
 
     render() {
         return (
-            <li>
+            <li className="contentSummary">
                 <Link to={"/article/" + this.props.data.slug} className={this.props.data.coming_soon ? "coming-soon" : ""}>
-                    <h3>{this.props.data.title}</h3>
-                    <p>{this.props.data.description}</p>
+                    <img className="contentSummaryThumbnail" src={"/images/Article - Thumbnail - " + this.props.data.slug + ".jpg"} alt="" />
+                    <div className="contentSummaryText">
+                        <h3>{this.props.data.title}</h3>
+                        <p>{this.props.data.description}</p>
+                    </div>
                 </Link>
             </li>
         );
@@ -123,7 +126,7 @@ export class Article extends React.Component<ArticleProps> {
                     </Helmet>
                     <main className="column article">
                         <article>
-                            <div className="contentHeader">
+                            <div className="contentHeader" style={{backgroundImage: "url('/images/Article - Header - " + this.article.data.slug + ".jpg')"}}>
                                 <h1>{this.article.data.title}</h1>
                                 <p>{this.article.data.description}</p>
                             </div>

@@ -261,22 +261,40 @@
     margin: 0;
     padding: 0;
 
-    > li {
-        border-left: $border solid $primary;
-        padding-left: $spacing;
+    > .contentSummary {
 
         &:not(:last-child) {
             margin-bottom: $spacing*2;
         }
 
         > a {
-            display: block;
+            display: flex;
+            position: relative;
+            flex-direction: row;
             color: inherit;
-        }
+    
+            .contentSummaryThumbnail {
+                flex: 0 0;
+                height: 10em;
+                margin-right: $spacing;
+            }
 
-        h3 {
-            font-size: 2em;
-            margin-top: 0;
+            .contentSummaryText {
+                border-left: $border solid $primary;
+                padding-left: $spacing;
+
+                > h3 {
+                    font-size: 2em;
+                }
+                
+                > *:first-child {
+                    margin-top: 0;
+                }
+
+                > *:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
