@@ -50,7 +50,7 @@ export const Term: React.FunctionComponent<TermProps> = moize.react(props => {
     if (props.image !== undefined) {
         let src: string = "/images/" + props.image.filename;
         image = (
-            <a className="termImage" target="_blank" href={src}>
+            <a className="termImage" target="_blank" rel="noopener noreferrer" href={src}>
                 <img src={src} alt={props.image.altText} title={props.image.altText} />
                 <span>Click to open in new tab</span>
             </a>
