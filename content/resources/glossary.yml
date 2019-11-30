@@ -9,7 +9,7 @@
     
 -   term: Gold cabinet
     concept: Hardware
-    definition: The model of [DDR] cabinets released alongside [DDR A20]. These cabinets can be found at all Round1 locations in the United States. In addition to the new cabinet & [dance stage] design, gold cabinets offer some exclusive A20 features like [Dan] courses and exclusive new songs.
+    definition: The model of [DDR] cabinets released alongside [DDR A20]. These cabinets can be found at most Round1 locations in the United States. In addition to the new cabinet & [dance stage] design, gold cabinets offer some exclusive A20 features like [Dan] courses and exclusive new songs.
 
 -   term: Dance stage
     aka: [Stage, Dance pad, Pads]
@@ -17,8 +17,14 @@
     definition: The physical box that houses the [panels|panel] and connects to the main [game cabinet|cabinet]. Players typically stand on this stage during gameplay.
 
 -   term: Panel
+    aka: [Arrow]
     concept: Hardware
     definition: One of the primary gameplay inputs, typically activated by a player stepping onto it. There are four panels per side, for a total of eight panels on a standard [dance stage].
+
+-   term: Bar
+    aka: [Rail]
+    concept: Hardware
+    definition: The painted metal rail affixed behind each set of four [panels|panel]. Many players hold the bar to maintain balance during gameplay.
 
 -   term: Receptors
     concept: Gameplay elements
@@ -191,48 +197,69 @@
 
 -   term: Judgement
     concept: Scores
-    definition: An indicator of how precisely the player hit a [note], with respect to timing. Every judgement has an associated timing window that determines how early or late a note may be hit, compared to the exact timing of the note. Judgements with smaller timing windows take precedence over those with larger timing windows. After each [stage], the players can review how many times they received each judgement on the results screen. The judgements are [Marvelous], [Perfect], [Great], [Good], [OK], and [Miss].
+    definition: |
+        An indicator of how precisely the player hit a [note], with respect to timing.
+    
+        Every judgement has an associated timing window that determines how early or late a note may be hit, as well as a score calculation that depends on the chart. Judgements with smaller timing windows take precedence over those with larger timing windows, and yield higher scores. After each [stage], the players can review how many times they received each judgement on the results screen. The judgements are [Marvelous], [Perfect], [Great], [Good], [O.K.], and [Miss] / [N.G.]
 
 -   term: Marvelous
     aka: [Marvs (slang)]
     concept: Scores
-    definition: The best [note judgement|judgement], above [Perfect]. The timing window for the Marvelous judgement is 16.666… ms.
+    definition: |
+        The best [note judgement|judgement], above [Perfect].
+    
+        The timing window for the Marvelous judgement is 16.666… ms; the [score] it yields is the maximum possible for each note in the chart.
     trivia: |
         The Marvelous judgement was introduced in DanceDanceRevolution EXTREME, but only in courses. It was introduced to normal gameplay in DDR SuperNOVA2. Prior to its introduction, Perfect was the best note judgement - hence the peculiar naming convention.
 
-        The [score] gained from each Marvelous is determined by dividing the maximum score of 1,000,000 by the maximum number of Marvelous and [OK] judgements that can be obtained in the current chart. If the maximum score described above isn't a multiple of 10 on the current [stage] (which it usually won't be), the score will actually fluctuate on a note-by-note basis between the surrounding multiples of 10, such that the total adds up to exactly 1,000,000.
+        The aforementioned "maximum possible" score for each note is determined by dividing the maximum *total* score of 1,000,000 by the number of scored [judgements|judgement] (notes + held [freeze notes|freeze note] + dodged [shock arrows|shock arrow]) for that chart. If the resulting number isn't a multiple of 10 (which it usually won't be), the maximum score will actually fluctuate on a note-by-note basis between the surrounding multiples of 10, such that the total adds up to exactly 1,000,000.
+
 -   term: Perfect
     aka: [Perfs (slang)]
     concept: Scores
-    definition: The second-best [note judgement|judgement], below [Marvelous] and above [Great]. The timing window for the Perfect judgement is 33.333… ms.
-    trivia: The [score] obtained from each Perfect is the corresponding Marvelous score minus 10.
+    definition: |
+        The second-best [note judgement|judgement], below [Marvelous] and above [Great].
+
+        The timing window for the Perfect judgement is 33.333… ms; the [score] it yields is the same as a Marvelous, minus 10.
 
 -   term: Great
     concept: Scores
-    definition: The third-best [note judgement|judgement], below [Perfect] and above [Good]. The timing window for the Great judgement is about 92 ms TODO CONFIRM.
-    trivia: The [score] obtained from each Great is the corresponding Perfect score times 60%, rounded down to a multiple of 10.
+    definition: |
+        The third-best [note judgement|judgement], below [Perfect] and above [Good].
+        
+        The timing window for the Great judgement is about 92 ms; the [score] it yields is 60% of a Perfect.
 
 -   term: Good
     concept: Scores
-    definition: The fourth-best [note judgement|judgement], below [Great]. The timing window for the Good judgement is about 142 ms TODO CONFIRM.
-    trivia: The [score] obtained from each Good is the corresponding Perfect score times 20%, rounded down to a multiple of 10.
+    definition: |
+        The fourth-best [note judgement|judgement], below [Great].
+        
+        The timing window for the Good judgement is about 142 ms; the [score] it yields 20% of a [Perfect].
 
--   term: OK
+-   term: O.K.
+    aka: [OK]
     concept: Scores
-    definition: A pseudo-[judgement] obtained by holding a [freeze note] to its end or avoiding a [shock arrow].
-    trivia: The [score] gained from each OK is the same as [Marvelous].
-
--   term: Miss
-    concept: Scores
-    definition: Failing to hit an arrow within the widest timing window (namely [Good]) incurs a Miss, as does dropping a [freeze note] or triggering a [shock arrow]. Obtaining a miss will reset the player's [combo] back to zero and decrease the [life gauge] (unless it is already empty). Misses do not increase or decrease the player's [score].
+    definition: |
+        A pseudo-[judgement] obtained by holding a [freeze note] to its end or avoiding a [shock arrow].
+        
+        The [score] gained from each OK is the same as [Marvelous].
 
 -   term: N.G.
-    aka: [No Good]
+    aka: [NG, No Good]
     concept: Scores
     definition: |
         A pseudo-judgement obtained by dropping a [freeze note] or triggering a [shock arrow].
     
-        During gameplay, the judgement is displayed as "N.G.", but on the results screen it is counted as a [miss], and all game mechanics influenced by misses are also influenced by "N.G." judgements.
+        During gameplay, the judgement is displayed as "N.G.", but on the results screen it is counted as a [miss], and all game mechanics influenced by misses are also influenced by N.G. judgements.
+
+        N.G. judgements do not increase or decrease the player's [score].
+
+-   term: Miss
+    concept: Scores
+    definition: |
+        Failing to hit an arrow within the widest timing window (namely [Good]) incurs a Miss. This resets the player's [combo] back to zero and decreases the [life gauge] (unless it is [already empty|fail]).
+        
+        Misses do not increase or decrease the player's [score].
 
 -   term: Pad miss
     aka: [Pad s**t (slang)]
@@ -337,7 +364,7 @@
 -   term: Fail
     aka: [Game over]
     concept: Scores
-    definition: Ending a [stage] with a depleted [life gauge]. Fails are assigned a [letter grade|grade] of E, although the score the player obtained prior to the life gauge depleting is equally valid as a score obtained by [clearing|clear] the stage.
+    definition: Ending a [stage] with a depleted [life gauge]. Fails are assigned a [letter grade|grade] of E, although the [score] the player obtained prior to failing is equally valid as a score obtained by [clearing|clear] the stage.
 
 -   term: Score
     aka: [Money score]
@@ -353,10 +380,10 @@
     definition: |
         An alternative scoring method where judgements are assigned the following weights:
         
-        * [Marvelous] & [OK]: 3
+        * [Marvelous] & [O.K.]: 3
         * [Perfect]: 2
         * [Great]: 1
-        * [Good] & [Miss]: 0
+        * [Good] & [Miss] / [N.G.]: 0
         
         EX score is displayed on the results screen below the [judgement] counts. In [Event Mode], the normal score and EX score displays may be swapped.
     trivia: This scoring method is favored in tournaments over [money score|score] because it assigns comparable weights to Perfects and Greats, unlike the standard scoring system where, for example, nearly any reasonable [PFC] would beat a near-[MFC] missed by only one great.
@@ -868,3 +895,9 @@
     concept: Community Lingo
     definition: |
         Highly contextual social media slang. In the context of a [score] post, "corny [MA]" or "corny [chart]" usually has negative connotations. However, replies containing the corn emoji (🌽) and neologisms involving "corn" are typically positive, meant to compare the score to the player who popularized the "corn" meme, CHRS4LFE.
+
+-   term: GOAT
+    acronym: Greatest of All Time
+    concept: Community Lingo
+    definition: |
+        "Greatest of All Time", a superlative usually (though not exclusively) applied to player CHRS4LFE.
