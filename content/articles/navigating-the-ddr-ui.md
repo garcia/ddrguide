@@ -49,7 +49,7 @@ When you find a song you like, press the green button to play it; be aware that 
 
 Get ready to dance now! You'll have a moment before the first arrow appears on the screen to adjust your footing. If you need help understanding the scrolling arrows, check out our article on [article:basic gameplay] for an in-depth explanation.
 
-When you complete the song, you'll be presented with a results screen that shows your [glossary:score], your [glossary:grade], and more details below. You can use the left/right buttons to switch between some tabs that show different details. It's a lot of information to take in, so don't worry if you don't understand everything immediately! Check out our article on [article:understanding the results screen] if you want to learn more.
+When you complete the song, you'll be presented with a results screen that shows your [glossary:score], your [glossary:grade], and more details below. You can use the left/right buttons to switch between some tabs that show different details. It's a lot of information to take in, so don't worry if you don't understand everything immediately!
 
 If you're new to DDR, here are some basic goals to aim for:
 
