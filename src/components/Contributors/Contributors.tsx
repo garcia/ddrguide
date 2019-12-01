@@ -42,7 +42,7 @@ export class Contributors extends React.Component {
                         </div>
                         <ul className="contributorSectionContent">
                             <li>Steve (<a href="https://twitter.com/StevesUsername">@StevesUsername</a>)</li>
-                            <li>David (<a href="https://twitter.com/mutesauce">@mutesauce</a>)</li>
+                            <li>David (<a href="https://www.instagram.com/mutesauce/">@mutesauce</a>)</li>
                         </ul>
                     </li>
                     <li className="contributorSection">
