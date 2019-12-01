@@ -46,6 +46,16 @@ class Suggestion extends React.Component<SuggestionProps> {
         }
 
         for (let termProps of glossaryStore.allTerms) {
+            if (suggested[termProps.term] === undefined && termProps.acronym !== undefined) {
+                if (termProps.acronym.toLowerCase().startsWith(input)) {
+                    suggestions.push({
+                        termProps: termProps,
+                        matchedTerm: termProps.acronym,
+                        boldRegion: [0, input.length]
+                    });
+                    suggested[termProps.term] = true;
+                }
+            }
             if (suggested[termProps.term] === undefined && termProps.aka !== undefined) {
                 for (let aka of termProps.aka) {
                     if (aka.toLowerCase().startsWith(input)) {
