@@ -13,7 +13,7 @@ export class Home extends React.Component {
                         <img src="/images/ddrguide.svg" alt="DDRGuide Logo" />
                         <h1>DDRGuide</h1>
                     </div>
-                    <p>Learn where, why, and how to play DanceDanceRevolution A and A20.</p>
+                    <p>Learn where, why, and how to play DanceDanceRevolution A and A20. Advice written &amp; vetted by experienced players, comprehensive resources of in-depth game knowledge for newcomers and experts alike, and more.</p>
                 </div>
                 <ul className="homeSections">
                     <li>
@@ -25,19 +25,10 @@ export class Home extends React.Component {
                         <ul className="contentSummaryList">
                             <li className="contentSummary">
                                 <Link to="/glossary/">
-                                    <img className="contentSummaryThumbnail" src="/images/Glossary - Thumbnail.jpg" alt="" />
+                                    <img className="contentSummaryThumbnail" src="/images/irasutoya - friend_advice_woman.png" alt="" />
                                     <div className="contentSummaryText">
                                         <h3>Glossary</h3>
                                         <p>A comprehensive glossary of modern DDR terminology & slang.</p>
-                                    </div>
-                                </Link>
-                            </li>
-                            <li className="contentSummary">
-                                <Link to="/songs/" className="coming-soon">
-                                    <img className="contentSummaryThumbnail" src="/images/Glossary - Thumbnail.jpg" alt="" />
-                                    <div className="contentSummaryText">
-                                        <h3>Song List</h3>
-                                        <p>Basic information on every song in DDR A / A20.</p>
                                     </div>
                                 </Link>
                             </li>

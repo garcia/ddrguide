@@ -7,16 +7,22 @@
     background-color: $white;
 
     > .homeHeader {
-        position: relative;
-        padding: 6em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: $spacing*4 $spacing*2;
         box-sizing: border-box;
-        text-align: center;
         background-color: $black;
         background-image: url("/images/Home - Header.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         color: $white;
+
+        @include tablet-or-smaller {
+            flex-direction: column;
+        }
 
         @supports (pointer-events: none) and (mix-blend-mode: difference) {
             &::before {
@@ -32,8 +38,18 @@
             }
         }
 
+        > * {
+            padding: $spacing;
+        }
+
         > p {
-            font-size: 1.25em;
+            margin: 0;
+            max-width: 640px;
+            line-height: 2;
+
+            @include tablet-or-larger {
+                font-size: 1.25em;
+            }
         }
 
         > .homeLogo {
@@ -43,18 +59,18 @@
             align-items: center;
 
             > img {
-                height: 9em;
+                height: 8em;
                 margin-right: 2em;
             }
 
             > h1 {
-                font-size: 9em;
+                font-size: 8em;
                 font-family: "Big Shoulders Text";
                 font-weight: 700;
                 margin: 0;
             }
 
-            @include phone {
+            @include tablet-or-smaller {
                 > img {
                     height: 15vw;
                     margin-right: 3vw;
@@ -74,7 +90,7 @@
         list-style-type: none;
         background-color: $white;
 
-        @include phone {
+        @include tablet-or-smaller {
             flex-direction: column;
         }
 
@@ -82,7 +98,7 @@
             padding: $spacing*2;
             flex: 1;
 
-            @include phone {
+            @include tablet-or-smaller {
                 padding: $spacing;
             }
 

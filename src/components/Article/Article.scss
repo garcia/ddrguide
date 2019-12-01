@@ -11,11 +11,21 @@ article {
         padding-bottom: $spacing*4 !important;
         margin-bottom: $spacing*2 !important;
 
+        @include desktop {
+            padding-left: $spacing*2 !important;
+            padding-right: $spacing*2 !important;
+        }
+
+        @include phone {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
         h1, p {
             display: table;
             margin: 0 !important;
             padding: $spacing/2;
-            background-color: rgba(0, 0, 0, .875);
+            background-color: rgba($dark, .9);
             color: $offWhite !important;
         }
     }

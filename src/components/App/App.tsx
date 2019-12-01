@@ -11,6 +11,7 @@ import { Article } from '../Article';
 import { AllArticleSummariesPage } from '../Article';
 import { Page404 } from '../Page404';
 import { SongGroups } from '../Songs';
+import { Contributors } from '../Contributors';
   
 function Sidebar() {
     return (
@@ -26,9 +27,6 @@ function Sidebar() {
                 <li>
                     <NavLink to="/glossary/" activeClassName="current">Glossary</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/songs/" className="coming-soon" activeClassName="current">Songs</NavLink>
-                </li>
             </ul>
         </nav>
     )
@@ -42,7 +40,7 @@ function Footer() {
                     <h3>DDRGuide.com</h3>
                     <ul className="footerLinks">
                         <li><Link to="/about/contributors/">Contributors</Link></li>
-                        <li><Link to="/about/source/">Source</Link></li>
+                        <li><a href="https://github.com/garcia/ddrguide">Source</a></li>
                         <li><a href="https://twitter.com/DDRGuide">Twitter</a></li>
                     </ul>
                 </li>
@@ -91,6 +89,7 @@ export function App() {
                         <Route path="/article/:slug" render={({match}) => <Article key={match.params.slug} slug={match.params.slug} />} />
                         <Route path="/songs/" component={SongGroups} />
                         <Route path="/song/" component={SongGroups} />
+                        <Route path="/about/contributors/" exact component={Contributors} />
                         <Route component={Page404} />
                     </Switch>
                 </div>

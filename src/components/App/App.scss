@@ -235,7 +235,7 @@
                 > h3 {
                     text-transform: uppercase;
                     margin-top: 0;
-                    color: $blueWhite;
+                    color: $offWhite;
                 }
 
                 > p {
@@ -277,6 +277,10 @@
                 flex: 0 0;
                 height: 10em;
                 margin-right: $spacing;
+
+                @include phone {
+                    display: none;
+                }
             }
 
             .contentSummaryText {
