@@ -80,8 +80,8 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
                 }
 
                 let anchor: string;
-                if (linkTerm.startsWith("http")) {
-                    anchor = linkTerm;
+                if (linkTerm.startsWith("http") || linkTerm.startsWith("/")) {
+                    anchor = linkTerm.replace(/ /g, "%20");
                 } else {
                     anchor = MakeSiteLink[linkSection as SiteSection](linkTerm);
                     // Hacky fix for glossary hash links
@@ -102,6 +102,7 @@ export class GuideMarkdown extends React.Component<GuideMarkdownProps> {
 
             }
         }
+        console.log(output.join(""));
 
         return output.join("");
     }

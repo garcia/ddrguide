@@ -36,6 +36,8 @@ If the cabinet is connected to the Internet, you'll be prompted to scan your e-a
 
 Next, the game will prompt you to **choose a game mode**. If you're playing alongside another player, the game will automatically select Versus Mode; otherwise, you can choose [glossary:Single|SP], [glossary:Double|DP], or Versus using the left/right buttons and pressing the green button to confirm. (I recommend choosing Single if you're new). Finally, if you used an e-amusement pass, the game will ask you to choose whether to play with Premium Play or not. You should **always choose Premium Play**; it's free at all established North America locations! Simply press the down button to select Premium Play and press green to confirm.
 
+![Premium Play|/images/Article - navigating-the-ddr-ui - Premium Play.jpg]
+
 Once you know what you're doing, this whole process should only take about 15 seconds each time. Now you're ready to choose your first song and play the game!
 
 ## Song selection & Gameplay
@@ -43,6 +45,8 @@ Once you know what you're doing, this whole process should only take about 15 se
 On the music selection screen, you can use all four arrow buttons to navigate the song list. Hold left or right to scan through the complete list of songs, or hold up or down to scroll through each row of 3 songs faster. You can also press and hold up and down to leave a song folder immediately, or press and hold left and right to choose another sort mode. Need help choosing a song? Check out our guide on [article:deciding what to play] for some useful advice.
 
 When you find a song you like, press the green button to play it; be aware that there's no backing out once you've chosen a song! If you *hold* the green button, it'll take you to the [glossary:Option] menu where you can set your speed and more. (If you just want to set your options *without* choosing a song, press the "9" key on the number pad before using the green button). Select your preferred difficulty using the up/down buttons; a lower number ([glossary:level]) indicates an easier chart. If you're ready to play, press the green button again (without holding it down) to confirm. If you're playing with another player, they'll need to confirm too before the song starts.
+
+![Option Menu|/images/Article - navigating-the-ddr-ui - Option Menu.jpg]
 
 > #### Tip
 > Once you're comfortable with the game, it becomes crucial to **update your speed option** before every song. Check out our guide on [article:setting your speed] for more details.
