@@ -453,7 +453,7 @@
         * [assist clear] (purple)
         * [failed|fail] (dark amber)
         * not played (black)
-    trivia: On [SP|Single Play], the highest level folder on which any player has obtained an [MFC] lamp is 14 (by CHRS4LFE). For [PFC] lamps, the highest is 18, obtained by multiple players. Currently, no player has documented a clear level higher than the normal clear lamp on the SP 19 folder (although BROSONI. had a FC lamp prior to ENDYMION [CSP]'s release).
+    trivia: On [SP|Single Play], the highest level folder on which any player has obtained an [MFC] lamp is 14 (by CHRS4LFE). For [PFC] lamps, the highest is 18, obtained by multiple players. Currently, no player has documented a clear level higher than the normal clear lamp on the SP 19 folder (although o4ma. had a FC lamp prior to ENDYMION [CSP]'s release).
     image:
         filename: "Select Music (with lamp annotations).png"
         altText: Screenshot of the music selection screen, with annotations for each player's song and folder lamps.
@@ -692,8 +692,7 @@
         * 4th (quarter) notes: Red
         * 8th notes: Blue
         * 16th notes: Yellow
-        * 32nd notes: Orange
-        * 64th notes and triplets (12th, 24th, 48th…): Green
+        * All other quantizations (12th, 24th, 32nd...): Green
 
 -   term: Measure
     concept: Rhythm
@@ -843,12 +842,12 @@
         A [pattern] which normally requires the player to cross one leg over the other.
 
 -   term: Lateral crossover
-    aka: [Laterals, Scoobie (slang)]
+    aka: [Laterals, Scoobie (slang), Afronova walk (outdated)]
     concept: Patterns
     definition: |
         A specific type of [crossover] pattern in which the player's left and right feet are momentarily positioned on the *right* and *left* [panels|panel], respectively.
         
-        The informal term "scooby" or "scoobies" refers to rapid-fire lateral crossovers, such as those seen near the end of [song:Mei] [CSP].
+        The informal term "scooby" or "scoobies" refers to rapid-fire lateral crossovers like LDRLUR or RDLRUL, such as those seen near the end of [song:Mei] [CSP].
 
 -   term: Double-step
     concept: Patterns
@@ -861,6 +860,11 @@
     concept: Patterns
     definition: |
         A [pattern] in which multiple consecutive [notes] must be hit on the same [panel]. These patterns are typically executed by using the same foot to hit each note, although players may choose to alternate feet, depending on which panel is used and how fast the arrows must be hit.
+
+-   term: Drill
+    concept: Patterns
+    definition: |
+        A [pattern] characterized by a monotonic sequence of single [notes|note] alternating between two panels. For example, [song:Horatio] ESP features many [16th note|quantization] drills.
 
 -   term: Footswitch
     concept: Patterns
@@ -880,6 +884,12 @@
     concept: Patterns
     definition: |
         A [pattern] characterized by a monotonic sequence of single [notes|note] on different panels. For example, [song:Healing Vision ~angelic mix~] [ESP] ends with a long stream of [8th notes|quantization], and [song:Nageki no ki] [ESP] has a long 16th note stream towards the end.
+
+-   term: Bracket
+    aka: [Heel-toe]
+    concept: Patterns
+    definition: |
+        A gameplay technique where the player hits a corner [jump] using one foot, hitting one panel with their heel and the other with their toes. The name "bracket" refers to the metal brackets that secure the [panels|panel] in place at the corners.
 
 -   term: YB
     acronym: Yabai
