@@ -1,0 +1,58 @@
+@import "global";
+
+.contributorSections {
+    display: table;
+    padding: 0;
+    color: $dark;
+    
+    > .contributorSection {
+        display: table-row;
+
+        > * {
+            display: table-cell;
+            padding: $spacing*2 0;
+            border-bottom: 1px solid $offWhite;
+        }
+
+        &:first-child > * {
+            padding-top: 0;
+        }
+
+        > .contributorSectionHeader {
+            position: relative;
+            text-align: right;
+            padding-right: $spacing;
+
+            > h2 {
+                font-size: 2em;
+                font-weight: normal;
+                margin-top: $spacing;
+                color: $black;
+
+                @include phone {
+                    font-size: 1.5em;
+                }
+            }
+
+            > p {
+                font-style: italic;
+
+                @include phone {
+                    font-size: .75em;
+                }
+            }
+
+            > img {
+                width: 100px;
+            }
+        }
+
+        > .contributorSectionContent {
+            padding-left: $spacing;
+
+            @include tablet-or-larger {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
