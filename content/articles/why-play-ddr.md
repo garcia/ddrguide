@@ -19,7 +19,7 @@ It should be noted that DDR isn't a replacement for a full exercise regimen. The
 
 Turns out you can play videogames to have fun! Crazy, right?
 
-Exactly what makes DDR fun to play is something that varies from player to player almost as much as the very sources of motivation we're already discussing. Maybe you enjoy listening to the energetic soundtrack, or the thrill of *finally* comboing that one song, or the satisfaction of filling out song folder [glossary:lamps|lamp] (clearing every song in a folder). Maybe it's the unlockable song events that appeal to you, or just the mental space of focusing on one very simple task for a few minutes, leaving all your worries behind for the moment.
+Exactly what makes DDR fun to play is something that varies from player to player almost as much as the very sources of motivation we're already discussing. Maybe you enjoy listening to the energetic soundtrack, or the thrill of *finally* comboing that one song, or going head-to-head in Versus mode with your friends. Maybe it's the unlockable song events that appeal to you, or just the mental space of focusing on one very simple task for a few minutes, leaving all your worries behind for the moment.
 
 The soundtrack in particular deserves more than a passing mention - the music of DDR is highly varied, spanning the [classic high-speed dance sound|https://www.youtube.com/watch?v=KRfOTl8MREo] that older DDR [glossary:mixes|mix] were known for to [modern bangers|https://www.youtube.com/watch?v=Ejz9ZwNfhu8] for the current era of the game. Get your daily exercise while listening to eccentric, memorable songs like [SAKURA|https://www.youtube.com/watch?v=w3Uz6uBOwjw] or [Dazzlin' Darlin'|https://www.youtube.com/watch?v=KQh8svG-HY0] or even [MAX 300|https://www.youtube.com/watch?v=yE-Dpr3Cri8]! There are 800 songs in the latest version of the game, so you're sure to find something you'll vibe with.
 
@@ -41,6 +41,4 @@ After you've honed your dance game skills for awhile, you might even gain intere
 
 ## Further reading
 
-Besides improving scores, one of the primary forms of progression in the game is called *lamps*, a game mechanic that keeps track of your best type of clear (like full combos). Read about them in the [glossary:glossary entry for "lamp"|lamp].
-
-Once more, our article on [deciding what to play] might help you understand possible motivations for playing the game.
+This article goes hand-in-hand with [deciding what to play], which discusses possible motivations for playing specific songs.
