@@ -91,7 +91,7 @@
 
 -   term: Final Stage
     concept: Modes & Stages
-    definition: The last of the normal [stages|stage], typically the third stage. Some event [songs|song] may be exclusive to this stage. In order to access the [Extra Stage], the Final Stage *must* be [cleared|clear], in addition meeting the [result star] requirements.
+    definition: The last of the normal [stages|stage], typically the third stage. Some event [songs|song] may be exclusive to this stage. In order to access the [Extra Stage], the Final Stage *must* be [cleared|clear], in addition to meeting the [result star] requirements.
 
 -   term: Extra Stage
     concept: Modes & Stages
@@ -111,9 +111,9 @@
 -   term: Extra Savior
     concept: Modes & Stages
     definition: |
-        An unlock mechanic consisting of a variety of special [song] folders that can only be accessed in the [Extra Stage]. The exact unlock mechanics vary from event to event, but in general, clearing an Extra Savior [chart] will unlock it for play during normal [stages|stage], and unlocking all charts for a song will remove it from the Extra Savior folder (as it can be found in the corresponding DDR mix [folder|sorting]).
-        
-        Full details on the unlock requirements for Extra Savior songs can be found on RemyWiki's [DDR A|https://remywiki.com/AC_DDR_A#Unlockable_Songs] and [DDR A20|https://remywiki.com/AC_DDR_A20#Unlockable_Songs] pages.
+        A [DDR A] exclusive unlock mechanic consisting of a variety of special [song] folders that can only be accessed in the [Extra Stage]. The exact unlock mechanics vary from event to event, but in general, clearing an Extra Savior [chart] will unlock it for play during normal [stages|stage], and unlocking all charts for a song will remove it from the Extra Savior folder (as it can be found in the corresponding DDR mix [folder|sorting]). Full details on the unlock requirements for Extra Savior songs can be found on RemyWiki's [DDR A|https://remywiki.com/AC_DDR_A#Unlockable_Songs] page.
+
+        In [DDR A20], the unlockable songs from DDR A are unlocked for normal play for everyone.
 
 -   term: Result Star
     concept: Modes & Stages
@@ -127,13 +127,23 @@
     definition: |
         A [DDR A] exclusive mechanic that primarily affects the [Extra Stage]. Heat Power is represented by a 7-bar gauge that starts empty on each day (divided by [e-amusement] maintenance periods) and increases by one after every [game] a player completes on [Premium Play]. At 3 bars, the player enters Heat Power level 2, and at a full 7 bars the player enters Heat Power level 3.
         
-        Some [Extra Exclusive] songs can only be played at a particular Heat Power level. Additionally, higher Heat Power levels provide the player with bonus [result stars|result star] that make it easier to obtain the [Extra Stage] (level 2 gives 3 stars and level 3 gives 9 stars).
+        On DDR A, some [Extra Exclusive] songs could only be played at a particular Heat Power level. Additionally, higher Heat Power levels provided the player with bonus [result stars|result star] that made it easier to obtain the [Extra Stage] (level 2 gave 3 stars and level 3 gave 9 stars).
+
+        [DDR A20] has no Heat Power or equivalent mechanic; there are no bonus Result Stars awarded at the end of each [game].
 
 -   term: Encore Extra Stage
     aka: [Encore Stage, One More Extra Stage, OMES]
     concept: Modes & Stages
     definition: A special [stage] following the [Encore Stage] that can only be accessed during certain events. This stage does not allow the player to control the [song], [chart], or [options|option], and the stage ends immediately if the player receives a [judgement] of [Great], [Good], or [Miss]. Currently, there is no way to access the Encore Extra Stage as there is no active event that makes use of it.
     trivia: The last time Encore Extra Stage was accessible ranged from July 12, 2017 to April 26, 2018, during the "Rinon's Adventure" event finale for [DDR A]. Clearing the [Extra Exclusive] song ENDYMION on [Expert] with a [grade] of AA+ or higher would trigger the Encore Extra Stage with the song ACE FOR ACES on [Difficult]. The [difficulty] requirements were gradually relaxed over the following months until ACE FOR ACES was ultimately made available outside of the Encore Extra Stage.
+
+-   term: Course
+    aka: [Nonstop, Dan]
+    concept: Modes & Stages
+    definition: |
+        A [DDR A20] exclusive mechanic that automatically plays through four pre-selected [songs|song] on a chosen [difficulty]. Courses can only be selected during the first [stage] on [Premium Play]; the [game] will end after the course has been completed, with no opportunity for an [Extra Stage].
+
+        Some courses are region-locked due to the songs they contain. Additionally, **Dan courses** are exclusive to gold cabinets, which is currently only accessible in Japan. Refer to the RemyWiki page on [Dan Courses|https://remywiki.com/DanceDanceRevolution_Dan_Courses] for more details.
 
 -   term: Song
     concept: Charts
@@ -208,7 +218,7 @@
     definition: |
         The best [note judgement|judgement], above [Perfect].
     
-        The timing window for the Marvelous judgement is 16.666… ms; the [score] it yields is the maximum possible for each note in the chart.
+        The timing window for the Marvelous judgement is believed to be 16.666… ms; the [score] it yields is the maximum possible for each note in the chart.
     trivia: |
         The Marvelous judgement was introduced in DanceDanceRevolution EXTREME, but only in courses. It was introduced to normal gameplay in DDR SuperNOVA2. Prior to its introduction, Perfect was the best note judgement - hence the peculiar naming convention.
 
@@ -220,21 +230,21 @@
     definition: |
         The second-best [note judgement|judgement], below [Marvelous] and above [Great].
 
-        The timing window for the Perfect judgement is 33.333… ms; the [score] it yields is the same as a Marvelous, minus 10.
+        The timing window for the Perfect judgement is believed to be 33.333… ms; the [score] it yields is the same as a Marvelous, minus 10.
 
 -   term: Great
     concept: Scores
     definition: |
         The third-best [note judgement|judgement], below [Perfect] and above [Good].
         
-        The timing window for the Great judgement is about 92 ms; the [score] it yields is 60% of a Perfect.
+        The timing window for the Great judgement is believed to be about 92 ms; the [score] it yields is 60% of a Perfect.
 
 -   term: Good
     concept: Scores
     definition: |
         The fourth-best [note judgement|judgement], below [Great].
         
-        The timing window for the Good judgement is about 142 ms; the [score] it yields 20% of a [Perfect].
+        The timing window for the Good judgement is believed to be about 142 ms; the [score] it yields 20% of a [Perfect].
 
 -   term: O.K.
     aka: [OK]
@@ -312,6 +322,8 @@
         A score obtained by getting either a [Marvelous], [Perfect], or [Great] judgement on every step, with no [misses|miss].
         
         The [score] for any GFC will typically be lower than any PFC on the same chart, due to Greats costing significantly more points off of the maximum than Perfects, although this is not always the case.
+
+        In previous [versions|mix] of DDR, a Great Full Combo was the lowest FC because [Good] judgements broke combo. Due to this, some players swap the definitions of [FC] and GFC.
     trivia: |
         All [Single|SP] charts [rated|level] 18 and lower have been not only GFC'd, but [PFC]'d by at least one player.  Some SP 19s have been GFC'd.
         
@@ -321,7 +333,10 @@
     acronym: Full Combo
     aka: [Good Full Combo, Blue Full Combo, BFC]
     concept: Combos & Lamps
-    definition: A score obtained by [clearing|clear] a [stage] with no [misses|miss]. [Good] judgements do not break combo in [DDR A], so a FC is distinct from (and more permissive than) a [GFC].
+    definition: |
+        A score obtained by [clearing|clear] a [stage] with no [misses|miss]. [Good] judgements do not break combo in [DDR A], so a FC is distinct from (and more permissive than) a [GFC].
+
+        In previous [versions|mix] of DDR, a Good Full Combo was impossible because [Good] judgements broke combo. Due to this, some players swap the definitions of FC and [GFC].
     trivia: |
         All but one [Single|SP] chart have been FC'd by at least one player; the one remaining is [song:ENDYMION] [CSP].
         
@@ -685,7 +700,7 @@
     definition: |
         Four [beats|beat] of a [song].
     
-        When [guide lines] are enabled, measures are denoted by the brigher scrolling lines.
+        When [guide lines] are enabled, measures are denoted by the brighter scrolling lines.
 
 -   term: Beat
     concept: Rhythm
@@ -810,6 +825,10 @@
 -   term: Machine Record
     concept: Online features
     definition: A [score] on a [chart] that exceeds all other scores on that chart that were obtained on the same [cabinet]. The player and score associated with this record are displayed near the top of the [leaderboard] on the song selection screen.
+
+-   term: Rival
+    concept: Online features
+    definition: In DDR, a "rival" is one of up to 10 players who each player can choose through the [e-amusement] website for comparing scores. Of these ten players, any 3 can be marked as "active" to appear on the in-game [leaderboards|leaderboard].
 
 -   term: Pattern
     concept: Patterns

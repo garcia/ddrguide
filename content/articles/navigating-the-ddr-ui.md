@@ -9,7 +9,7 @@ If you've never played DDR at the arcade before, you're probably faced with a lo
 With that said, a little prior knowledge goes a long way for confidence. This guide covers the complete flow for playing DDR, from the moment you swipe your card to the end of your session.
 
 > #### In a Nutshell
-> Bring your game card to the arcade (or buy one there), plus your e-amusement card. Respect anyone who's playing or waiting for their turn on the game. Swipe your game card, then scan your e-amusement card and enter your PIN. Select "Premium Play" when prompted. When you find a song you want to play, press "9" on the number pad to set your options (mainly speed) and enjoy the game!
+> Bring your game card to the arcade (or buy one there), plus your e-amusement card. Respect anyone who's playing or waiting for their turn on the game. Put in your credits, then scan your e-amusement card and enter your PIN. Select "Premium Play" when prompted. When you find a song you want to play, press "9" on the number pad to set your options (mainly speed) and enjoy the game!
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ With your game card and e-amusement pass in hand, you're ready to step up to the
 
 When you find the DDR cabinet, first **check whether anyone is playing** or waiting to play. If people are actively playing, or if the game doesn't appear to be in the "attract sequence" (the default mode when no one is playing), you'll need to wait your turn. There might be a [glossary:card line] if multiple players are waiting for their turn, in which case you should ask a player (but not while they're dancing!) where to put your card. If there's no card line on the cabinet marquee or screen frame, look around for any other potential players hovering near the DDR cabinet. If you're not sure, just ask if they're waiting to play; again, the arcade DDR experience is a social one. Talking to fellow players is good!
 
-If no one else is playing or waiting to play, go ahead and **swipe your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you're playing with a friend, you'll need *two swipes* to play together. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
+If no one else is playing or waiting to play, go ahead and **swipe / tap your game card** using the arcade's card reader, usually somewhere below the screen. You should hear a sound effect when the game accepts your credit. If you're playing with a friend, you'll need *two credits* to play together. If you have an e-amusement pass, swipe it by the NFC card reader on the cabinet, next to the buttons; without an e-amusement pass, just press the green button to proceed.
 
 On DDR A20, the game will prompt you to choose a language. The choice defaults to English on [glossary:white cabinets|white cabinet] and Japanese on [glossary:gold cabinets|gold cabinet], so take a moment to check the selection before pressing the green button to proceed.
 
