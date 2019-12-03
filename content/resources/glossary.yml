@@ -70,16 +70,21 @@
     definition: Gameplay mode where two players play on one side of the [dance stage] each (four [panels] each). Both players must share [song] picks for each [stage], but can select different [single|SP] charts and [options|option] for themselves.
 
 -   term: Session
-    aka: [Set]
     concept: Modes & Stages
-    definition: The unit of gameplay associated with a player's entire arcade visit, typically comprising multiple [games|game], with optional breaks between games.
+    definition: |
+        The unit of gameplay associated with a player's entire arcade visit, typically comprising multiple [games|game], with optional breaks between games.
+
+        Players might say "set" to mean "session" or "[game]"".
 
 -   term: Game
+    aka: [Set]
     concept: Modes & Stages
     definition: |
         The unit of gameplay purchased with each card swipe at an arcade. Players typically start each game by swiping their [e-amusement] pass and choosing their gameplay mode, then play 3-4 [stages|stage] (depending on the [cabinet]'s configuration and whether they meet the requirements for an [Extra Stage]).
         
         Of course, the word "game" can also refer to the [DDR] videogame itself, and other videogames. Context is key.
+
+        Players might say "set" to mean "game" or "[session]".
 
 -   term: Stage
     aka: [Round]
@@ -111,7 +116,7 @@
 -   term: Extra Savior
     concept: Modes & Stages
     definition: |
-        A [DDR A] exclusive unlock mechanic consisting of a variety of special [song] folders that can only be accessed in the [Extra Stage]. The exact unlock mechanics vary from event to event, but in general, clearing an Extra Savior [chart] will unlock it for play during normal [stages|stage], and unlocking all charts for a song will remove it from the Extra Savior folder (as it can be found in the corresponding DDR mix [folder|sorting]). Full details on the unlock requirements for Extra Savior songs can be found on RemyWiki's [DDR A|https://remywiki.com/AC_DDR_A#Unlockable_Songs] page.
+        A [DDR A] exclusive unlock mechanic consisting of a variety of special [song] folders that can only be accessed in the [Extra Stage]. The exact unlock mechanics vary from event to event, but in general, clearing an Extra Savior [chart] will unlock it for play during normal [stages|stage], and unlocking all charts for a song will remove it from the Extra Savior folder (as it can be found in the corresponding DDR mix [folder]). Full details on the unlock requirements for Extra Savior songs can be found on RemyWiki's [DDR A|https://remywiki.com/AC_DDR_A#Unlockable_Songs] page.
 
         In [DDR A20], the unlockable songs from DDR A are unlocked for normal play for everyone.
 
@@ -153,7 +158,7 @@
         "Song" is often informally used as a synonym for [stage].
 
 -   term: Chart
-    aka: [Pattern]
+    aka: [Pattern, Sequence]
     concept: Charts
     definition: A gameplay sequence for a particular song. Each chart has a [difficulty], [level], and [groove radar] displayed on the song selection screen. During gameplay, the chart lays out where notes (and other gameplay elements like [shock arrows] and [speed changes|speed change]) are placed.
 
@@ -191,6 +196,7 @@
     trivia: The only songs that have different speed changes for different charts are ACE FOR ACES ([Beginner]/[Basic] have no speed changes, all other difficulties have their own distinct speed changes) and CHAOS Terror-Tech Mix (only [Challenge] has separate speed changes).
 
 -   term: BPM change
+    aka: [Speedup, Slowdown]
     concept: Gameplay elements
     definition: |
         A [speed change] where the scroll speed increases or decreases. These typically occur in powers of two, i.e. doubling or halving the scroll speed, and are typically placed to follow the subjective "intensity" of the song.
@@ -438,7 +444,7 @@
     aka: [Song lamp, Folder lamp]
     concept: Combos & Lamps
     definition: |
-        A visual indicator of the highest clear level a player has obtained on a [song] or [folder|sorting]. On the song selection screen, lamps appear as two colored bars on the sides of each song jacket or folder entry. In [Versus Mode], each bar corresponds to each player; otherwise, both bars correspond to the single player.
+        A visual indicator of the highest clear level a player has obtained on a [song] or [folder]. On the song selection screen, lamps appear as two colored bars on the sides of each song jacket or folder entry. In [Versus Mode], each bar corresponds to each player; otherwise, both bars correspond to the single player.
         
         *Song lamps* are independent of the player's high score; obtaining a higher score with a lower clear level does not decrease the lamp's clear level. *Folder lamps* correspond to the lowest clear level in the folder; for example, to obtain a [FC] folder lamp, every song in the folder must have a FC or higher clear level.
         
@@ -510,45 +516,45 @@
     trivia: Some songs have Challenge charts that are *easier* than the [Expert] chart, as the Challenge difficulty sometimes denotes an "experimental" chart, rather than a hard one.
 
 -   term: BSP
-    acronym: Basic Single Pattern
+    acronym: Basic Single Play
     concept: Charts
     definition: |
-        *BSP* refers to [Basic] [Single|SP] [Pattern|Chart]; a double chart in the Basic difficulty slot.
+        *BSP* refers to [Basic] [Single Play|SP]; a double [chart] in the Basic difficulty slot.
         
-        *bSP* (with a lowercase "b") refers to [Beginner] [Single|SP] [Pattern|Chart].
+        *bSP* (with a lowercase "b") refers to [Beginner] [Single Play|SP].
 
 -   term: BDP
-    acronym: Basic Double Pattern
+    acronym: Basic Double Play
     concept: Charts
     definition: A [double|DP] [chart] in the [Basic] difficulty slot.
 
 -   term: DSP
-    acronym: Difficult Single Pattern
+    acronym: Difficult Single Play
     concept: Charts
     definition: A [single|SP] [chart] in the [Difficult] difficulty slot.
 
 -   term: DDP
-    acronym: Difficult Double Pattern
+    acronym: Difficult Double Play
     concept: Charts
     definition: A [double|DP] [chart] in the [Difficult] difficulty slot.
 
 -   term: ESP
-    acronym: Expert Single Pattern
+    acronym: Expert Single Play
     concept: Charts
     definition: A [single|SP] [chart] in the [Expert] difficulty slot.
 
 -   term: EDP
-    acronym: Expert Double Pattern
+    acronym: Expert Double Play
     concept: Charts
     definition: A [double|DP] [chart] in the [Expert] difficulty slot.
 
 -   term: CSP
-    acronym: Challenge Single Pattern
+    acronym: Challenge Single Play
     concept: Charts
     definition: A [single|SP] [chart] in the [Challenge] difficulty slot.
 
 -   term: CDP
-    acronym: Challenge Double Pattern
+    acronym: Challenge Double Play
     concept: Charts
     definition: A [double|DP] [chart] in the [Challenge] difficulty slot.
 
@@ -789,12 +795,16 @@
         
         For more information on purchasing the Basic Course and PASELI, refer to the bemanistyle guide [e-amusement How to: Charging PASELI and Basic Course Subscription|https://www.bemanistyle.com/e-amusement-how-to-charging-paseli-and-basic-course-subscription/]. Note that purchasing BitCash is no longer required for players in North America, as the [e-amusement] website now accepts non-Japanese credit cards for payment.
 
+        You can also refer to Sanbai Ice Cream's [setup tutorial|https://3icecream.com/tutorial/], which guides you through the same process in a streamlined fashion.
+
 -   term: PASELI
     concept: Online features
     definition: |
         [Konami]'s in-house currency for arcade games, used to pay for the [Basic Course] for an enhanced DDR experience.
 
         For more information on purchasing the Basic Course and PASELI, refer to the bemanistyle guide [e-amusement How to: Charging PASELI and Basic Course Subscription|https://www.bemanistyle.com/e-amusement-how-to-charging-paseli-and-basic-course-subscription/]. Note that purchasing BitCash is no longer required for players in North America, as the [e-amusement] website now accepts non-Japanese credit cards for payment.
+
+        You can also refer to Sanbai Ice Cream's [setup tutorial|https://3icecream.com/tutorial/], which guides you through the same process in a streamlined fashion.
 
 -   term: e-amusement extended maintenance
     aka: [Third Monday, Maintenance Monday]
@@ -837,6 +847,7 @@
         "Pattern" can also be synonymous with "[chart]", although this is uncommon among English-speaking players.
 
 -   term: Crossover
+    aka: [Turn]
     concept: Patterns
     definition: |
         A [pattern] which normally requires the player to cross one leg over the other.
