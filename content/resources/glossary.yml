@@ -148,7 +148,7 @@
     definition: |
         A [DDR A20] exclusive mechanic that automatically plays through four pre-selected [songs|song] on a chosen [difficulty]. Courses can only be selected during the first [stage] on [Premium Play]; the [game] will end after the course has been completed, with no opportunity for an [Extra Stage].
 
-        Some courses are region-locked due to the songs they contain. Additionally, **Dan courses** are exclusive to gold cabinets, which is currently only accessible in Japan. Refer to the RemyWiki page on [Dan Courses|https://remywiki.com/DanceDanceRevolution_Dan_Courses] for more details.
+        Some courses are region-locked due to the songs they contain. Additionally, **Dan courses** are exclusive to [gold cabinets|gold cabinet] on [Premium Play], effectively region-locking them to Japan. Refer to the RemyWiki page on [Dan Courses|https://remywiki.com/DanceDanceRevolution_Dan_Courses] for more details.
 
 -   term: Song
     concept: Charts
@@ -158,7 +158,7 @@
         "Song" is often informally used as a synonym for [stage].
 
 -   term: Chart
-    aka: [Pattern, Sequence]
+    aka: [Pattern, Sequence, Stepchart]
     concept: Charts
     definition: A gameplay sequence for a particular song. Each chart has a [difficulty], [level], and [groove radar] displayed on the song selection screen. During gameplay, the chart lays out where notes (and other gameplay elements like [shock arrows] and [speed changes|speed change]) are placed.
 
@@ -306,7 +306,7 @@
 
         The [folder] for MFCs when browsing the "CLEAR RANK" [category] is labeled "MARVELOUS SWEEP".
     trivia: |
-        All [Single|SP] charts [rated|level] 14 (and *most* rated 13 and lower) have been MFC'd by at least one player. Only one MFC on an 18 has ever been recorded: [CHRS4LFE's MFC|https://www.youtube.com/watch?v=gKXz57J1eK4] of [song:Fascination ~eternal love mix~].
+        All [Single|SP] charts [rated|level] 14 (and *most* rated 13 and lower) have been MFC'd by at least one player. Various charts rated 15-17 have been MFC'd. Two 18s have been MFC'd: [song:Fascination ~eternal love mix~] and [song:Prey] [CSP], both by CHRS4LFE.
 
 -   term: PFC
     acronym: Perfect Full Combo
@@ -317,7 +317,7 @@
     
         The [score] for a PFC will be 1,000,000 minus the number of Perfect judgements obtained times 10.
     trivia: |
-        All [Single|SP] charts [rated|level] 18 and lower have been PFC'd by at least one player. Only one PFC on a 19 has ever been recorded: [CHRS4LFE's PFC|https://www.youtube.com/watch?v=QWCXAdaj2Vs] of [song:EGOISM 440] [CSP] on December 13, 2017.
+        All [Single|SP] charts [rated|level] 18 and lower have been PFC'd by at least one player. Only one 19 has ever been PFC'd: [song:EGOISM 440] [CSP], by CHRS4LFE, on two occasions.
         
         All [Double|DP] charts rated 16 and lower have been PFC'd by at least one player. All but one DP 17 have been PFC'd; the one remaining is [song:Dopamine] [EDP]. Some DP 18s have been PFC'd.  No DP 19 has ever been PFC'd.
 
@@ -333,7 +333,7 @@
     trivia: |
         All [Single|SP] charts [rated|level] 18 and lower have been not only GFC'd, but [PFC]'d by at least one player.  Some SP 19s have been GFC'd.
         
-        All [Double|DP] charts rated 17 and lower have been GFC'd by at least one player. Many DP 18s have been GFC'd as well.
+        All [Double|DP] charts rated 17 and lower have been GFC'd by at least one player. Many DP 18s have been GFC'd as well. No DP 19 has ever been GFC'd.
 
 -   term: FC
     acronym: Full Combo
@@ -346,7 +346,7 @@
     trivia: |
         All but one [Single|SP] chart have been FC'd by at least one player; the one remaining is [song:ENDYMION] [CSP].
         
-        All [Double|DP] charts rated 17 and lower have been not only FC'd, but [GFC]'d by at least one player. Most DP 18s have been FC'd as well. No DP 19s have been FC'd by anyone.
+        All [Double|DP] charts rated 17 and lower have been not only FC'd, but [GFC]'d by at least one player. Most DP 18s have been FC'd as well. No DP 19 has ever been FC'd.
 
 -   term: Flag
     aka: [Black flag]
@@ -786,7 +786,7 @@
     definition: |
         A gameplay mode for online [cabinets|cabinet] that enables many game mechanics, including the [Extra Stage], more granular [speed] choices, and guaranteed play of 3 songs regardless of whether the first two [stages|stage] are [cleared|clear].
 
-        On North American cabinets, Premium Play is available for no additional cost; in Japan, it typically costs [PASELI] or additional game credits.
+        On North American [white cabinets|white cabinet], Premium Play is available for no additional cost; however, [gold cabinets|gold cabinet] in NA do not have access to Premium Play yet. In Japan, Premium Play typically costs [PASELI] or additional game credits.
 
 -   term: Basic Course
     concept: Online features
@@ -941,3 +941,32 @@
     concept: Community Lingo
     definition: |
         "Greatest of All Time", a superlative usually (though not exclusively) applied to player CHRS4LFE.
+
+-   term: StepMania
+    aka: [SM]
+    concept: Related games
+    definition: |
+        A free, open-source dance game simulator for PCs that supports [DDR]-style gameplay via keyboard or a home [pad|dance stage]. Content designed for StepMania is distributed as [simfiles|simfile].
+
+-   term: Simfile
+    concept: Related games
+    definition: |
+        A [song] bundled with [charts|chart] and metadata for use in [StepMania]. Simfile is short for "simulation file".
+
+        Simfiles can be written by "stepartists" to custom songs, or they can be transcriptions of content from existing games such as [DDR].
+
+-   term: ITG
+    acronym: In The Groove
+    concept: Related games
+    definition: |
+        A defunct dance game series that used the same 4-panel [dance stage] configuration as [DDR].
+        
+        Owing to the *[Konami] v. Roxor* lawsuit, ITG is no longer in production. Its community now favors custom-written [simfiles|simfile] and typically uses [StepMania] rather than the original ITG software to play.
+
+-   term: PIU
+    acronym: Pump It Up
+    concept: Related games
+    definition: |
+        An active dance game series that uses a 5-panel [dance stage] configuration (diagonal & center panels).
+
+        Like [DDR], PIU gameplay can be simulated using [StepMania].
