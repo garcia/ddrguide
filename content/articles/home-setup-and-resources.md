@@ -2,7 +2,7 @@
 title: Home Setup & Resources
 slug: home-setup-and-resources
 description: The resources and tools you need to practice and learn at home.
-sections: [StepMania, Adding DDR songs to StepMania, Online references, Further reading]
+sections: [StepMania, Adding DDR songs to StepMania, Online references]
 date: April 6, 2020
 author: {
     name: 'J.T. Vandenbree',
@@ -15,14 +15,14 @@ Try as we might, we can’t stay at the arcade all the time. For those of you wh
 > #### In a nutshell
 
 > StepMania is a free, open-source rhythm game simulator that will let you play official and custom DDR songs on your keyboard or a home pad.  You can download StepMania versions of official DDR songs from Zenius-I-Vanisher (click here for songs from A20)
-> Yuisin’s Youtube channel has reference videos of hundreds of DDR charts. Remywiki is a collaborative resource for all kinds of information about Bemani* games. True BPM lists and visualizes exact BPM data for every song in DDR.
+> Yuisin’s Youtube channel has reference videos of hundreds of DDR charts. Remywiki is a collaborative resource for all kinds of information about [glossary:Bemani] games. True BPM lists and visualizes exact BPM data for every song in DDR.
 > DDRCommunity contains community-created difficulty rankings, event listings, and descriptions of official Konami events.
 
 ## StepMania
 
 StepMania is a free, open-source simulator for DDR and other rhythm games that you can download here. We’re going to cover the basics of setting up StepMania here, but the program has a ton of functionality for you to explore!
 
-Install StepMania like any other program on your computer, and it’s ready to go immediately! It comes with a few demo simfiles - StepMania song files - for testing. You’ll learn how to get more in the Zenius-I-Vanisher section below). StepMania also allows for you to completely customize the appearance and functionality of the game and menu using themes. One theme in particular is very common among western players - Simply Love. Simply Love adds a ton of new options, functions, and interface settings that will take your setup to the next level. Download the theme and drop the folder into your StepMania\Themes folder. Select the theme in the options menu under Display Options → Appearance Options → Theme.
+Install StepMania like any other program on your computer, and it’s ready to go immediately! It comes with a few demo simfiles - StepMania song files - for testing. You’ll learn how to get more in the Zenius-I-Vanisher section below). StepMania also allows for you to completely customize the appearance and functionality of the game and menu using themes. One theme in particular is very common among western players - Simply Love. Simply Love adds a ton of new options, functions, and interface settings that will take your setup to the next level. Download the theme and drop the folder into your `StepMania\Themes` folder. Select the theme in the options menu under Display Options → Appearance Options → Theme.
 
 ![Set Theme (step 1)|/images/Article - home-setup-and-resources - Set Theme - 1.jpg]
 
@@ -57,7 +57,7 @@ A few useful features:
 
 ## Adding DDR songs to StepMania
 
-Once you’ve gotten StepMania installed, it’s time to load it up with songs. ZIv is a rhythm game community site, sporting news, forums, and simfiles. You can find plenty of user-made custom songs here, but most useful is their expansive directory of official DDR arcade Simfiles. Click through the dropdown menus to download individual songs or full packs from mixes. DDR A20 simfiles are viewable here, with regular updates as more songs are released.
+Once you’ve gotten StepMania installed, it’s time to load it up with songs. [Zenius-I-vanisher|https://zenius-i-vanisher.com/] (ZIv) is a rhythm game community site, sporting news, forums, and simfiles. You can find plenty of user-made custom songs here, but most useful is their expansive directory of official DDR arcade simfiles. Click through the dropdown menus to download individual songs or full packs from mixes. DDR A20 simfiles are viewable here, with regular updates as more songs are released.
 
 Downloading these packs will let you try songs at home before playing them at the arcade, helping you plan your sets better, and spend more time playing!
 
@@ -65,7 +65,7 @@ Downloading these packs will let you try songs at home before playing them at th
 
 With so much content in modern DDR, the community has created plenty of places for you to look up information about the game. Here are some of the most valuable resources out there.
 
-* Yuisin’s Youtube channel has hundreds of videos of DDR charts with assist tick turned on. Great for studying at home or on the go.
-* Remywiki is a wiki-style resource for all kinds of information about DDR and all [glossary:Bemani] games. Learn how to unlock songs, look up your favorite artists, or see detailed step counts and BPMs.
-* trueBPM visualizes [glossary:BPM changes] over time for every DDR song, and even recommends speed mods given a preferred reading speed.
-DDRCommunity is a news and event site, helpful for following live and upcoming tournaments or keeping up with the latest official news from [glossary:Konami] in English.
+* [yuisin’s YouTube channel|https://www.youtube.com/channel/UCyrf1KnurHCOaz69FVoZXfA] has hundreds of videos of DDR charts with assist tick turned on. Great for studying at home or on the go.
+* [RemyWiki|https://remywiki.com/] is a wiki-style resource for all kinds of information about DDR and all Bemani games. Learn how to unlock songs, look up your favorite artists, or see detailed step counts and BPMs.
+* [true BPM|http://truebpm.dance/] visualizes [glossary:BPM changes|BPM change] over time for every DDR song, and even recommends speed mods given a preferred reading speed.
+* [DDRCommunity|http://ddrcommunity.com/] is a news and event site, helpful for following live and upcoming tournaments or keeping up with the latest official news from [glossary:Konami] in English.
