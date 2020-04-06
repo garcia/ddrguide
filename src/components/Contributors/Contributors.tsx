@@ -27,6 +27,15 @@ export class Contributors extends React.Component {
                     </li>
                     <li className="contributorSection">
                         <div className="contributorSectionHeader">
+                            <h2>Writers</h2>
+                            <p>Freelance writers who have provided articles &amp; other content for DDRGuide.com.</p>
+                        </div>
+                        <ul className="contributorSectionContent">
+                            <li>J.T. Vandenbree (<a href="https://twitter.com/tizatryhards">@TizaTryhards</a>)</li>
+                        </ul>
+                    </li>
+                    <li className="contributorSection">
+                        <div className="contributorSectionHeader">
                             <h2>Beta Testers</h2>
                             <p>These players provided valuable feedback on the site's content prior to release.</p>
                         </div>

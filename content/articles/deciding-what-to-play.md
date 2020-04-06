@@ -3,6 +3,10 @@ title: Deciding What to Play
 slug: deciding-what-to-play
 description: With over 800 songs to choose from, it can be daunting to pick them one at a time.
 sections: [For fun, For improvement, For new content, Miscellaneous ideas, Further reading]
+date: December 2, 2019
+author: {
+    name: DDRGuide.com Staff
+}
 ---
 Virtually every DDR player knows the experience of wandering aimlessly through song folders, looking for something, *anything* to play while the timer counts down its final seconds. With every new [glossary:mix] comes a wave of new songs, and after 17 mixes, decision paralysis on the music selection screen has never felt more real. A lot of the time, being able to decide on what to play requires you to ask yourself *why* you're playing in the first place. What *interests* you about DDR? In this article we'll look at various ways to pick a song to play, depending on your particular motivations.
 

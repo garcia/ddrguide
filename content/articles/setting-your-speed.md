@@ -3,6 +3,10 @@ title: Setting your Speed Option
 slug: setting-your-speed
 description: Finding the right multiplier for the song, plus some gotchas to look out for.
 sections: [Understanding speed, Finding your target BPM, Speed in practice, Dealing with strange BPMs]
+date: December 2, 2019
+author: {
+    name: DDRGuide.com Staff
+}
 ---
 Of all the settings you can change from the Option menu, speed is the most important *and* the most heavily dependent on the song. Most players will set or verify their speed choice before every stage, as the penalty for leaving it on the wrong choice can range from getting a lower [glossary:score] to outright [glossary:failing|fail] the song. In this article we'll discuss how the speed mod affects gameplay, how to choose your speed for each song, and some important caveats for specific songs.
 

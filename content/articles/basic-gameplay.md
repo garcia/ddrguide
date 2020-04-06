@@ -3,6 +3,10 @@ title: Basic Gameplay
 slug: basic-gameplay
 description: Learn the fundamentals of playing DDR - how to read the screen and where to put your feet.
 sections: [Positioning yourself, Bar or no bar?, Reading the screen, Basic techniques, Correcting mistakes, Further reading]
+date: December 2, 2019
+author: {
+    name: DDRGuide.com Staff
+}
 ---
 For every piece of trivia that I consider to be "common knowledge", thousands to tens of thousands of people will learn about it for the first time each and every day. It's just how [the numbers|https://xkcd.com/1053/] work out. And while DanceDanceRevolution gameplay is perhaps *slightly* more niche than your average piece of common knowledge, it's still undeniably part of the Internet's collective consciousness. It's embedded in GIFs and [viral YouTube videos|https://www.youtube.com/watch?v=MFlCD_IaTE8] and the odd [movie|https://www.youtube.com/watch?v=qatmvE7S4Sw] or two. Regardless of how much you already know about DDR, this article aims to get you up to speed: where to put your feet, how to read the screen, and some basic techniques that you can try out at the arcade.
 

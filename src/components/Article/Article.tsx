@@ -15,6 +15,7 @@ import settingYourSpeed from '../../content/articles/setting-your-speed.json';
 import whyPlayDDR from  '../../content/articles/why-play-ddr.json';
 import basicGameplay from  '../../content/articles/basic-gameplay.json';
 import decidingWhatToPlay from  '../../content/articles/deciding-what-to-play.json';
+import homeSetupAndResources from  '../../content/articles/home-setup-and-resources.json';
 import Helmet from 'react-helmet';
 
 export interface ArticleProps {
@@ -28,6 +29,11 @@ export interface ArticleContent {
         description: string;
         sections: string[];
         coming_soon?: boolean;
+        date: string;
+        author: {
+            name: string;
+            url?: string;
+        }
     }
     content: string;
 }
@@ -36,7 +42,7 @@ export class ArticleStore {
     
     static instance?: ArticleStore;
 
-    allArticles: ArticleContent[] = [navigatingTheDDRUI, whyPlayDDR, basicGameplay, settingYourSpeed, decidingWhatToPlay];
+    allArticles: ArticleContent[] = [navigatingTheDDRUI, whyPlayDDR, basicGameplay, settingYourSpeed, decidingWhatToPlay, homeSetupAndResources];
     articleSlugs: {[key: string]: ArticleContent} = {};
 
     constructor() {
@@ -116,6 +122,13 @@ export class Article extends React.Component<ArticleProps> {
         let output: JSX.Element;
 
         if (this.article) {
+            let author: JSX.Element;
+            if (this.article.data.author.url !== undefined) {
+                author = <a target="_blank" rel="noopener noreferrer" href={this.article.data.author.url}>{this.article.data.author.name}</a>
+            } else {
+                author = <>{this.article.data.author.name}</>
+            }
+
             output = (
                 <>
                     <Helmet>
@@ -131,6 +144,7 @@ export class Article extends React.Component<ArticleProps> {
                                 <p>{this.article.data.description}</p>
                             </div>
                             <div className="contents">
+                                <p className="articleMetadata">{author} · {this.article.data.date}</p>
                                 {this.contentMarkdown}
                             </div>
                         </article>
