@@ -2,7 +2,7 @@
 title: Home Setup & Resources
 slug: home-setup-and-resources
 description: The resources and tools you need to practice and learn at home.
-sections: [StepMania, Adding DDR songs to StepMania, Online references]
+sections: [Basic StepMania setup, Adding DDR songs to StepMania, Online references]
 date: April 6, 2020
 author: {
     name: 'J.T. Vandenbree',
@@ -18,7 +18,7 @@ Try as we might, we can’t stay at the arcade all the time. For those of you wh
 > Yuisin’s Youtube channel has reference videos of hundreds of DDR charts. Remywiki is a collaborative resource for all kinds of information about [glossary:Bemani] games. True BPM lists and visualizes exact BPM data for every song in DDR.
 > DDRCommunity contains community-created difficulty rankings, event listings, and descriptions of official Konami events.
 
-## StepMania
+## Basic StepMania setup
 
 StepMania is a free, open-source simulator for DDR and other rhythm games that you can download here. We’re going to cover the basics of setting up StepMania here, but the program has a ton of functionality for you to explore!
 
@@ -58,6 +58,16 @@ A few useful features:
 ## Adding DDR songs to StepMania
 
 Once you’ve gotten StepMania installed, it’s time to load it up with songs. [Zenius-I-vanisher|https://zenius-i-vanisher.com/] (ZIv) is a rhythm game community site, sporting news, forums, and simfiles. You can find plenty of user-made custom songs here, but most useful is their expansive directory of official DDR arcade simfiles. Click through the dropdown menus to download individual songs or full packs from mixes. DDR A20 simfiles are viewable here, with regular updates as more songs are released.
+
+![ZIv (step 1)|/images/Article - home-setup-and-resources - ZIv - 1.png]
+
+![ZIv (step 2)|/images/Article - home-setup-and-resources - ZIv - 2.png]
+
+![ZIv (step 3)|/images/Article - home-setup-and-resources - ZIv - 3.png]
+
+![ZIv (step 4)|/images/Article - home-setup-and-resources - ZIv - 4.png]
+
+![ZIv (step 5)|/images/Article - home-setup-and-resources - ZIv - 5.png]
 
 Downloading these packs will let you try songs at home before playing them at the arcade, helping you plan your sets better, and spend more time playing!
 
