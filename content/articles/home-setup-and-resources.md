@@ -14,9 +14,9 @@ Try as we might, we can’t stay at the arcade all the time. For those of you wh
 
 > #### In a nutshell
 
-> StepMania is a free, open-source rhythm game simulator that will let you play official and custom DDR songs on your keyboard or a home pad.  You can download StepMania versions of official DDR songs from Zenius-I-Vanisher (click here for songs from A20)
-> Yuisin’s Youtube channel has reference videos of hundreds of DDR charts. Remywiki is a collaborative resource for all kinds of information about [glossary:Bemani] games. True BPM lists and visualizes exact BPM data for every song in DDR.
-> DDRCommunity contains community-created difficulty rankings, event listings, and descriptions of official Konami events.
+> * [StepMania|https://stepmania.com/] is a free, open-source rhythm game simulator that will let you play official and custom DDR songs on your keyboard or a home pad.  You can download StepMania versions of official DDR songs from [Zenius-I-vanisher|https://zenius-i-vanisher.com/] ([click here|https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=1170] for songs from A20).
+> * [yuisin’s YouTube channel|https://www.youtube.com/channel/UCyrf1KnurHCOaz69FVoZXfA] has reference videos of hundreds of DDR charts. [RemyWiki|https://remywiki.com/] is a collaborative resource for all kinds of information about [glossary:Bemani] games. [True BPM|http://truebpm.dance/] lists and visualizes exact BPM data for every song in DDR.
+> * [DDRCommunity|http://ddrcommunity.com/] contains community-created difficulty rankings, event listings, and descriptions of official [glossary:Konami] events.
 
 ## Basic StepMania setup
 
@@ -78,4 +78,4 @@ With so much content in modern DDR, the community has created plenty of places f
 * [yuisin’s YouTube channel|https://www.youtube.com/channel/UCyrf1KnurHCOaz69FVoZXfA] has hundreds of videos of DDR charts with assist tick turned on. Great for studying at home or on the go.
 * [RemyWiki|https://remywiki.com/] is a wiki-style resource for all kinds of information about DDR and all Bemani games. Learn how to unlock songs, look up your favorite artists, or see detailed step counts and BPMs.
 * [true BPM|http://truebpm.dance/] visualizes [glossary:BPM changes|BPM change] over time for every DDR song, and even recommends speed mods given a preferred reading speed.
-* [DDRCommunity|http://ddrcommunity.com/] is a news and event site, helpful for following live and upcoming tournaments or keeping up with the latest official news from [glossary:Konami] in English.
+* [DDRCommunity|http://ddrcommunity.com/] is a news and event site, helpful for following live and upcoming tournaments or keeping up with the latest official news from Konami in English.
