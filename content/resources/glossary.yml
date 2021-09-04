@@ -703,9 +703,9 @@
 -   term: Measure
     concept: Rhythm
     definition: |
-        Four [beats|beat] of a [song].
+        Typically four [beats|beat] of a [song]; sometimes fewer, sometimes more.
     
-        When [guide lines] are enabled, measures are denoted by the brighter scrolling lines.
+        When [guide lines] are enabled, measures are denoted by the brighter scrolling lines. Songs with unusual time signatures may or may not have accurate measure lines.
 
 -   term: Beat
     concept: Rhythm
