@@ -306,7 +306,7 @@
 
         The [folder] for MFCs when browsing the "CLEAR RANK" [category] is labeled "MARVELOUS SWEEP".
     trivia: |
-        All [Single|SP] charts [rated|level] 14 (and *most* rated 13 and lower) have been MFC'd by at least one player. Various charts rated 15-17 have been MFC'd. Two 18s have been MFC'd: [song:Fascination ~eternal love mix~] and [song:Prey] [CSP], both by CHRS4LFE.
+        All [Single|SP] charts [rated|level] 16 and lower have been MFC'd by at least one player. Various charts rated 17-18 have been MFC'd.
 
 -   term: PFC
     acronym: Perfect Full Combo
@@ -317,7 +317,7 @@
     
         The [score] for a PFC will be 1,000,000 minus the number of Perfect judgements obtained times 10.
     trivia: |
-        All [Single|SP] charts [rated|level] 18 and lower have been PFC'd by at least one player. Only one 19 has ever been PFC'd: [song:EGOISM 440] [CSP], by CHRS4LFE, on two occasions.
+        All [Single|SP] charts [rated|level] 18 and lower have been PFC'd by at least one player. Three 19s have been PFC'd: [song:EGOISM 440] [CSP], [song:PARANOiA Revolution] CSP, and [song:MAX 360] CSP.
         
         All [Double|DP] charts rated 16 and lower have been PFC'd by at least one player. All but one DP 17 have been PFC'd; the one remaining is [song:Dopamine] [EDP]. Some DP 18s have been PFC'd.  No DP 19 has ever been PFC'd.
 
@@ -344,7 +344,7 @@
 
         In previous [versions|mix] of DDR, a Good Full Combo was impossible because [Good] judgements broke combo. Due to this, some players swap the definitions of FC and [GFC].
     trivia: |
-        All but one [Single|SP] chart have been FC'd by at least one player; the one remaining is [song:ENDYMION] [CSP].
+        All but two [Single|SP] charts have been FC'd by at least one player; the two remaining are [song:ENDYMION] [CSP] and [song:Lachryma《Re:Queen'M》] CSP.
         
         All [Double|DP] charts rated 17 and lower have been not only FC'd, but [GFC]'d by at least one player. Most DP 18s have been FC'd as well. No DP 19 has ever been FC'd.
 
@@ -459,7 +459,7 @@
         * [assist clear] (purple)
         * [failed|fail] (dark amber)
         * not played (black)
-    trivia: On [SP|Single Play], the highest level folder on which any player has obtained an [MFC] lamp is 14 (by CHRS4LFE). For [PFC] lamps, the highest is 18, obtained by multiple players. Currently, no player has documented a clear level higher than the normal clear lamp on the SP 19 folder (although o4ma. had a FC lamp prior to ENDYMION [CSP]'s release).
+    trivia: On [SP|Single Play], the highest level folder on which any player has obtained an [MFC] lamp is 16 (by CHRS4LFE). For [PFC] lamps, the highest is 18, obtained by multiple players. Currently, no player has documented a clear level higher than the normal clear lamp on the SP 19 folder (although o4ma. had a FC lamp prior to ENDYMION [CSP]'s release).
     image:
         filename: "Select Music (with lamp annotations).png"
         altText: Screenshot of the music selection screen, with annotations for each player's song and folder lamps.
